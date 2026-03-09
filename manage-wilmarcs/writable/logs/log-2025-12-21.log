@@ -1,0 +1,13 @@
+CRITICAL - 2025-12-21 10:01:07 --> Undefined array key "name"
+#0 D:\wamp64\www\wilmarcs\manage\app\Controllers\backend\Category.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\wamp64\\www\\w...', 41)
+#1 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(928): App\Controllers\Backend\Category->add('services', '2')
+#2 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\Category))
+#3 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\wamp64\www\wilmarcs\manage\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2025-12-21 10:01:22 --> Object of class App\Libraries\Slug could not be converted to string
+#0 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(928): App\Controllers\Backend\Category->add(Object(App\Libraries\Slug), '2')
+#1 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Backend\Category))
+#2 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\wamp64\www\wilmarcs\manage\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

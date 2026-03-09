@@ -1,0 +1,49 @@
+ERROR - 2025-12-18 15:02:16 --> Unknown column 'services.fksid' in 'on clause'
+CRITICAL - 2025-12-18 15:02:16 --> Call to a member function getResultArray() on bool
+#0 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(928): App\Controllers\Content->services('0')
+#1 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+#2 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\wamp64\www\wilmarcs\manage\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2025-12-18 15:02:18 --> Unknown column 'services.fksid' in 'on clause'
+CRITICAL - 2025-12-18 15:02:18 --> Call to a member function getResultArray() on bool
+#0 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(928): App\Controllers\Content->services('0')
+#1 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+#2 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\wamp64\www\wilmarcs\manage\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2025-12-18 15:02:37 --> Unknown column 'services.fksid' in 'on clause'
+CRITICAL - 2025-12-18 15:02:37 --> Call to a member function getResultArray() on bool
+#0 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(928): App\Controllers\Content->services('0')
+#1 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+#2 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\wamp64\www\wilmarcs\manage\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2025-12-18 15:02:38 --> Unknown column 'services.fksid' in 'on clause'
+CRITICAL - 2025-12-18 15:02:38 --> Call to a member function getResultArray() on bool
+#0 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(928): App\Controllers\Content->services('0')
+#1 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+#2 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\wamp64\www\wilmarcs\manage\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2025-12-18 15:03:08 --> Unknown column 'services.fksid' in 'on clause'
+CRITICAL - 2025-12-18 15:03:08 --> Call to a member function getResultArray() on bool
+#0 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(928): App\Controllers\Content->services('0')
+#1 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+#2 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\wamp64\www\wilmarcs\manage\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2025-12-18 15:03:09 --> Unknown column 'services.fksid' in 'on clause'
+CRITICAL - 2025-12-18 15:03:09 --> Call to a member function getResultArray() on bool
+#0 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(928): App\Controllers\Content->services('0')
+#1 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+#2 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\wamp64\www\wilmarcs\manage\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2025-12-18 15:03:37 --> Unknown column 'services.fksid' in 'on clause'
+CRITICAL - 2025-12-18 15:03:37 --> Call to a member function getResultArray() on bool
+#0 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(928): App\Controllers\Content->services('0')
+#1 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Content))
+#2 D:\wamp64\www\wilmarcs\manage\system\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\wamp64\www\wilmarcs\manage\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

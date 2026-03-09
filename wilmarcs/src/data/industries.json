@@ -1,0 +1,2510 @@
+{
+  "travel-hospitality": {
+    "hero": {
+      "tag": "Travel & Hospitality",
+      "headline": "Experiences that linger long after checkout.",
+      "subhead": "Resorts, destinations, and experiences—told with cinematic polish and social-ready speed.",
+      "cta": {
+        "primary": {
+          "label": "Get an estimate",
+          "href": "#contact"
+        },
+        "secondary": {
+          "label": "Watch the reel",
+          "href": "#reel"
+        }
+      },
+      "chips": ["Hotels", "Resorts", "Tourism Boards", "Airlines", "Cruise Lines", "Travel Apps"]
+    },
+    "proof": {
+      "title": "Trusted by global destinations & hospitality leaders",
+      "logos": ["Hotels", "Resorts", "Tourism", "Airlines", "Cruise", "Apps"]
+    },
+    "madeFor": {
+      "title": "Built for your reality",
+      "lead": "From launch films to always-on reels, we create assets that inspire bookings and repeat stays.",
+      "cards": [
+        {
+          "title": "Occupancy pressure",
+          "description": "Content that inspires direct bookings and reduces OTA dependency."
+        },
+        {
+          "title": "Experience variety",
+          "description": "Covering spa, F&B, rooms, adventure—all without multiple crews."
+        },
+        {
+          "title": "Global guests",
+          "description": "Assets subtitled and localized for international reach."
+        }
+      ]
+    },
+    "kpis": {
+      "title": "What we optimize for",
+      "metrics": [
+        { "label": "Bookings", "value": "↑ Direct bookings" },
+        { "label": "CTR", "value": "↑ Campaign CTR" },
+        { "label": "Occupancy", "value": "↑ Off-season occupancy" },
+        { "label": "Engagement", "value": "↑ Social interactions" },
+        { "label": "RevPAR", "value": "↑ Revenue per available room" }
+      ]
+    },
+    "services": {
+      "title": "Services made for travel & hospitality",
+      "lead": "Detailed packages: deliverables + timelines for clarity.",
+      "packages": [
+        {
+          "title": "Resort brand film",
+          "deliverables": [
+            "1x 2-3 min cinematic brand film",
+            "1x 60s cutdown",
+            "3x 15s social teasers",
+            "Drone, gimbal, steadycam shots"
+          ],
+          "timeline": "10-14 days"
+        },
+        {
+          "title": "Experience package",
+          "deliverables": [
+            "1x 60-90s experience film (spa/adventure)",
+            "3x 10-15s loops",
+            "10x lifestyle stills",
+            "Captions + safe zones"
+          ],
+          "timeline": "5-7 days"
+        },
+        {
+          "title": "Event & conference",
+          "deliverables": [
+            "1x 2-3 min event recap",
+            "1x 60s highlight reel",
+            "Speaker reels (3)",
+            "Captions + 4K master"
+          ],
+          "timeline": "6-8 days"
+        },
+        {
+          "title": "Tourism campaign",
+          "deliverables": [
+            "1x 2 min tourism ad",
+            "3x 30s cutdowns (regional focus)",
+            "Vertical teasers (3)",
+            "Captions + localization"
+          ],
+          "timeline": "12-16 days"
+        }
+      ]
+    },
+    "useCases": {
+      "title": "Where this wins",
+      "lead": "From launch hype to repeat visits.",
+      "cases": [
+        "Destination launch campaigns",
+        "Seasonal occupancy push",
+        "Experience highlights (spa, F&B, adventure)",
+        "MICE & event marketing",
+        "Airline/cruise campaigns"
+      ]
+    },
+    "reel": {
+      "title": "See the difference",
+      "lead": "Scenic. Emotional. Social-ready.",
+      "thumbnails": [
+        "Drop your thumbnail / embed here.",
+        "Drop your thumbnail / embed here.",
+        "Drop your thumbnail / embed here."
+      ]
+    },
+    "process": {
+      "title": "Frictionless, end-to-end",
+      "steps": ["Discovery", "Pre-production", "Production", "Edit", "Delivery"],
+      "highlights": [
+        {
+          "title": "Location-ready crews",
+          "description": "Travel-light crews trained for remote shoots with drone, gimbal, and minimal footprint."
+        },
+        {
+          "title": "Fast cutdowns",
+          "description": "Social highlights delivered during the stay to keep feeds fresh."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Simple packages. Serious impact.",
+      "lead": "Transparent AED pricing for fast approvals. Custom scopes on request.",
+      "plans": [
+        {
+          "name": "Essential",
+          "price": "Starting from AED 5000",
+          "details": [
+            "1 shoot day (drone + gimbal)",
+            "1x 90s film + 2 cutdowns",
+            "10 retouched stills",
+            "Captions + clean masters",
+            "2 review rounds • 7-10 day ETA"
+          ],
+          "cta": "Start with Essential"
+        },
+        {
+          "name": "Professional",
+          "price": "Starting from AED 10000",
+          "details": [
+            "2-3 shoot days (multi-crew)",
+            "1x 2-3 min film + 5 cutdowns",
+            "20 stills + aerials",
+            "Localization pack",
+            "3 review rounds • 10-14 day ETA"
+          ],
+          "cta": "Book Professional"
+        }
+      ]
+    },
+    "addons": {
+      "title": "Popular add-ons",
+      "items": [
+        {
+          "title": "Localization pack",
+          "description": "Subtitles + dubs in 6 languages."
+        },
+        {
+          "title": "Influencer edits",
+          "description": "Cutdowns optimized for influencer collabs."
+        },
+        {
+          "title": "In-room screens",
+          "description": "Silent loops formatted for in-room TVs."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "What partners say",
+      "quotes": [
+        {
+          "text": "“Bookings jumped 27% post-launch.”",
+          "author": "GM, Resort"
+        },
+        {
+          "text": "“Tourism ad syndicated across 5 markets flawlessly.”",
+          "author": "Director, Tourism Board"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions, answered",
+      "items": [
+        {
+          "question": "Do you handle drone permissions?",
+          "answer": "Yes—we coordinate with local authorities for aerial permissions."
+        },
+        {
+          "question": "Localization?",
+          "answer": "Yes—captions and dubs for key languages, with tourism-ready safe zones."
+        },
+        {
+          "question": "Turnaround?",
+          "answer": "Essential: 7-10 days. Pro: 10-14 days."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Ready when you are",
+      "lead": "Tell us about your property or experience. We'll reply with a tailored estimate and timeline.",
+      "form": {
+        "cta": {
+          "submit": "Request estimate"
+        }
+      }
+    }
+  },
+  "tech-saas": {
+    "hero": {
+      "tag": "Tech / SaaS",
+      "headline": "Tech stories, simplified for scale.",
+      "subhead": "From AI to IoT, we turn complexity into clarity. Your product, your vision—delivered with cinematic precision.",
+      "cta": {
+        "primary": {
+          "label": "Get an estimate",
+          "href": "#contact"
+        },
+        "secondary": {
+          "label": "Watch the reel",
+          "href": "#reel"
+        }
+      },
+      "chips": ["AI", "SaaS", "IoT", "Cloud", "FinTech", "DevTools"]
+    },
+    "proof": {
+      "title": "Trusted by global destinations & hospitality leaders",
+      "logos": ["AI", "SaaS", "IoT", "Cloud", "FinTech", "DevTools"]
+    },
+    "madeFor": {
+      "title": "Built for your reality",
+      "lead": "Explain the “why”, show the “how”, and ship video assets that actually convert.",
+      "cards": [
+        {
+          "title": "Complex to clear",
+          "description": "We translate deep tech into visuals execs and users get instantly."
+        },
+        {
+          "title": "Scale & speed",
+          "description": "Modular production, sprint-friendly timelines, reusable assets for GTM."
+        },
+        {
+          "title": "Trust & security",
+          "description": "NDA workflows, secure links, masked data, and compliant edits."
+        }
+      ]
+    },
+    "kpis": {
+      "title": "What we optimize for",
+      "metrics": [
+        { "label": "Demos", "value": "↑ Demo sign-ups" },
+        { "label": "Activation", "value": "↑ Product activation" },
+        { "label": "Sales cycle", "value": "↓ Time to close" },
+        { "label": "Integration", "value": "↓ Dev integration time" },
+        { "label": "CAC/Payback", "value": "↑ CAC payback speed" }
+      ]
+    },
+    "services": {
+      "title": "Services made for travel & hospitality",
+      "lead": "Detailed packages: deliverables + timelines for clarity.",
+      "packages": [
+        {
+          "title": "Product explainer (motion + live)",
+          "deliverables": [
+            "1x 60-90s hero (16:9)",
+            "3x 10-15s cutdowns (9:16/1:1/16:9)",
+            "Thumbnail set (3 options)",
+            "Captions + clean masters"
+          ],
+          "timeline": "7-10 days"
+        },
+        {
+          "title": "Feature walkthroughs & UI demos",
+          "deliverables": [
+            "1x 90s walkthrough (16:9)",
+            "3x 15s feature clips (9:16)",
+            "On-screen callouts + cursor tracks",
+            "SRT captions"
+          ],
+          "timeline": "5-8 days"
+        },
+        {
+          "title": "Customer story (ROI)",
+          "deliverables": [
+            "1x 60-90s case film",
+            "3x quotes/snippets (9:16)",
+            "B-roll of product in use",
+            "Graphics: metrics & outcomes"
+          ],
+          "timeline": "8-12 days"
+        },
+        {
+          "title": "Developer content (API)",
+          "deliverables": [
+            "1x 6-8 min code demo",
+            "Docs snippets + terminal capture",
+            "Chaptered timestamps",
+            "Github-ready cut"
+          ],
+          "timeline": "6-9 days"
+        },
+        {
+          "title": "Launch toolkit",
+          "deliverables": [
+            "Teaser (6-10s)",
+            "Hero (15-30s)",
+            "3x hooks & CTA variants",
+            "Landing page background loop"
+          ],
+          "timeline": "5-9 days"
+        },
+        {
+          "title": "Webinar/summit coverage",
+          "deliverables": [
+            "Multi-cam talk capture",
+            "Speaker reels (3)",
+            "Highlights (60-90s)",
+            "Clean slides + captions"
+          ],
+          "timeline": "3-7 days"
+        }
+      ]
+    },
+    "useCases": {
+      "title": "Where this wins",
+      "lead": "Engineered for GTM, growth, and developer trust.",
+      "cases": [
+        "GTM support — teaser, hero, landing assets",
+        "Sales enablement — crisp demos that shorten cycles",
+        "DevRel — API explainers that reduce integration time",
+        "Customer marketing — case films that prove ROI",
+        "Fundraising — vision films for investors"
+      ]
+    },
+    "reel": {
+      "title": "See the difference",
+      "lead": "Cinematic look. Real users. Real outcomes.",
+      "thumbnails": [
+        "Drop your thumbnail / embed here.",
+        "Drop your thumbnail / embed here.",
+        "Drop your thumbnail / embed here."
+      ]
+    },
+    "process": {
+      "title": "Frictionless, end-to-end",
+      "steps": ["Discovery", "Scripting", "Production", "Edit & Grade", "Delivery"],
+      "highlights": [
+        {
+          "title": "Speed without chaos",
+          "description": "Tickets, timelines, and predictable delivery—like an engineering sprint."
+        },
+        {
+          "title": "Compliance ready",
+          "description": "NDAs, role-based access, secure review links. Your data stays your data."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Simple packages. Serious impact.",
+      "lead": "Transparent AED pricing for fast approvals. Custom scopes on request.",
+      "plans": [
+        {
+          "name": "Essential",
+          "price": "Starting from AED 3800",
+          "details": [
+            "One shoot day or remote capture",
+            "Director + DP (or motion design lead)",
+            "1x 60-90s hero + 2 cutdowns",
+            "Captions + clean masters",
+            "2 review rounds • 7-10 day ETA"
+          ],
+          "cta": "Start with Essential"
+        },
+        {
+          "name": "Professional",
+          "price": "Starting from AED 8300",
+          "details": [
+            "Two shoot days or hybrid (live + motion)",
+            "Senior crew + motion graphics",
+            "1x hero + 3 cutdowns + verticals",
+            "Cinematic grade & sound design",
+            "3 review rounds • 5-9 day ETA (priority)"
+          ],
+          "cta": "Book Professional"
+        }
+      ]
+    },
+    "addons": {
+      "title": "Popular add-ons",
+      "items": [
+        {
+          "title": "Interactive product tours",
+          "description": "Clickable walkthroughs for landing pages."
+        },
+        {
+          "title": "ASO/SEO loop exports",
+          "description": "Looped hero backgrounds for web & app stores."
+        },
+        {
+          "title": "3D UI & device comps",
+          "description": "Device frames, parallax scenes, and mock-up shots."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "What partners say",
+      "quotes": [
+        {
+          "text": "“Explained our AI platform in 90 seconds—and doubled demo sign-ups.”",
+          "author": "Founder, SaaS Startup"
+        },
+        {
+          "text": "“Best product walkthrough we've shipped. Sales cycles shortened.”",
+          "author": "VP Growth, DevTools"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions, answered",
+      "items": [
+        {
+          "question": "Do you handle unreleased features?",
+          "answer": "Yes—strict NDAs, secure links, and masked data. We can film in sandboxes or use redacted UIs."
+        },
+        {
+          "question": "Localization?",
+          "answer": "Yes—captions/VO for multiple markets; culturally adapted cutdowns."
+        },
+        {
+          "question": "Timeline?",
+          "answer": "Essential: 72h preview. Pro: 48h. Finals ~7-12 days depending on feedback."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Ready when you are",
+      "lead": "Tell us about your launch. We'll reply with a tailored estimate and timeline.",
+      "form": {
+        "cta": {
+          "submit": "Request estimate"
+        }
+      }
+    }
+  },
+  "real-estate": {
+    "hero": {
+      "tag": "Real Estate & PropTech",
+      "headline": "Bring properties to life before they're built.",
+      "subhead": "Cinematic walkthroughs, drone flyovers, and 3D visualizations that close deals faster.",
+      "cta": {
+        "primary": {
+          "label": "Get an estimate",
+          "href": "#contact"
+        },
+        "secondary": {
+          "label": "Watch the reel",
+          "href": "#reel"
+        }
+      },
+      "chips": ["Developers", "Architects", "PropTech", "Brokerages", "Interior Brands"]
+    },
+    "proof": {
+      "title": "Trusted by developers, architects & proptech innovators",
+      "logos": ["Developers", "Architects", "PropTech", "Brokerages", "Interior Brands"]
+    },
+    "madeFor": {
+      "title": "Built for your reality",
+      "lead": "Sales teams close faster with immersive visuals—both built and unbuilt projects.",
+      "cards": [
+        {
+          "title": "Unbuilt projects",
+          "description": "3D/CGI assets that sell before construction."
+        },
+        {
+          "title": "Scale of detail",
+          "description": "Drone + walkthroughs covering full projects."
+        },
+        {
+          "title": "Stakeholder proof",
+          "description": "Investor decks + global buyers require polish."
+        }
+      ]
+    },
+    "kpis": {
+      "title": "What we optimize for",
+      "metrics": [
+        { "label": "Leads", "value": "↑ Qualified leads" },
+        { "label": "Conversions", "value": "↑ Site visit conversions" },
+        { "label": "Sales cycle", "value": "↓ Time to close" },
+        { "label": "Investor trust", "value": "↑ Investor confidence" },
+        { "label": "Engagement", "value": "↑ Brochure/video interactions" }
+      ]
+    },
+    "services": {
+      "title": "Services made for real estate",
+      "lead": "Clear deliverables and ETAs for every property need.",
+      "packages": [
+        {
+          "title": "Project launch film",
+          "deliverables": [
+            "1x 90-120s launch film",
+            "Drone flyovers",
+            "3x 15s teasers",
+            "Captions + graphics"
+          ],
+          "timeline": "7-10 days"
+        },
+        {
+          "title": "3D walkthrough",
+          "deliverables": [
+            "1x 2-3 min CGI walkthrough",
+            "Virtual staging options",
+            "Cutdowns (3)",
+            "4K renders"
+          ],
+          "timeline": "14-21 days"
+        },
+        {
+          "title": "Property tour",
+          "deliverables": [
+            "1x 2-3 min tour film",
+            "Drone exteriors + steadycam interiors",
+            "Agent reels (3)",
+            "Captions + localized masters"
+          ],
+          "timeline": "6-8 days"
+        },
+        {
+          "title": "Investor deck video",
+          "deliverables": [
+            "1x 2 min investor film",
+            "3 key stat graphics",
+            "2x 30s cutdowns",
+            "Voiceover + captions"
+          ],
+          "timeline": "7-9 days"
+        }
+      ]
+    },
+    "useCases": {
+      "title": "Where this wins",
+      "lead": "From showflats to smart apps.",
+      "cases": [
+        "Luxury launches",
+        "Unbuilt CGI previews",
+        "Brokerage marketing",
+        "Investor decks",
+        "PropTech app demos"
+      ]
+    },
+    "reel": {
+      "title": "See the difference",
+      "lead": "Architectural detail. Emotional storytelling.",
+      "thumbnails": [
+        "Drop your thumbnail / embed here.",
+        "Drop your thumbnail / embed here.",
+        "Drop your thumbnail / embed here."
+      ]
+    },
+    "process": {
+      "title": "Frictionless, end-to-end",
+      "steps": ["Discovery", "Script & Visuals", "Production", "Edit", "Delivery"],
+      "highlights": [
+        {
+          "title": "Pre-sales ready",
+          "description": "3D and CGI previews delivered before the first brick."
+        },
+        {
+          "title": "Investor proof",
+          "description": "Films tailored to investor decks and international pitches."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Simple packages. Serious impact.",
+      "lead": "Transparent AED pricing for fast approvals. Custom scopes on request.",
+      "plans": [
+        {
+          "name": "Essential",
+          "price": "Starting from AED 6200",
+          "details": [
+            "1-2 shoot days",
+            "1x 90s film + 2 teasers",
+            "Drone + interiors",
+            "Captions + masters",
+            "2 review rounds • 7-10 day ETA"
+          ],
+          "cta": "Start with Essential"
+        }
+      ]
+    },
+    "addons": {
+      "title": "Popular add-ons",
+      "items": [
+        {
+          "title": "CGI pack",
+          "description": "Extra renders for brochures & ads."
+        },
+        {
+          "title": "Localization",
+          "description": "Captions/VO for NRI and global buyers."
+        },
+        {
+          "title": "Agent reels",
+          "description": "Custom short reels for agents/brokers."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "What partners say",
+      "quotes": [
+        {
+          "text": "“Explained our AI platform in 90 seconds—and doubled demo sign-ups.”",
+          "author": "Founder, SaaS Startup"
+        },
+        {
+          "text": "“Best product walkthrough we've shipped. Sales cycles shortened.”",
+          "author": "VP Growth, DevTools"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions, answered",
+      "items": [
+        {
+          "question": "Do you handle CGI?",
+          "answer": "Yes—3D/CGI included in walkthrough packages."
+        },
+        {
+          "question": "Drone rules?",
+          "answer": "We handle permissions and flight safety."
+        },
+        {
+          "question": "Localization?",
+          "answer": "Captions/dubs for investor or NRI markets."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Ready when you are",
+      "lead": "Tell us about your project. We'll reply with a tailored estimate and timeline.",
+      "form": {
+        "cta": {
+          "submit": "Request estimate"
+        }
+      }
+    }
+  },
+  "post-production": {
+    "hero": {
+      "tag": "Post-Production & Broadcast Partnerships",
+      "headline": "Finish strong. Deliver on spec.",
+      "subhead": "Editorial, color, mix, localization, and delivery—spec-checked for broadcasters, studios, and OTT.",
+      "cta": {
+        "primary": { "label": "Request a post bid", "href": "#contact" },
+        "secondary": { "label": "See finishing samples", "href": "#reel" }
+      },
+      "chips": ["IMF", "AS-11", "HDR10", "Dolby Vision", "Stereo/5.1/7.1", "Localization", "QC", "DCP"]
+    },
+    "proof": {
+      "title": "Trusted by networks, studios, OTTs, and indies",
+      "logos": ["Broadcast", "OTT", "Studios", "Networks", "Indies", "Publishers"]
+    },
+    "madeFor": {
+      "title": "Built for broadcasters, studios & OTT",
+      "lead": "We take your offline or raw and return platform-ready masters—IMF, AS-11, ProRes, DCP—plus stems, captions, and localized versions.",
+      "cards": [
+        { "title": "Spec anxiety", "description": "Different platforms, different specs—handled and templated in our pipeline." },
+        { "title": "Tight air dates", "description": "Parallel color/mix, overnight renders, and rush paths." },
+        { "title": "Global versions", "description": "VO/captions and textless/texted masters for markets." }
+      ]
+    },
+    "kpis": {
+      "title": "What we optimize for",
+      "metrics": [
+        { "label": "QC pass rate", "value": "↑ 99% first-pass" },
+        { "label": "On-time delivery", "value": "↑ 98%+ on-time" },
+        { "label": "Rejections", "value": "↓ Delivery rejections" },
+        { "label": "Mix translation", "value": "↑ Platform loudness compliance" },
+        { "label": "Turnaround", "value": "↓ Days to master" }
+      ]
+    },
+    "services": {
+      "title": "Post services that ship on spec",
+      "lead": "Every service below includes exact deliverables, stems, and target timelines.",
+      "packages": [
+        {
+          "title": "Picture finishing & color (SDR/HDR)",
+          "deliverables": [
+            "Conform from XML/AAF",
+            "Primary & secondary grade (Rec.709 HDR10 optional)",
+            "Grain, noise, film emulation as needed",
+            "1x 4K ProRes master + textless/texted + slates",
+            "EDL/XML + stills + LUTs"
+          ],
+          "timeline": "4-7 days"
+        },
+        {
+          "title": "Audio post: dialog, FX, mix",
+          "deliverables": [
+            "Dialogue edit & repair",
+            "Sound design & Foley (light)",
+            "Stereo/5.1/7.1 mix per spec (EBU R128/ATSC A/85)",
+            "M&E stems + full mix + split-tracks",
+            "Loudness report"
+          ],
+          "timeline": "3-6 days"
+        },
+        {
+          "title": "ADR / dubbing & localization",
+          "deliverables": [
+            "Casting & script adaptation",
+            "Studio or remote ADR sessions",
+            "Language VO tracks synchronized",
+            "M&E stems, captions (SRT/TTML)",
+            "Cue sheets"
+          ],
+          "timeline": "5-10 days"
+        },
+        {
+          "title": "Editorial & finishing (long-form)",
+          "deliverables": [
+            "Assembly from proxies or turnovers",
+            "Lower-thirds/title template",
+            "2x review rounds (time-coded)",
+            "Picture lock + conform handoff",
+            "Trailer/teaser cutdown (optional)"
+          ],
+          "timeline": "5-9 days"
+        },
+        {
+          "title": "QC & delivery (IMF/AS-11/ProRes)",
+          "deliverables": [
+            "Automated QC + manual pass",
+            "IMF CPL/PKL/OP-atom or AS-11 DPP",
+            "ProRes masters + H.264 screeners",
+            "Slates, bars/tone, leader, and textless",
+            "Checksum + delivery report"
+          ],
+          "timeline": "2-4 days"
+        },
+        {
+          "title": "Accessibility & compliance",
+          "deliverables": [
+            "Captions: SRT/SCC/TTML",
+            "Audio description (mix)",
+            "PSE checks (where required)",
+            "Clean & broadcast-safe versions",
+            "Metadata sheets"
+          ],
+          "timeline": "2-4 days"
+        },
+        {
+          "title": "Theatrical & festival (DCP)",
+          "deliverables": [
+            "2K/4K DCP (Flat/Scope)",
+            "Subtitle burn-in or XML",
+            "KDM management (on request)",
+            "Cinema QC checklist"
+          ],
+          "timeline": "3-5 days"
+        },
+        {
+          "title": "Promo & reversioning",
+          "deliverables": [
+            "30/15/6-sec cutdowns",
+            "Safe-area versions (9:16/1:1/16:9)",
+            "Open captions + endslates",
+            "Thumbnail pack (3 options)"
+          ],
+          "timeline": "2-4 days"
+        }
+      ]
+    },
+    "useCases": {
+      "title": "Where this wins",
+      "lead": "From one-off episodes to multi-season pipelines.",
+      "cases": [
+        "Doc & series finishing",
+        "Feature DI & mix",
+        "OTT re-masters",
+        "Localization & access packs",
+        "Festival DCPs",
+        "Trailer & promo reversioning"
+      ]
+    },
+    "reel": {
+      "title": "See the finish",
+      "lead": "Picture finish. Broadcast mix. Clean delivery.",
+      "thumbnails": [
+        "Drop your color / mix thumbnails or links here.",
+        "Drop your EPK / long-form cut sample here.",
+        "Drop your IMF/AS-11 sample spec sheet here."
+      ]
+    },
+    "process": {
+      "title": "Frictionless, end-to-end",
+      "steps": [
+        "Specs & ingest",
+        "Conform & edit",
+        "Color & mix (parallel)",
+        "QC (auto + manual)",
+        "Delivery (IMF/AS-11/DCP)"
+      ],
+      "highlights": [
+        {
+          "title": "Spec-first workflow",
+          "description": "We ingest specs up front (IMF/AS-11/DCP), set templates, and QC every export—no last-minute surprises."
+        },
+        {
+          "title": "Security & chain-of-custody",
+          "description": "NDAs, watermarking, role-based links, checksum logs, and secure drives when required."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Simple packages. Serious impact.",
+      "lead": "Transparent AED pricing for fast approvals. Custom scopes on request.",
+      "plans": [
+        {
+          "name": "Essential",
+          "price": "Starting from AED 5000",
+          "details": [
+            "Episode/feature finishing up to 30-60 min",
+            "Conform + SDR grade + stereo/5.1 mix",
+            "Captions (SRT) + ProRes master + screener",
+            "IMF/AS-11 OR DCP (choose one)",
+            "2 review rounds • 5-9 day ETA"
+          ],
+          "cta": "Start with Essential"
+        },
+        {
+          "name": "Professional",
+          "price": "Starting from AED 12000",
+          "details": [
+            "Long-form or multi-deliverable package",
+            "HDR10/Dolby Vision grade (where supported)",
+            "5.1/7.1 mix + stems + access pack",
+            "IMF + AS-11 + DCP (multi)",
+            "3 review rounds • 5-12 day ETA (priority)"
+          ],
+          "cta": "Book Professional"
+        }
+      ]
+    },
+    "addons": {
+      "title": "Popular add-ons",
+      "items": [
+        {
+          "title": "Dolby Vision pass",
+          "description": "HDR master + XML metadata (where supported)."
+        },
+        {
+          "title": "Atmos mix (partner stage)",
+          "description": "Certified stage booking + printmaster."
+        },
+        {
+          "title": "24-48h rush",
+          "description": "Priority pipeline and overnight renders."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "What partners say",
+      "quotes": [
+        {
+          "text": "“Passed QC on first try—air date saved.”",
+          "author": "Line Producer, Factual Series"
+        },
+        {
+          "text": "“Mix translated perfectly across platforms.”",
+          "author": "Supervising Producer, Doc Feature"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions, answered",
+      "items": [
+        {
+          "question": "Do you deliver IMF/AS-11/DCP?",
+          "answer": "Yes. We create and QC IMF packages, AS-11 DPP files, ProRes masters, and DCPs per spec with leader/slates and reports."
+        },
+        {
+          "question": "Dolby Vision / Atmos?",
+          "answer": "HDR10 and Dolby Vision grading available depending on source and delivery. For Atmos, we book a certified mix stage with trusted partners."
+        },
+        {
+          "question": "Security?",
+          "answer": "We use NDAs, watermarking, role-based access, checksum logs, and secure drives. Clean rooms available on request."
+        },
+        {
+          "question": "Turnaround for a 30-60 min episode?",
+          "answer": "Typical 5-9 days for conform, SDR grade, stereo/5.1 mix, captions, and one delivery format (IMF or AS-11). Rush available."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Ready when you are",
+      "lead": "Tell us your specs and deadline. We'll reply with a precise scope and schedule.",
+      "form": {
+        "cta": {
+          "submit": "Request estimate"
+        }
+      }
+    }
+  },
+  "csr-video": {
+    "hero": {
+      "tag": "NGO / CSR & Sustainability",
+      "headline": "Make impact visible.",
+      "subhead": "Human stories, measurable outcomes, and donor-ready films—made with safeguarding, consent, and speed.",
+      "cta": {
+        "primary": { "label": "Get an estimate", "href": "#contact" },
+        "secondary": { "label": "Watch the reel", "href": "#reel" }
+      },
+      "chips": ["NGOs", "Foundations", "CSR", "Impact Funds", "UN/INGOs", "Social Enterprises"]
+    },
+    "proof": {
+      "title": "Trusted by NGOs, foundations, and CSR leaders",
+      "logos": ["NGOs", "CSR", "Foundations", "UN", "INGOs", "Social"]
+    },
+    "madeFor": {
+      "title": "Built for your reality",
+      "lead": "From field shoots to boardroom updates, we build assets that raise funds, mobilize volunteers, and meet compliance.",
+      "cards": [
+        { "title": "Safeguarding & consent", "description": "Ethical storytelling with signed consent and anonymization when required." },
+        { "title": "Donor & board reporting", "description": "Outcome-aligned edits that integrate metrics and M&E visuals." },
+        { "title": "Multi-language reach", "description": "Captions/VO across Indian languages for inclusive access." }
+      ]
+    },
+    "kpis": {
+      "title": "What we optimize for",
+      "metrics": [
+        { "label": "Funds raised", "value": "↑ Donations & grants" },
+        { "label": "Volunteer sign-ups", "value": "↑ Active volunteers" },
+        { "label": "Program adoption", "value": "↑ Beneficiaries reached" },
+        { "label": "Stakeholder trust", "value": "↑ Donor/board confidence" },
+        { "label": "Policy reach", "value": "↑ Decision-maker views" }
+      ]
+    },
+    "services": {
+      "title": "Services made for NGO / CSR",
+      "lead": "Every card lists deliverables and typical timelines—no guesswork.",
+      "packages": [
+        {
+          "title": "Impact story film",
+          "deliverables": [
+            "1x 90-120s impact film",
+            "3x 20-30s social cutdowns",
+            "Photos (15) for reports",
+            "On-screen metrics & credits"
+          ],
+          "timeline": "7-12 days"
+        },
+        {
+          "title": "Program explainer",
+          "deliverables": [
+            "1x 60-90s explainer",
+            "Process graphics + map cards",
+            "3x FAQ clips",
+            "Captions + transcript"
+          ],
+          "timeline": "6-9 days"
+        },
+        {
+          "title": "Fundraising campaign pack",
+          "deliverables": [
+            "1x 45-60s appeal film",
+            "3x 15s urgency teasers",
+            "Donation CTA overlays",
+            "Localized captions"
+          ],
+          "timeline": "5-8 days"
+        },
+        {
+          "title": "Donor/board update video",
+          "deliverables": [
+            "1x 2-3 min quarterly update",
+            "Charts of KPIs (M&E)",
+            "2x 30s highlights",
+            "SRT captions + clean"
+          ],
+          "timeline": "6-9 days"
+        },
+        {
+          "title": "Field documentation",
+          "deliverables": [
+            "Raw + selects (organized)",
+            "Consent records (scanned)",
+            "Photo pack (20)",
+            "Basic captions"
+          ],
+          "timeline": "3-6 days"
+        },
+        {
+          "title": "Policy explainer (animation)",
+          "deliverables": [
+            "1x 90s animated explainer",
+            "Infographic frames (SVG)",
+            "3x 10s social snippets",
+            "VO + captions"
+          ],
+          "timeline": "7-12 days"
+        }
+      ]
+    },
+    "useCases": {
+      "title": "Where this wins",
+      "lead": "From fundraising to policy change.",
+      "cases": [
+        "Fundraising & donor outreach",
+        "Quarterly board updates",
+        "Volunteer recruitment",
+        "Program explainers for partners",
+        "Policy advocacy",
+        "Annual report films"
+      ]
+    },
+    "reel": {
+      "title": "See the difference",
+      "lead": "Respectful. Accurate. Action-driving.",
+      "thumbnails": [
+        "Drop your thumbnail / embed here.",
+        "Drop your thumbnail / embed here.",
+        "Drop your thumbnail / embed here."
+      ]
+    },
+    "process": {
+      "title": "Frictionless, end-to-end",
+      "steps": [
+        "Discovery & Safeguarding Plan",
+        "Scripting (SME/field)",
+        "Field Production",
+        "Edit & Compliance Review",
+        "Delivery & Accessibility"
+      ],
+      "highlights": [
+        {
+          "title": "Safeguarding first",
+          "description": "Consent-led storytelling, risk checks, and culturally sensitive filming."
+        },
+        {
+          "title": "Evidence-ready",
+          "description": "On-screen metrics and M&E summaries donors can trust."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Simple packages. Serious impact.",
+      "lead": "Transparent AED pricing for fast approvals. Custom scopes on request.",
+      "plans": [
+        {
+          "name": "Essential",
+          "price": "Starting from AED 3800",
+          "details": [
+            "1 field day (lean crew)",
+            "1x 90s film + 2 cutdowns",
+            "Consent kit + release forms",
+            "Captions + transcript",
+            "2 review rounds • 7-10 day ETA"
+          ],
+          "cta": "Start with Essential"
+        },
+        {
+          "name": "Professional",
+          "price": "Starting from AED 8300",
+          "details": [
+            "2-3 field days (multi-location)",
+            "1x 2-3 min film + 5 cutdowns",
+            "On-screen metrics + graphics",
+            "Localization pack",
+            "3 review rounds • 8-14 day ETA"
+          ],
+          "cta": "Book Professional"
+        }
+      ]
+    },
+    "addons": {
+      "title": "Popular add-ons",
+      "items": [
+        {
+          "title": "Localization pack",
+          "description": "Captions/VO in 11 Indian languages + English."
+        },
+        {
+          "title": "Accessibility bundle",
+          "description": "Audio description, high-contrast graphics, large-type exports."
+        },
+        {
+          "title": "M&E graphics toolkit",
+          "description": "Charts, maps, and KPI frames for reports and decks."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "What partners say",
+      "quotes": [
+        {
+          "text": "“Donors called it the clearest impact story we've shown.”",
+          "author": "Director, NGO"
+        },
+        {
+          "text": "“CSR board approved renewal in one meeting.”",
+          "author": "CSR Lead, Enterprise"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions, answered",
+      "items": [
+        {
+          "question": "How do you handle consent and safeguarding?",
+          "answer": "We use written consent (or guardian consent), anonymize when needed, avoid sensitive details, and follow your safeguarding policy."
+        },
+        {
+          "question": "Do you work in remote sites?",
+          "answer": "Yes—lean crews trained for low-infrastructure locations; local fixers when needed."
+        },
+        {
+          "question": "Accessibility and languages?",
+          "answer": "Captions and transcript by default; VO/localization in Indian languages on request."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Ready when you are",
+      "lead": "Tell us about your program. We'll reply with a tailored estimate and timeline.",
+      "form": {
+        "cta": {
+          "submit": "Request estimate"
+        }
+      }
+    }
+  },
+  "media-entertainment": {
+    "hero": {
+      "tag": "Media & Entertainment",
+      "headline": "Stories that move audiences.",
+      "subhead": "From OTT launches to live moments—cinematic polish at platform speed, with rights handled right.",
+      "cta": {
+        "primary": { "label": "Get an estimate", "href": "#contact" },
+        "secondary": { "label": "Watch the reel", "href": "#reel" }
+      },
+      "chips": ["OTT", "Broadcasters", "Studios", "Music", "Sports", "Brands", "Creators"]
+    },
+    "proof": {
+      "title": "Trusted by teams who set the tone",
+      "logos": ["OTT", "Broadcasters", "Studios", "Music", "Sports", "Creators"]
+    },
+    "madeFor": {
+      "title": "Built for your reality",
+      "lead": "Launch-ready cuts, clean rights, and multi-format masters—without the last-minute scramble.",
+      "cards": [
+        { "title": "Speed to air", "description": "Same-day or overnight edits. On-site ingest and review when needed." },
+        { "title": "Rights & clearances", "description": "Talent, music, stock, and brand safety tracked across deliverables and windows." },
+        { "title": "Multi-format delivery", "description": "9:16, 1:1, 16:9—with captions, safe zones, color & loudness QC." }
+      ]
+    },
+    "kpis": {
+      "title": "What we optimize for",
+      "metrics": [
+        { "label": "Views", "value": "↑ Trailer views" },
+        { "label": "Watch-through", "value": "↑ 50%+ VT on promos" },
+        { "label": "Engagement", "value": "↑ Social interactions" },
+        { "label": "Time-to-air", "value": "↓ Turnaround time" },
+        { "label": "QC fails", "value": "↓ Rejections on platforms" }
+      ]
+    },
+    "services": {
+      "title": "Services made for media",
+      "lead": "Trailers, promos, live coverage, and social verticals—dialed to your slate.",
+      "packages": [
+        {
+          "title": "Trailer & launch promo pack",
+          "deliverables": [
+            "1x 30-60s trailer (16:9)",
+            "1x 15s promo (9:16)",
+            "3x 6-10s teasers",
+            "Captions + thumbnail set"
+          ],
+          "timeline": "6-10 days"
+        },
+        {
+          "title": "Live event & multi-cam coverage",
+          "deliverables": [
+            "Multi-cam capture + audio",
+            "1x 60-90s highlight reel",
+            "Speaker/artist reels (3)",
+            "Captions + platform masters"
+          ],
+          "timeline": "3-6 days"
+        },
+        {
+          "title": "TVCs & digital spots",
+          "deliverables": [
+            "1x 20/30s main spot",
+            "3x cutdowns (10-15s)",
+            "Safe-area & logo pack",
+            "Audio mix per spec"
+          ],
+          "timeline": "7-12 days"
+        },
+        {
+          "title": "Music video / performance",
+          "deliverables": [
+            "1x 2-4 min MV",
+            "Visual treatments + title design",
+            "Vertical highlights (3)",
+            "Captions + clean master"
+          ],
+          "timeline": "8-14 days"
+        },
+        {
+          "title": "BTS & EPK package",
+          "deliverables": [
+            "1x 60-90s EPK",
+            "Set b-roll & interviews",
+            "Press stills (10)",
+            "Captions + credits"
+          ],
+          "timeline": "4-7 days"
+        },
+        {
+          "title": "Creator collab series",
+          "deliverables": [
+            "3 concepts x (1x 15s + 2x 6s)",
+            "Hook/CTA variants (6)",
+            "Brand-safe edit rules",
+            "SRT captions"
+          ],
+          "timeline": "5-8 days"
+        }
+      ]
+    },
+    "useCases": {
+      "title": "Where this wins",
+      "lead": "From hype to highlights.",
+      "cases": [
+        "Launch campaigns — teaser, trailer, countdown assets",
+        "Live highlights — sports, award shows, festivals",
+        "Artist releases — MV + verticals for social",
+        "Brand integrations — creator collabs at scale",
+        "OTT refresh — re-edits and platform masters"
+      ]
+    },
+    "reel": {
+      "title": "See the difference",
+      "lead": "Theatrical finish. Platform-perfect specs.",
+      "thumbnails": [
+        "Drop your thumbnail / embed here.",
+        "Drop your thumbnail / embed here.",
+        "Drop your thumbnail / embed here."
+      ]
+    },
+    "process": {
+      "title": "Frictionless, end-to-end",
+      "steps": [
+        "Discovery",
+        "Pre-production",
+        "Production",
+        "Edit & Finish",
+        "Delivery (QC)"
+      ],
+      "highlights": [
+        {
+          "title": "QC without drama",
+          "description": "Loudness, color, captions—checked against platform specs before delivery."
+        },
+        {
+          "title": "Rights handled",
+          "description": "Talent, music, stock, and brand safety tracked across cuts and windows."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Simple packages. Serious impact.",
+      "lead": "Transparent AED pricing for fast approvals. Custom scopes on request.",
+      "plans": [
+        {
+          "name": "Essential",
+          "price": "Starting from AED 4000",
+          "details": [
+            "One shoot day or remote ingest",
+            "Director + DP (or editor + motion lead)",
+            "1x 60-90s hero + 2 cutdowns",
+            "Captions + clean masters",
+            "2 review rounds • 6-9 day ETA"
+          ],
+          "cta": "Start with Essential"
+        },
+        {
+          "name": "Professional",
+          "price": "Starting from AED 9200",
+          "details": [
+            "Two shoot days / multi-cam",
+            "Senior crew + motion graphics",
+            "1x hero + 5 cutdowns + verticals",
+            "Broadcast/OTT-ready: loudness, captions, 4K masters",
+            "3 review rounds • 5-9 day ETA (priority)"
+          ],
+          "cta": "Book Professional"
+        }
+      ]
+    },
+    "addons": {
+      "title": "Popular add-ons",
+      "items": [
+        {
+          "title": "Localization pack",
+          "description": "Subtitles for international markets; localized graphic cards."
+        },
+        {
+          "title": "Motion title templates",
+          "description": "Reusable slates for episodic promos and countdowns."
+        },
+        {
+          "title": "Live stream support",
+          "description": "On-site encoder, lower-thirds graphics, and program record."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "What partners say",
+      "quotes": [
+        {
+          "text": "“Overnight edit went live before call time—spotless QC.”",
+          "author": "Executive Producer, Live Event"
+        },
+        {
+          "text": "“Trailer outperformed baseline by 2.3x.”",
+          "author": "Head of Marketing, OTT"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions, answered",
+      "items": [
+        {
+          "question": "What specs do you deliver?",
+          "answer": "4K Rec.709 by default; HDR10 and platform templates on request. Captions/loudness per platform."
+        },
+        {
+          "question": "Music licensing?",
+          "answer": "We can clear tracks or work with your cues. Usage windows/geos tracked; we don't provide legal advice."
+        },
+        {
+          "question": "How fast?",
+          "answer": "Essential: 72h preview. Pro: 48h preview. Live highlight edits during event day available."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Ready when you are",
+      "lead": "Tell us about your program. We'll reply with a tailored estimate and timeline.",
+      "form": {
+        "cta": {
+          "submit": "Request estimate"
+        }
+      }
+    }
+  },
+  "manufacturing": {
+    "hero": {
+      "tag": "Manufacturing & Industry 4.0",
+      "headline": "Showcase the future of making.",
+      "subhead": "Factory floors, robotics, and innovation—captured with clarity and cinematic precision.",
+      "cta": {
+        "primary": { "label": "Get an estimate", "href": "#contact" },
+        "secondary": { "label": "Watch the reel", "href": "#reel" }
+      },
+      "chips": ["Factories", "Robotics", "Automation", "Heavy Industry", "Engineering", "IoT"]
+    },
+    "proof": {
+      "title": "Trusted by manufacturers & innovators",
+      "logos": ["Factories", "Robotics", "Automation", "Engineering"]
+    },
+    "madeFor": {
+      "title": "Built for your reality",
+      "lead": "From plant tours to product explainers, we create visuals that win clients and partners.",
+      "cards": [
+        { "title": "Complex processes", "description": "Visuals that simplify robotics and automation." },
+        { "title": "Restricted zones", "description": "Crews trained to work safely in PPE areas." },
+        { "title": "Stakeholder trust", "description": "Professional films that impress partners and clients." }
+      ]
+    },
+    "kpis": {
+      "title": "What we optimize for",
+      "metrics": [
+        { "label": "Client trust", "value": "↑ Client confidence" },
+        { "label": "Leads", "value": "↑ Partner leads" },
+        { "label": "Sales cycle", "value": "↓ Time to close deals" },
+        { "label": "Talent", "value": "↑ Employer branding" },
+        { "label": "Engagement", "value": "↑ Explainer video views" }
+      ]
+    },
+    "services": {
+      "title": "Services made for manufacturing",
+      "lead": "Detailed service cards: deliverables + timelines.",
+      "packages": [
+        {
+          "title": "Plant tour film",
+          "deliverables": [
+            "1x 2-3 min plant tour",
+            "Drone exteriors",
+            "3x 15s teasers",
+            "Captions + graphics"
+          ],
+          "timeline": "6-8 days"
+        },
+        {
+          "title": "Automation explainer",
+          "deliverables": [
+            "1x 90s explainer",
+            "Motion graphics overlays",
+            "3x 10s cutdowns",
+            "Voiceover + captions"
+          ],
+          "timeline": "5-7 days"
+        },
+        {
+          "title": "Product demo",
+          "deliverables": [
+            "1x 2 min demo",
+            "Macro + process shots",
+            "3x 15s clips",
+            "Captions + masters"
+          ],
+          "timeline": "5-7 days"
+        },
+        {
+          "title": "Recruitment film",
+          "deliverables": [
+            "1x 90s employer film",
+            "Employee interviews",
+            "5x 10s social reels",
+            "Captions + subtitles"
+          ],
+          "timeline": "6-9 days"
+        }
+      ]
+    },
+    "useCases": {
+      "title": "Where this wins",
+      "lead": "From automation to client trust.",
+      "cases": [
+        "Plant tours",
+        "Automation explainers",
+        "Product demos",
+        "Investor films",
+        "Employer branding"
+      ]
+    },
+    "reel": {
+      "title": "See the difference",
+      "lead": "Precision. Scale. Trust.",
+      "thumbnails": [
+        "Drop your thumbnail / embed here.",
+        "Drop your thumbnail / embed here.",
+        "Drop your thumbnail / embed here."
+      ]
+    },
+    "process": {
+      "title": "Frictionless, end-to-end",
+      "steps": [
+        "Discovery",
+        "Pre-production",
+        "Production",
+        "Edit",
+        "Delivery"
+      ],
+      "highlights": [
+        {
+          "title": "Industrial-safe crews",
+          "description": "Trained to shoot in PPE zones without disruption."
+        },
+        {
+          "title": "Tech clarity",
+          "description": "Complex machinery simplified with motion graphics overlays."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Simple packages. Serious impact.",
+      "lead": "Transparent AED pricing for fast approvals. Custom scopes on request.",
+      "plans": [
+        {
+          "name": "Essential",
+          "price": "Starting from AED 5000",
+          "details": [
+            "1 shoot day",
+            "1x 90s film + 2 cutdowns",
+            "Drone + interiors",
+            "Captions + masters",
+            "2 review rounds • 6-9 day ETA"
+          ],
+          "cta": "Start with Essential"
+        },
+        {
+          "name": "Professional",
+          "price": "Starting from AED 10000",
+          "details": [
+            "2-3 shoot days",
+            "1x 2-3 min film + 5 cutdowns",
+            "Motion graphics overlays",
+            "Localized masters",
+            "3 review rounds • 7-12 day ETA"
+          ],
+          "cta": "Book Professional"
+        }
+      ]
+    },
+    "addons": {
+      "title": "Popular add-ons",
+      "items": [
+        {
+          "title": "Motion pack",
+          "description": "Extra graphics templates for reuse."
+        },
+        {
+          "title": "Localization",
+          "description": "Captions/VO for global buyers."
+        },
+        {
+          "title": "Recruitment reels",
+          "description": "Short reels for employer branding."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "What partners say",
+      "quotes": [
+        {
+          "text": "“Clients said the plant film was game-changing.”",
+          "author": "VP, Manufacturing"
+        },
+        {
+          "text": "“Explainer helped win a robotics client.”",
+          "author": "Head of Sales, Automation"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions, answered",
+      "items": [
+        {
+          "question": "Do you handle safety compliance?",
+          "answer": "Yes—crew trained with PPE and site rules."
+        },
+        {
+          "question": "Motion graphics?",
+          "answer": "Included in automation explainers for clarity."
+        },
+        {
+          "question": "Turnaround?",
+          "answer": "Essential: 6-9 days. Pro: 7-12 days."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Ready when you are",
+      "lead": "Tell us about your plant or product. We'll reply with a tailored estimate and timeline.",
+      "form": {
+        "cta": {
+          "submit": "Request estimate"
+        }
+      }
+    }
+  },
+  "healthcare": {
+    "hero": {
+      "tag": "Healthcare & MedTech",
+      "headline": "Healthcare stories with clinical accuracy.",
+      "subhead": "Human-centered films for hospitals, pharma, and med-tech—made with privacy, precision, and speed.",
+      "cta": {
+        "primary": { "label": "Get an estimate", "href": "#contact" },
+        "secondary": { "label": "Watch the reel", "href": "#reel" }
+      },
+      "chips": ["Hospitals", "Pharma", "Med-tech", "Diagnostics", "Clinics", "Education"]
+    },
+    "proof": {
+      "title": "Trusted by teams who care deeply",
+      "logos": ["Hospitals", "Pharma", "Med-tech", "Diagnostics", "Clinics", "Education"]
+    },
+    "madeFor": {
+      "title": "Built for your reality",
+      "lead": "From consent to sterile protocols, our process respects your environment and your patients.",
+      "cards": [
+        { "title": "Patient privacy", "description": "Consent workflows from pre-production through delivery; data masked in edit." },
+        { "title": "Clinical accuracy", "description": "Scripts and cuts reviewed with clinical advisors; no over-claiming." },
+        { "title": "Multi-team approvals", "description": "Checkpoints for medical, legal, and brand—so sign-off is smooth." }
+      ]
+    },
+    "kpis": {
+      "title": "What we optimize for",
+      "metrics": [
+        { "label": "Understanding", "value": "↑ Patient comprehension" },
+        { "label": "Consent", "value": "↑ Consent rate" },
+        { "label": "Training", "value": "↑ Staff completion" },
+        { "label": "Approvals", "value": "↑ Review velocity" },
+        { "label": "Recruitment", "value": "↑ Qualified applicants" }
+      ]
+    },
+    "services": {
+      "title": "Services made for healthcare",
+      "lead": "Clear, compassionate storytelling—from brand to bedside.",
+      "packages": [
+        {
+          "title": "Patient education series",
+          "deliverables": [
+            "1x 60-90s hero explainer",
+            "4x 20-30s micro-lessons",
+            "Captions + transcript",
+            "Clinician review notes"
+          ],
+          "timeline": "7-12 days"
+        },
+        {
+          "title": "Procedure explainer (pre-op)",
+          "deliverables": [
+            "1x 90s step-by-step (graphics)",
+            "Consent-friendly visuals (no PHI)",
+            "3x FAQ micro-clips",
+            "Multi-language captions"
+          ],
+          "timeline": "6-10 days"
+        },
+        {
+          "title": "Medical device launch",
+          "deliverables": [
+            "1x 60-90s product film",
+            "3x clinician clips (indications)",
+            "OR/ICU b-roll (approvals)",
+            "Captioned masters"
+          ],
+          "timeline": "8-14 days"
+        },
+        {
+          "title": "Hospital brand film",
+          "deliverables": [
+            "1x 60-90s brand film",
+            "3x department cutdowns",
+            "Community/CSR vignette",
+            "VO + captions"
+          ],
+          "timeline": "10-14 days"
+        },
+        {
+          "title": "Clinical training & CME",
+          "deliverables": [
+            "1x module intro",
+            "5x 2-3 min procedure clips",
+            "Checklists/overlays",
+            "Captions + transcript PDF"
+          ],
+          "timeline": "10-16 days"
+        },
+        {
+          "title": "Recruitment & onboarding",
+          "deliverables": [
+            "1x 60s recruitment film",
+            "Role highlight clips (3)",
+            "Culture montage",
+            "Captioned masters"
+          ],
+          "timeline": "7-10 days"
+        }
+      ]
+    },
+    "useCases": {
+      "title": "Where this wins",
+      "lead": "Education, trust, and adoption—without jargon.",
+      "cases": [
+        "Patient education — simple, trusted explainers",
+        "Clinical training — consistent teaching",
+        "Device launches — clear value for clinicians",
+        "Reputation — brand films that build trust",
+        "Recruitment — attract top clinicians"
+      ]
+    },
+    "reel": {
+      "title": "See the difference",
+      "lead": "Cinematic clarity. Clinically reviewed.",
+      "thumbnails": [
+        "Drop your thumbnail / embed here.",
+        "Drop your thumbnail / embed here.",
+        "Drop your thumbnail / embed here."
+      ]
+    },
+    "process": {
+      "title": "Frictionless, end-to-end",
+      "steps": [
+        "Discovery",
+        "Clinical Review & Scripting",
+        "Production (sterile protocols)",
+        "Edit & Medical Review",
+        "Delivery"
+      ],
+      "highlights": [
+        {
+          "title": "Safety first",
+          "description": "Approvals, PPE, sterile-zone rules; filming adjusts to patient care."
+        },
+        {
+          "title": "Privacy by design",
+          "description": "Consent workflows, masked data, restricted links, reviewer roles."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Simple packages. Serious impact.",
+      "lead": "Transparent AED pricing for fast approvals. Custom scopes on request.",
+      "plans": [
+        {
+          "name": "Essential",
+          "price": "Starting from AED 3800",
+          "details": [
+            "One shoot day or remote capture",
+            "Director + DP (or motion design lead)",
+            "1x 60-90s hero + 2 cutdowns",
+            "Captions + transcript",
+            "2 review rounds • 7-10 day ETA"
+          ],
+          "cta": "Start with Essential"
+        },
+        {
+          "name": "Professional",
+          "price": "Starting from AED 8300",
+          "details": [
+            "Two shoot days or hybrid (live + motion)",
+            "Senior crew + motion graphics",
+            "1x hero + 3 cutdowns + verticals",
+            "Cinematic grade & sound design",
+            "3 review rounds • 6-10 day ETA (priority)"
+          ],
+          "cta": "Book Professional"
+        }
+      ]
+    },
+    "addons": {
+      "title": "Popular add-ons",
+      "items": [
+        {
+          "title": "3D medical animation",
+          "description": "Device anatomy, procedures, and micro-anatomy."
+        },
+        {
+          "title": "Localization pack",
+          "description": "Subtitles/VO for regional languages."
+        },
+        {
+          "title": "Accessibility bundle",
+          "description": "Audio description, high-contrast graphics, large-type exports."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "What partners say",
+      "quotes": [
+        {
+          "text": "“Best medical explainer we've released—patients finally get it.”",
+          "author": "Chief Marketing, Multispecialty Hospital"
+        },
+        {
+          "text": "“They navigated consent and sterile rules flawlessly.”",
+          "author": "Clinical Ops Lead, Med-tech"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions, answered",
+      "items": [
+        {
+          "question": "Can you film in ICUs or OTs?",
+          "answer": "Only with hospital approvals and strict protocols (PPE, minimal footprint, no patient identifiers without consent)."
+        },
+        {
+          "question": "HIPAA/GDPR?",
+          "answer": "We follow your local laws/policies; mask data and control access to review links."
+        },
+        {
+          "question": "Timeline?",
+          "answer": "Essential: 72h preview. Pro: 48h. Finals ~7-12 days based on medical/legal review."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Ready when you are",
+      "lead": "Tell us about your project. We'll reply with a tailored estimate and timeline.",
+      "form": {
+        "cta": {
+          "submit": "Request estimate"
+        }
+      }
+    }
+  },
+  "fintech": {
+    "hero": {
+      "tag": "FinTech",
+      "headline": "Finance, told with trust.",
+      "subhead": "From payments to wealthtech, we turn regulation and product detail into films that convert—without risking compliance.",
+      "cta": {
+        "primary": { "label": "Get an estimate", "href": "#contact" },
+        "secondary": { "label": "Watch the reel", "href": "#reel" }
+      },
+      "chips": ["Payments", "Banking", "Lending", "InsurTech", "WealthTech", "RegTech"]
+    },
+    "proof": {
+      "title": "Trusted by teams who build confidence",
+      "logos": ["Payments", "Banking", "Lending", "InsurTech", "WealthTech", "RegTech"]
+    },
+    "madeFor": {
+      "title": "Built for your reality",
+      "lead": "Clear storytelling. Tight approvals. Zero surprises.",
+      "cards": [
+        { "title": "Compliance, not compromise", "description": "Disclaimers, risk lines, and regulator-safe claims baked in." },
+        { "title": "Trust at first sight", "description": "Premium visuals and clear demos reduce friction in KYC/onboarding." },
+        { "title": "Security expectations", "description": "PII masked, restricted links, and role-based access." }
+      ]
+    },
+    "kpis": {
+      "title": "What we optimize for",
+      "metrics": [
+        { "label": "Sign-ups", "value": "↑ Qualified sign-ups" },
+        { "label": "KYC", "value": "↑ KYC completion" },
+        { "label": "Activation", "value": "↑ First-transaction rate" },
+        { "label": "Support", "value": "↓ Onboarding calls" },
+        { "label": "Approvals", "value": "↑ Legal approval velocity" }
+      ]
+    },
+    "services": {
+      "title": "Services made for fintech",
+      "lead": "From launch films to compliance explainers—built to move signups and trust.",
+      "packages": [
+        {
+          "title": "Product launch film",
+          "deliverables": [
+            "1x 60-90s hero (claims-safe)",
+            "3x 10-15s cutdowns (platform-specific)",
+            "On-screen disclaimers as needed",
+            "Captions + clean versions"
+          ],
+          "timeline": "7-10 days"
+        },
+        {
+          "title": "App walkthroughs (KYC/AML)",
+          "deliverables": [
+            "1x 60-90s KYC/AML explainer",
+            "Flow overlays + masked data",
+            "3x 10-15s help clips",
+            "SRT captions"
+          ],
+          "timeline": "5-8 days"
+        },
+        {
+          "title": "ROI customer story (BFSI)",
+          "deliverables": [
+            "1x 60-90s case film",
+            "3x KPI snippets (9:16)",
+            "Charts/graphics pack",
+            "Clean audio mix"
+          ],
+          "timeline": "8-12 days"
+        },
+        {
+          "title": "Compliance explainers",
+          "deliverables": [
+            "1x 60-90s policy explainer",
+            "Static + animated graphics",
+            "Legal-reviewed copy onscreen",
+            "Captioned masters"
+          ],
+          "timeline": "6-9 days"
+        },
+        {
+          "title": "Investor & partner vision",
+          "deliverables": [
+            "1x 2-3 min vision film",
+            "Metric slates & TAM/SAM/SOM graphics",
+            "Cutdowns for updates",
+            "Deck loop"
+          ],
+          "timeline": "7-12 days"
+        },
+        {
+          "title": "Launch event/keynote",
+          "deliverables": [
+            "Multi-cam talk capture",
+            "Highlights (60-90s)",
+            "Speaker cuts (3)",
+            "Slides ISO + captions"
+          ],
+          "timeline": "3-6 days"
+        }
+      ]
+    },
+    "useCases": {
+      "title": "Where this wins",
+      "lead": "Acquisition today. Trust forever.",
+      "cases": [
+        "Acquisition — clear product films that drive signups",
+        "Onboarding — KYC/AML explainers that cut support",
+        "Conversion — ROI case films for enterprise",
+        "Retention — feature walkthroughs to boost adoption",
+        "Fundraising — investor films & updates"
+      ]
+    },
+    "reel": {
+      "title": "See the difference",
+      "lead": "Cinematic clarity. Auditor-friendly workflows.",
+      "thumbnails": [
+        "Drop your thumbnail / embed here.",
+        "Drop your thumbnail / embed here.",
+        "Drop your thumbnail / embed here."
+      ]
+    },
+    "process": {
+      "title": "Frictionless, end-to-end",
+      "steps": [
+        "Discovery",
+        "Scripting",
+        "Production",
+        "Edit & Legal Review",
+        "Delivery"
+      ],
+      "highlights": [
+        {
+          "title": "Speed without risk",
+          "description": "Legal checkpoints in every cut. No last-minute scrambles."
+        },
+        {
+          "title": "Security by design",
+          "description": "NDAs, restricted links, clean-room edits on request."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Simple packages. Serious impact.",
+      "lead": "Transparent AED pricing for fast approvals. Custom scopes on request.",
+      "plans": [
+        {
+          "name": "Essential",
+          "price": "Starting from AED 5000",
+          "details": [
+            "One shoot day or remote capture",
+            "Director + DP (or motion lead)",
+            "1x 60-90s hero + 2 cutdowns",
+            "Captions + clean masters",
+            "2 review rounds • 7-10 day ETA"
+          ],
+          "cta": "Start with Essential"
+        },
+        {
+          "name": "Professional",
+          "price": "Starting from AED 10000",
+          "details": [
+            "Two shoot days or hybrid (live + motion)",
+            "Senior crew + motion graphics",
+            "1x hero + 3 cutdowns + verticals",
+            "Broadcast-safe grade & sound",
+            "3 review rounds • 5-9 day ETA (priority)"
+          ],
+          "cta": "Book Professional"
+        }
+      ]
+    },
+    "addons": {
+      "title": "Popular add-ons",
+      "items": [
+        {
+          "title": "Sub-brand cut templates",
+          "description": "Reusable openers/enders for faster legal review."
+        },
+        {
+          "title": "Localization pack",
+          "description": "Regional captions/VO and localized disclaimers."
+        },
+        {
+          "title": "Data-viz toolkit",
+          "description": "Chart animations aligned to brand grid."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "What partners say",
+      "quotes": [
+        {
+          "text": "“Regulator-safe launch film that still felt premium.”",
+          "author": "VP Brand, Payments"
+        },
+        {
+          "text": "“Onboarding explainer reduced calls by 30%.”",
+          "author": "Head of Growth, WealthTech"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions, answered",
+      "items": [
+        {
+          "question": "Support for RBI/SEBI/PCI-DSS messaging?",
+          "answer": "We align claims with compliance/legal and add the right disclaimers. We don't provide legal advice."
+        },
+        {
+          "question": "Handling sensitive PII?",
+          "answer": "Masked data, secure links, role-based access; clean-room edits available."
+        },
+        {
+          "question": "Timeline?",
+          "answer": "Essential: 72h preview. Pro: 48h. Finals ~7-12 days depending on approvals."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Ready when you are",
+      "lead": "Tell us about your launch. We'll reply with a tailored estimate and timeline.",
+      "form": {
+        "cta": {
+          "submit": "Request estimate"
+        }
+      }
+    }
+  },
+  "education": {
+    "hero": {
+      "tag": "Education & EdTech",
+      "headline": "Learning, distilled.",
+      "subhead": "For schools and EdTech, we turn complex ideas into clear, bingeable lessons—aligned to outcomes.",
+      "cta": {
+        "primary": { "label": "Get an estimate", "href": "#contact" },
+        "secondary": { "label": "Watch the reel", "href": "#reel" }
+      },
+      "chips": ["K-12", "Higher Ed", "EdTech", "Test Prep", "Skills", "Corporate L&D"]
+    },
+    "proof": {
+      "title": "Trusted by teams who teach at scale",
+      "logos": ["K-12", "Higher Ed", "EdTech", "Test Prep", "Skills", "Corporate L&D"]
+    },
+    "madeFor": {
+      "title": "Built for your reality",
+      "lead": "Engaging lessons, aligned to objectives, and simple to deploy across LMS.",
+      "cards": [
+        { "title": "Engagement & outcomes", "description": "Micro-lessons, tight pacing, visuals that stick—built around learning goals." },
+        { "title": "Curriculum alignment", "description": "SME-led scripting and assessment-friendly framing. No fluff." },
+        { "title": "Scale & localization", "description": "Multi-language captions/VO, accessible graphics, LMS-ready masters." }
+      ]
+    },
+    "kpis": {
+      "title": "What we optimize for",
+      "metrics": [
+        { "label": "Watch-through", "value": "↑ 75%+ VT rates" },
+        { "label": "Completion", "value": "↑ Course completion" },
+        { "label": "Scores", "value": "↑ Assessment performance" },
+        { "label": "Support", "value": "↓ Onboarding tickets" },
+        { "label": "Time-to-launch", "value": "↓ Content production time" }
+      ]
+    },
+    "services": {
+      "title": "Services made for education",
+      "lead": "From curriculum films to product onboarding—crafted for attention and retention.",
+      "packages": [
+        {
+          "title": "Curriculum module series",
+          "deliverables": [
+            "1x module intro (60-90s)",
+            "5x 2-3 min micro-lessons",
+            "Graphics pack + worksheets",
+            "Captions + transcript"
+          ],
+          "timeline": "10-16 days"
+        },
+        {
+          "title": "Animated concept explainer",
+          "deliverables": [
+            "1x 90s animated explainer",
+            "Style frames + VO",
+            "3x 10s shorts",
+            "Captioned masters"
+          ],
+          "timeline": "7-12 days"
+        },
+        {
+          "title": "Product onboarding (student/teacher)",
+          "deliverables": [
+            "1x 90s walkthrough",
+            "UI overlays + callouts",
+            "3x 10-15s tips",
+            "SRT captions"
+          ],
+          "timeline": "6-9 days"
+        },
+        {
+          "title": "Teacher training & facilitator guides",
+          "deliverables": [
+            "1x 2-3 min overview",
+            "5x how-to clips",
+            "PDF guide",
+            "Captions + transcript"
+          ],
+          "timeline": "8-14 days"
+        },
+        {
+          "title": "Assessment walkthroughs & lab demos",
+          "deliverables": [
+            "1x 60-90s overview",
+            "3x 20-30s demos",
+            "On-screen steps",
+            "Captions + transcript"
+          ],
+          "timeline": "7-10 days"
+        },
+        {
+          "title": "LMS packaging (SCORM/xAPI)",
+          "deliverables": [
+            "SCORM 1.2/2004 or xAPI exports",
+            "Metadata & thumbnail set",
+            "Accessibility checks",
+            "Localization handoff"
+          ],
+          "timeline": "5-8 days"
+        }
+      ]
+    },
+    "useCases": {
+      "title": "Where this wins",
+      "lead": "Acquisition, activation, and retention for learners and users.",
+      "cases": [
+        "Admissions marketing — campus & program films",
+        "Course launches — hero + intros",
+        "Product adoption — app walkthroughs that cut support",
+        "Employer skilling — hands-on demos that drive completion",
+        "Impact stories — alumni, placement, outcomes"
+      ]
+    },
+    "reel": {
+      "title": "See the difference",
+      "lead": "Clear visuals. Confident teaching. Better outcomes.",
+      "thumbnails": [
+        "Drop your thumbnail / embed here.",
+        "Drop your thumbnail / embed here.",
+        "Drop your thumbnail / embed here."
+      ]
+    },
+    "process": {
+      "title": "Frictionless, end-to-end",
+      "steps": [
+        "Discovery & Outcomes Map",
+        "SME Scripting",
+        "Production (live/animation)",
+        "Edit & Learning QA",
+        "Delivery (LMS-ready)"
+      ],
+      "highlights": [
+        {
+          "title": "SME-led scripting",
+          "description": "We co-write with your experts to nail accuracy and pacing."
+        },
+        {
+          "title": "Accessibility-first",
+          "description": "Captions, transcripts, legible graphics, and localization."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Simple packages. Serious impact.",
+      "lead": "Transparent AED pricing for fast approvals. Custom scopes on request.",
+      "plans": [
+        {
+          "name": "Essential",
+          "price": "Starting from AED 3800",
+          "details": [
+            "One shoot day or remote capture",
+            "Director + DP (or motion design lead)",
+            "1x 60-90s hero + 2 cutdowns",
+            "Captions + transcript",
+            "2 review rounds • 7-10 day ETA"
+          ],
+          "cta": "Start with Essential"
+        },
+        {
+          "name": "Professional",
+          "price": "Starting from AED 8300",
+          "details": [
+            "Two shoot days or hybrid (live + motion)",
+            "Senior crew + motion graphics",
+            "1x hero + 3 cutdowns + verticals",
+            "Cinematic grade & sound design",
+            "3 review rounds • 6-10 day ETA (priority)"
+          ],
+          "cta": "Book Professional"
+        }
+      ]
+    },
+    "addons": {
+      "title": "Popular add-ons",
+      "items": [
+        {
+          "title": "Interactive quizzes",
+          "description": "Lightweight checks embedded into videos (via LMS)."
+        },
+        {
+          "title": "Localization pack",
+          "description": "Subtitles/VO for regional languages."
+        },
+        {
+          "title": "SVG/HTML assets",
+          "description": "Exported graphics for your LMS pages."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "What partners say",
+      "quotes": [
+        {
+          "text": "“Engagement went up and doubts went down.”",
+          "author": "Program Director, University"
+        },
+        {
+          "text": "“Onboarding tickets dropped by 28% after the walkthrough series.”",
+          "author": "VP Operations, EdTech"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions, answered",
+      "items": [
+        {
+          "question": "Can you package for our LMS?",
+          "answer": "Yes—SCORM 1.2/2004 or xAPI. We deliver captions/transcripts and thumbnails."
+        },
+        {
+          "question": "Accessibility?",
+          "answer": "Captions by default; legible graphics; transcripts; localized VO on request."
+        },
+        {
+          "question": "Timeline?",
+          "answer": "Essential: 72h preview. Pro: 48h. Finals ~7-12 days depending on feedback."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Ready when you are",
+      "lead": "Tell us about your learners. We'll reply with a tailored estimate and timeline.",
+      "form": {
+        "cta": {
+          "submit": "Request estimate"
+        }
+      }
+    }
+  },
+  "e-commerce": {
+    "hero": {
+      "tag": "E-Commerce & Retail",
+      "headline": "Make it cart-worthy.",
+      "subhead": "Product films and performance cuts that raise CTR, add-to-cart, and ROAS—shot fast, spec-perfect.",
+      "cta": {
+        "primary": { "label": "Get an estimate", "href": "#contact" },
+        "secondary": { "label": "Watch the reel", "href": "#reel" }
+      },
+      "chips": ["D2C", "Marketplace", "Fashion", "Beauty", "Electronics", "Grocery", "Home & Living"]
+    },
+    "proof": {
+      "title": "Trusted by teams who drop on schedule",
+      "logos": ["D2C", "Marketplace", "Fashion", "Beauty", "Electronics", "Grocery"]
+    },
+    "madeFor": {
+      "title": "Built for your reality",
+      "lead": "Creative that's beautiful, testable, and built for variants—so media teams can scale what works.",
+      "cards": [
+        { "title": "Scale & speed", "description": "Launch-ready assets in days. Variant-ready for A/B testing." },
+        { "title": "ROAS pressure", "description": "Hook banks, length variants, platform-specific openers to beat fatigue." },
+        { "title": "Consistency at SKU scale", "description": "Shotlists, color/perspective rules, and LUTs for repeatable quality." }
+      ]
+    },
+    "kpis": {
+      "title": "What we optimize for",
+      "metrics": [
+        { "label": "CTR", "value": "↑ Click-through" },
+        { "label": "ATC", "value": "↑ Add-to-Cart" },
+        { "label": "CVR", "value": "↑ Conversion" },
+        { "label": "ROAS", "value": "↑ Return on Ad Spend" },
+        { "label": "Returns", "value": "↓ Product returns" }
+      ]
+    },
+    "services": {
+      "title": "Services made for e-commerce",
+      "lead": "Every card lists deliverables and typical timelines—no guesswork.",
+      "packages": [
+        {
+          "title": "Product hero films (studio)",
+          "deliverables": [
+            "1x 15-30s hero (16:9)",
+            "3x 6-10s cutdowns (9:16/1:1/16:9)",
+            "6x retouched stills (4K)",
+            "Captions + thumbnail set (3 options)"
+          ],
+          "timeline": "7-10 days"
+        },
+        {
+          "title": "UGC + studio hybrid ads",
+          "deliverables": [
+            "3 concepts x (1x 15s + 2x 6s)",
+            "Hook/CTA variations (6)",
+            "Creator ingest + studio b-roll",
+            "SRT captions + safe-area design"
+          ],
+          "timeline": "5-7 days"
+        },
+        {
+          "title": "Marketplace listing (Amazon/Flipkart/Ajio)",
+          "deliverables": [
+            "1x 45-60s listing video (mute-first)",
+            "3x 15s silent loops (1:1)",
+            "360° product spin + macros",
+            "A+ module GIFs (optional)"
+          ],
+          "timeline": "4-6 days"
+        },
+        {
+          "title": "Apparel on-model reels & lookbooks",
+          "deliverables": [
+            "1x 30s lookbook reel (9:16)",
+            "10x 5s outfit loops",
+            "20x retouched stills",
+            "Color-consistent grade, skin-tone safe"
+          ],
+          "timeline": "5-8 days"
+        },
+        {
+          "title": "Beauty how-to & routines",
+          "deliverables": [
+            "1x 60-90s tutorial (16:9)",
+            "3x 10s tips (9:16)",
+            "Macro & texture shots + shade grid",
+            "Claims/disclaimers on-screen"
+          ],
+          "timeline": "6-8 days"
+        },
+        {
+          "title": "Electronics setup & unboxing",
+          "deliverables": [
+            "1x 90s setup/quick-start (16:9)",
+            "3x 15s feature clips (9:16)",
+            "Looping FAQ micro-clips (3)",
+            "Thumbnail set (A/B test)"
+          ],
+          "timeline": "6-9 days"
+        },
+        {
+          "title": "Tabletop & stop-motion (CPG/Grocery)",
+          "deliverables": [
+            "1x 15s hero",
+            "6x 6-8s loops (recipes/macro)",
+            "Ingredient beauty stills (10)",
+            "Pack-shot turntables"
+          ],
+          "timeline": "6-8 days"
+        },
+        {
+          "title": "Retail brand film & in-store screens",
+          "deliverables": [
+            "1x 45-60s brand film (16:9)",
+            "3x 10s DOOH/in-store cutdowns (silent)",
+            "Store aspect masters",
+            "Music licensed for in-store usage"
+          ],
+          "timeline": "10-14 days"
+        }
+      ]
+    },
+    "useCases": {
+      "title": "Where this wins",
+      "lead": "Launches, always-on performance, seasonal spikes.",
+      "cases": [
+        "Launch campaigns — teaser + hero + verticals",
+        "Always-on performance — fresh hooks to fight fatigue",
+        "Marketplace upgrades — listing videos & A+ assets",
+        "Returns reduction — setup/how-to clips",
+        "Retail refresh — in-store, DOOH, window screens"
+      ]
+    },
+    "reel": {
+      "title": "See the difference",
+      "lead": "Cinematic product. Platform-perfect specs. Faster edits.",
+      "thumbnails": [
+        "Drop your thumbnail / embed here.",
+        "Drop your thumbnail / embed here.",
+        "Drop your thumbnail / embed here."
+      ]
+    },
+    "process": {
+      "title": "Frictionless, end-to-end",
+      "steps": [
+        "Discovery & Brief",
+        "Creative & Shotlist",
+        "Production",
+        "Edit & Variations",
+        "Delivery & Launch QA"
+      ],
+      "highlights": [
+        {
+          "title": "Variant-ready",
+          "description": "Hook banks, captions, and cut structures built for A/B tests and markets."
+        },
+        {
+          "title": "Rights handled",
+          "description": "Talent buyouts, music, stock, and usage windows tracked across edits."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Simple packages. Serious impact.",
+      "lead": "Transparent AED pricing for fast approvals. Custom scopes on request.",
+      "plans": [
+        {
+          "name": "Essential",
+          "price": "Starting from AED 4000",
+          "details": [
+            "1 studio day OR 1 location day",
+            "Director + DP + Gaffer + Stylist/Props",
+            "1x hero (up to 30s) + 2 cutdowns + 6 stills",
+            "Captions + thumbnail set (2)",
+            "2 review rounds • 7-10 day ETA"
+          ],
+          "cta": "Start with Essential"
+        },
+        {
+          "name": "Professional",
+          "price": "Starting from AED 9200",
+          "details": [
+            "2 days (studio + location) or multi-set",
+            "Senior crew + motion/tabletop team",
+            "1x hero + 5 cutdowns + 12 loops + 12 stills",
+            "Captions + thumbnails (4) • grade & sound design",
+            "3 review rounds • 5-9 day ETA (priority)"
+          ],
+          "cta": "Book Professional"
+        }
+      ]
+    },
+    "addons": {
+      "title": "Popular add-ons",
+      "items": [
+        {
+          "title": "Influencer whitelisting",
+          "description": "Usage windows & geography managed; creator-safe edits."
+        },
+        {
+          "title": "Localization",
+          "description": "Captions/VO: EN + 6 Indian languages; regional visuals."
+        },
+        {
+          "title": "3D & tabletop",
+          "description": "CG product renders, stop-motion loops, fluid & macro rigs."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "What partners say",
+      "quotes": [
+        {
+          "text": "“Cutdowns beat our best ROAS in week one.”",
+          "author": "Performance Lead, D2C"
+        },
+        {
+          "text": "“Listing videos cut returns and boosted Q&A conversion.”",
+          "author": "E-Com Manager, Electronics"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Questions, answered",
+      "items": [
+        {
+          "question": "Rights?",
+          "answer": "Yes—buyouts and usage windows tracked by platform and geography. We align with legal; no legal advice provided."
+        },
+        {
+          "question": "Formats?",
+          "answer": "9:16, 1:1, 16:9 4K H.264 (ProRes on request). Captions (SRT) and clean versions included."
+        },
+        {
+          "question": "Performance testing?",
+          "answer": "Hook/CTA variants, cut naming, thumbnail options for rapid A/B tests across Meta/YouTube/Shorts."
+        },
+        {
+          "question": "DAM/PIM integration?",
+          "answer": "Yes—naming conventions, metadata sheets, shared folders. Project files available as add‑on."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Ready when you are",
+      "lead": "Tell us about your products. We’ll reply with a tailored estimate and timeline.",
+      "form": {
+        "cta": {
+          "submit": "Request estimate"
+        }
+      }
+    }
+  }
+}
