@@ -1,0 +1,53 @@
+# ----------------------------------------
+# 0. REDIRECT NON-WWW TO WWW (301)
+# ----------------------------------------
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^wilmarcs\.com$ [NC]
+RewriteRule ^(.*)$ https://www.wilmarcs.com/$1 [R=301,L]
+</IfModule>
+
+# ----------------------------------------
+# 1. PASSENGER CONFIG (Main Root App)
+# ----------------------------------------
+PassengerAppRoot /home/u615275088/domains/wilmarcs.com/public_html
+PassengerAppType node
+PassengerNodejs /opt/alt/alt-nodejs22/root/bin/node
+PassengerStartupFile server.js
+PassengerBaseURI /
+
+# ----------------------------------------
+# 2. LANDING REWRITES (Subfolder: landing)
+# ----------------------------------------
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Map clean slugs to the 'landing' subfolder
+RewriteRule ^csr-video-service/?$ landing/csr-video-service/index.html [L]
+RewriteRule ^csr-video-service/(.*)$ landing/csr-video-service/$1 [L]
+
+RewriteRule ^corporate-video-production-company/?$ landing/corporate-video-production-company/index.html [L]
+RewriteRule ^corporate-video-production-company/(.*)$ landing/corporate-video-production-company/$1 [L]
+</IfModule>
+
+# ----------------------------------------
+# 3. THANK YOU PAGE SETUPS
+# ----------------------------------------
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^thank-you/?$ /thank-you.html [L]
+</IfModule>
+
+# ----------------------------------------
+# 4. MAIN SITE FALLBACK
+# ----------------------------------------
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Fallback to main site
+RewriteRule ^ index.html [L]
+</IfModule>
+

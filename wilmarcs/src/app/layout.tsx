@@ -1,5 +1,5 @@
 import './globals.css';
-import { Header, Footer } from '@/components';
+import { Header, Footer, WhatsAppButton } from '@/components';
 import { getCategory } from '@/lib/data';
 import { Poppins } from 'next/font/google';
 import Script from 'next/script';
@@ -114,6 +114,7 @@ s0.parentNode.insertBefore(s1,s0);
         <Header />
         {children}
         <Footer data={footmenu?.data ?? []} />
+        <WhatsAppButton />
       </body>
     </html>
   );
