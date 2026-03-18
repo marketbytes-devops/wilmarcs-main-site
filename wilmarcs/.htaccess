@@ -1,13 +1,4 @@
 # ----------------------------------------
-# 0. REDIRECT NON-WWW TO WWW (301)
-# ----------------------------------------
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^wilmarcs\.com$ [NC]
-RewriteRule ^(.*)$ https://www.wilmarcs.com/$1 [R=301,L]
-</IfModule>
-
-# ----------------------------------------
 # 1. PASSENGER CONFIG (Main Root App)
 # ----------------------------------------
 PassengerAppRoot /home/u615275088/domains/wilmarcs.com/public_html
@@ -21,6 +12,9 @@ PassengerBaseURI /
 # ----------------------------------------
 <IfModule mod_rewrite.c>
 RewriteEngine On
+
+# DISABLE Passenger for these paths so Apache can handle them
+PassengerEnabled off
 
 # Map clean slugs to the 'landing' subfolder
 RewriteRule ^csr-video-service/?$ landing/csr-video-service/index.html [L]
