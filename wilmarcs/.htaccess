@@ -1,7 +1,22 @@
 # ----------------------------------------
+# 0. CANONICAL REDIRECT (All → https://www)
+# ----------------------------------------
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Force HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Force www (only if not already www)
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+</IfModule>
+
+# ----------------------------------------
 # 1. PASSENGER CONFIG (Main Root App)
 # ----------------------------------------
-PassengerAppRoot /home/u615275088/domains/wilmarcs.com/public_html
+PassengerAppRoot /home/u615275088/domains/wilmarcs.com/nodejs
 PassengerAppType node
 PassengerNodejs /opt/alt/alt-nodejs22/root/bin/node
 PassengerStartupFile server.js

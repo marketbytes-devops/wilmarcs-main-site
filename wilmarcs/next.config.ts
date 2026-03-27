@@ -1,12 +1,21 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // output: 'export',
+  output: 'standalone',
   reactStrictMode: true,
   trailingSlash: false,
   images: {
     unoptimized: true,
-    domains: ['img.youtube.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'img.youtube.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'manage.wilmarcs.com',
+      },
+    ],
   },
 };
 
