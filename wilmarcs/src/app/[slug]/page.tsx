@@ -19,13 +19,42 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const seo = slug ? await getSeo(slug) : null;
-  return {
+
+  const metadataMap: Record<string, { title: string; description: string }> = {
+    "about-us": {
+      title: "About Our Global Story & Team | Wilmarcs Motion Pictures",
+      description: "From a 2016 Bangalore crew to a global studio across India, Dubai, and Australia, Wilmarcs delivers impact-driven brand, CSR, and NGO films.",
+    },
+    "services": {
+      title: "Brand Films, CSR & Documentary Video Production Services | Wilmarcs",
+      description: "Explore Wilmarcs’ corporate films, animation, social content, innovation, and post‑production services, one integrated video production partner from brief to final master.",
+    },
+    "portfolio": {
+      title: "Video Production Portfolio & Case Studies | Wilmarcs Motion Pictures",
+      description: "See how Wilmarcs turns briefs into cinematic results with brand films, CSR videos, documentaries, events, and commercial spots in our curated video production portfolio.",
+    },
+    "industries": {
+      title: "Global Corporate Video Solutions for Leading Industries | Wilmarcs",
+      description: "Wilmarcs connects storytelling with strategy, crafting industry‑specific films for travel, tech, CSR, real estate, healthcare, fintech, education, e‑commerce and more.",
+    },
+    "contact": {
+      title: "Contact Wilmarcs | Brief, Collaborate or Join Our Video Team",
+      description: "Where next stories begin on screen contact Wilmarcs to share your brief or request a call, and our producers will define clear next steps for your video project.",
+    },
+  };
+
+  const currentMetadata = metadataMap[slug] || {
     title: seo?.data?.seotitle ?? "Wilmarcs UAE",
     description: seo?.data?.seodesc ?? "Motion Pictures",
+  };
+
+  return {
+    title: currentMetadata.title,
+    description: currentMetadata.description,
     keywords: seo?.data?.seokeywords ?? "",
     openGraph: {
-      title: seo?.data?.seotitle,
-      description: seo?.data?.seodesc,
+      title: currentMetadata.title,
+      description: currentMetadata.description,
       type: "website",
     },
   };
