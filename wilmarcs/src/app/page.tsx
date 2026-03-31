@@ -7,12 +7,12 @@ export async function generateMetadata(): Promise<Metadata> {
   const seo = await getSeo("home");
 
   return {
-    title: seo?.data?.seotitle ?? "Wilmarcs UAE",
-    description: seo?.data?.seodesc ?? "Motion Pictures",
-    keywords: seo?.data?.seokeywords ?? "",
+    title: "Corporate & CSR Video Production Company Bangalore, India | Wilmarcs",
+    description: "Ranked among India’s top Corporate & CSR filmmakers, Wilmarcs creates cinematic brand films, commercials, and documentaries that elevate brands globally.",
+    keywords: seo?.data?.seokeywords ?? "video production, bangalore, india, corporate, csr, commercials, brand films",
     openGraph: {
-      title: seo?.data?.seotitle,
-      description: seo?.data?.seodesc,
+      title: "Corporate & CSR Video Production Company Bangalore, India | Wilmarcs",
+      description: "Ranked among India’s top Corporate & CSR filmmakers, Wilmarcs creates cinematic brand films, commercials, and documentaries that elevate brands globally.",
       type: "website",
     },
   };
