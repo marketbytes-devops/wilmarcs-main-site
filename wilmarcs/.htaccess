@@ -59,4 +59,3 @@ RewriteRule ^ - [L]
 # Fallback to main site
 RewriteRule ^ index.html [L]
 </IfModule>
-

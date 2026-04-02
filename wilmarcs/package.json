@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node -e \"try{require('fs').chmodSync('node_modules/.bin/next',0o755)}catch(e){}\"",
+    "prebuild": "node -e \"try{if(process.platform!=='win32'){require('child_process').execSync('chmod -R 755 .');}}catch(e){}\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",

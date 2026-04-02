@@ -31,7 +31,7 @@ export default function Blogs({ data }: { data: Blogs[] }) {
       <section className="sm:pt-20 pt-16 lg:pb-52 md:pb-44 sm:pb-36 pb-24 relative bg-[#1D1D1F] before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-full before:h-full before:bg-gradient-to-t before:from-black before:from-20% before:to-60% before:via-45% before:via-transparent before:to-black before:z-1">
         <div className="max-w-7xl mx-auto relative z-1 px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-24 lg:gap-y-44 md:gap-y-32 gap-y-16 xl:mb-64 lg:mb-52 md:mb-44 sm:mb-36 mb-24">
-            {data.map((item, i) => (<div key={i} className="text-white">
+            {Array.isArray(data) && data.map((item, i) => (<div key={i} className="text-white">
               <Image src={process.env.NEXT_PUBLIC_ASSET_URL + item.blimg} className="block w-full rounded-3xl mb-6" width={400} height={256} priority alt="how-to-create-a-standout-corporate-video-insights-from-our-team" />
               <div className="px-4">
                 <h4 className="font-bold mb-2 text-lg">{item.bltitle}</h4>

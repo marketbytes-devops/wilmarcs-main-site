@@ -11,7 +11,7 @@ export default function Header() {
   const [showServicesMenu, setShowServicesMenu] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
-  const pathname = usePathname();
+  const pathname = usePathname() || '';
   useEffect(() => {
     const handleScroll = () => setShowServicesMenu(false);
     window.addEventListener('scroll', handleScroll);

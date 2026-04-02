@@ -9,7 +9,7 @@ type ServiceCategory = {
   cimg: string;
 };
 export default function Footer({ data }: { data: ServiceCategory[] }) {
-  const pathname = usePathname();
+  const pathname = usePathname() || '';
   useEffect(() => {
     function handleResize() {
       const container = document.querySelector('.container') as HTMLElement | null;
