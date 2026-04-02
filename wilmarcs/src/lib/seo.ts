@@ -1,12 +1,17 @@
 export async function getSeo(page?: string) {
   if (!page) return null;
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}seo/${page}`,
-    {
-      next: { revalidate: 3600 } // ISR – revalidate every 1 hour
-    }
-  );
+  try {
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_API_URL}seo/${page}`,
+      {
+        next: { revalidate: 3600 }
+      }
+    );
 
-  if (!res.ok) return null;
-  return res.json();
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (err) {
+    console.error(`Fetch failed for SEO on page ${page}:`, err);
+    return null;
+  }
 }

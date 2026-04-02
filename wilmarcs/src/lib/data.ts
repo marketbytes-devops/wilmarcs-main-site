@@ -1,45 +1,30 @@
 const API = process.env.NEXT_PUBLIC_API_URL;
+
+async function fetcher(url: string) {
+  try {
+    const res = await fetch(url, {
+      next: { revalidate: 3600 }
+    });
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (err) {
+    console.error(`Fetch failed for ${url}:`, err);
+    return null;
+  }
+}
+
 export async function getServices(id: number) {
-  const res = await fetch(
-    `${API}services/${id}`,
-    {
-      next: { revalidate: 3600 } // ISR – revalidate every 1 hour
-    }
-  );
-
-  if (!res.ok) return null;
-  return res.json();
+  return await fetcher(`${API}services/${id}`);
 }
+
 export async function getPortfolio(id: number) {
-  const res = await fetch(
-    `${API}portfolio/${id}`,
-    {
-      next: { revalidate: 3600 } // ISR – revalidate every 1 hour
-    }
-  );
-
-  if (!res.ok) return null;
-  return res.json();
+  return await fetcher(`${API}portfolio/${id}`);
 }
+
 export async function getBlog(id: number) {
-  const res = await fetch(
-    `${API}blog/${id}`,
-    {
-      next: { revalidate: 3600 } // ISR – revalidate every 1 hour
-    }
-  );
-
-  if (!res.ok) return null;
-  return res.json();
+  return await fetcher(`${API}blog/${id}`);
 }
-export async function getCategory(type: number, id: number) {
-  const res = await fetch(
-    `${API}category/${type}/${id}`,
-    {
-      next: { revalidate: 3600 } // ISR – revalidate every 1 hour
-    }
-  );
 
-  if (!res.ok) return null;
-  return res.json();
+export async function getCategory(type: number, id: number) {
+  return await fetcher(`${API}category/${type}/${id}`);
 }
