@@ -7,12 +7,12 @@ export async function generateMetadata(): Promise<Metadata> {
   const seo = await getSeo("home");
 
   return {
-    title: "Corporate & CSR Video Production Company Bangalore, India | Wilmarcs",
-    description: "Ranked among India’s top Corporate & CSR filmmakers, Wilmarcs creates cinematic brand films, commercials, and documentaries that elevate brands globally.",
+    title: "Corporate & CSR Video Production Company in Bangalore, India | Wilmarcs",
+    description: "Ranked among India’s top corporate and CSR filmmakers, Wilmarcs crafts cinematic brand films and documentaries that move audiences. Connect with us today",
     keywords: seo?.data?.seokeywords ?? "video production, bangalore, india, corporate, csr, commercials, brand films",
     openGraph: {
-      title: "Corporate & CSR Video Production Company Bangalore, India | Wilmarcs",
-      description: "Ranked among India’s top Corporate & CSR filmmakers, Wilmarcs creates cinematic brand films, commercials, and documentaries that elevate brands globally.",
+      title: "Corporate & CSR Video Production Company in Bangalore, India | Wilmarcs",
+      description: "Ranked among India’s top corporate and CSR filmmakers, Wilmarcs crafts cinematic brand films and documentaries that move audiences. Connect with us today",
       type: "website",
     },
   };

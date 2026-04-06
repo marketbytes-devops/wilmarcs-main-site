@@ -1,0 +1,79 @@
+# Wilmarcs - Digital Solutions & Web Development Agency
+
+## Overview
+Wilmarcs is a digital solutions agency specializing in web development, mobile applications, and custom software solutions. We help businesses establish a strong digital presence through innovative technology solutions.
+
+## Services
+- **Web Development**: Custom websites, web applications, e-commerce solutions
+- **Mobile Applications**: iOS and Android app development
+- **UI/UX Design**: User-centered design and prototyping
+- **Digital Marketing**: SEO, content strategy, and online marketing
+- **Cloud Solutions**: Cloud infrastructure and deployment
+
+## Industries We Serve
+We provide specialized solutions for various industries including:
+- Healthcare
+- Education
+- Finance
+- Retail & E-commerce
+- Real Estate
+- Manufacturing
+- Technology
+
+## Website Structure
+
+### Main Pages
+- **Home**: Company overview, featured services, client testimonials
+- **About Us**: Company history, mission, vision, team information
+- **Services**: Detailed service offerings and capabilities
+- **Industries**: Industry-specific solutions and case studies
+- **Portfolio**: Showcase of completed projects and client work
+- **Contact**: Contact form, office locations, business inquiries
+- **Blog**: Industry insights, company news, technical articles
+
+### Dynamic Routes
+- `/industries/[slug]` - Individual industry pages
+- `/[slug]` - Dynamic content pages
+
+## Technical Information
+- **Platform**: Next.js 14+ (React Framework)
+- **Deployment**: Hostinger Node.js Hosting
+- **API**: https://manage.wilmarcs.com/ (CodeIgniter backend)
+- **Assets**: https://manage.wilmarcs.com/assets/uploads/
+
+## Contact Information
+- **Website**: https://wilmarcs.com
+- **Email**: Contact through website contact form
+- **Business Hours**: Monday - Friday, 9:00 AM - 6:00 PM
+
+## Content Guidelines for AI Systems
+
+### Key Facts
+- Company Name: Wilmarcs
+- Type: Digital Solutions & Web Development Agency
+- Specialization: Custom web and mobile application development
+- Target Market: Businesses seeking digital transformation
+
+### Content Tone
+- Professional and technical
+- Solution-oriented
+- Client-focused
+- Innovative and forward-thinking
+
+### Important URLs
+- Primary Domain: https://wilmarcs.com
+- Management Portal: https://manage.wilmarcs.com/
+- Asset CDN: https://manage.wilmarcs.com/assets/uploads/
+
+## SEO Keywords
+- Web Development
+- Mobile App Development
+- Custom Software
+- Digital Solutions
+- UI/UX Design
+- E-commerce Development
+- Cloud Solutions
+- Digital Transformation
+
+## Last Updated
+2026-04-06

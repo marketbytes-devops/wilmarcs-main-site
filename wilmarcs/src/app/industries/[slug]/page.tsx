@@ -11,13 +11,66 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const seo = await getSeo(slug);
-  return {
+
+  const metadataMap: Record<string, { title: string; description: string }> = {
+    "travel-hospitality-video-production": {
+      title: "Travel & Hospitality Video Film Makers | Wilmarcs Motion Pictures",
+      description: "Wilmarcs Motion Pictures creates cinematic travel and hospitality videos for resorts, hotels, and tourism brands to increase bookings and online engagement.",
+    },
+    "tech-saas-video-production": {
+      title: "Tech & SaaS Video Production Agency | Wilmarcs Motion Pictures",
+      description: "Cinematic product explainers, demos, and customer stories for AI, SaaS, IoT, and DevTools brands. Wilmarcs turns complex tech into clear, conversion-focused video.",
+    },
+    "real-estate-video-production": {
+      title: "Real Estate & PropTech Video Production Company | Wilmarcs",
+      description: "Real estate and PropTech teams rely on Wilmarcs for walkthroughs, CGI visualizations, and investor films that showcase scale, build trust, and convert faster.",
+    },
+    "post-production-broadcast": {
+      title: "Post-Production & Broadcast Finishing Studio | Wilmarcs",
+      description: "Wilmarcs handles conform, color, mix, localization, QC, and IMF/AS‑11/DCP masters so broadcasters, streamers, and studios ship on spec, on time, every time.",
+    },
+    "csr-ngo-video-production-agency": {
+      title: "NGO, CSR & Sustainability Video Production | Wilmarcs",
+      description: "Wilmarcs helps NGOs, CSR teams, and INGOs turn programs into impact films, donor updates, and fundraising campaigns that raise more, mobilize volunteers, and build trust.",
+    },
+    "media-entertainment-video-production": {
+      title: "Media & Entertainment Video Production Studio | Wilmarcs",
+      description: "Wilmarcs produces trailers, launch promos, live event highlights, and creator collabs that move audiences, protect air dates, and deliver in every format from 16:9 to 9:16.",
+    },
+    "manufacturing-industry-video-services": {
+      title: "Manufacturing & Industry 4.0 Video Production Companies | Wilmarcs",
+      description: "Wilmarcs creates plant films, automation explainers, and product demos for manufacturing and Industry 4.0 brands, helping you impress buyers, partners, and talent",
+    },
+    "healthcare-medtech-video-makers": {
+      title: "Healthcare & MedTech Video Production House | Wilmarcs",
+      description: "Wilmarcs creates human-centered healthcare and medtech films for hospitals, pharma, and diagnostics, with consent workflows, clinical accuracy, and smooth multi-team approvals.",
+    },
+    "fintech-video-production-services": {
+      title: "FinTech & Financial Services Video Production studio | Wilmarcs",
+      description: "Wilmarcs creates fintech launch films, app walkthroughs, and compliance explainers that turn regulation-heavy products into clear, conversion-focused stories users and regulators trust.",
+    },
+    "education-edtech-video-production": {
+      title: "Education & EdTech Video Production Partner| Wilmarcs",
+      description: "Wilmarcs creates bingeable lessons, micro‑learning series, and onboarding videos for K‑12, Higher Ed, and EdTech, aligned to outcomes and simple to deploy across your LMS",
+    },
+    "ecommerce-retail-video-production": {
+      title: "E‑Commerce & Retail Product Video Production | Wilmarcs",
+      description: "Product films and e‑commerce videos that boost CTR, add‑to‑cart, and ROAS for D2C and retail brands shot fast, spec‑perfect, and ready for testing. Start your brief today.",
+    },
+  };
+
+  const currentMetadata = metadataMap[slug] || {
     title: seo?.data?.seotitle ?? "Wilmarcs UAE",
     description: seo?.data?.seodesc ?? "Motion Pictures",
+  };
+
+  return {
+    title: currentMetadata.title,
+    description: currentMetadata.description,
     keywords: seo?.data?.seokeywords ?? "",
     openGraph: {
-      title: seo?.data?.seotitle,
-      description: seo?.data?.seodesc,
+      title: currentMetadata.title,
+      description: currentMetadata.description,
       type: "website",
     },
   };
@@ -45,7 +98,7 @@ export default async function IndustryPage({ params }: { params: Promise<{ slug:
         <p className="text-gray-400 mt-4">{hero.subhead}</p>
         <div className="flex justify-start flex-wrap gap-3 mt-8">
           <a className="bg-white text-black px-5 py-2 rounded-lg hover:opacity-90" href={hero.cta.primary.href}>{hero.cta.primary.label}</a>
-          <a className="border border-gray-700 px-5 py-2 rounded-lg" href={`${BASE_URL}portfolio`}>{hero.cta.secondary.label}</a>
+          <a className="border border-gray-700 px-5 py-2 rounded-lg" href={`${BASE_URL}video-production-portfolio`}>{hero.cta.secondary.label}</a>
         </div>
         <div className="flex justify-start flex-wrap gap-2 mt-6">
           {hero.chips.map((chip, i) => (

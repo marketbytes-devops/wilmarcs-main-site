@@ -5,12 +5,12 @@ import industries from '@/data/industries.json';
 export default function sitemap(): MetadataRoute.Sitemap {
   const topLevelRoutes = [
     '',
-    'about-us',
+    'about-our-team',
     'blog',
-    'contact',
-    'industries',
-    'portfolio',
-    'services',
+    'book-a-call',
+    'industries-we-serve',
+    'video-production-portfolio',
+    'video-production-services',
   ];
 
   const industryRoutes = Object.keys(industries).map((slug) => `industries/${slug}`);

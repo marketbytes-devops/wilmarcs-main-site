@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
+import { BASE_URL } from "@/lib/constants";
 const Z = [
   { key:'IN', el:'timeIN', tz:'Asia/Kolkata', badge:'badgeIN', tzEl:'tzIN', country: 'India', place: 'Bangalore', timezone: 'IST', address: 'Bandra Kurla Complex, Mumbai 400051', phonelink: 'tel:+912240000000', phone: '+91 22 4000 0000', emaillink: 'mailto:hello@wilmarcs.com', email: 'hello@wilmarcs.com', maplink: 'https://www.google.com/maps?q=Bandra+Kurla+Complex+Mumbai&output=embed' },
   { key:'AE', el:'timeAE', tz:'Asia/Dubai', badge:'badgeAE', tzEl:'tzAE', country: 'United Arab Emirates', place: 'Dubai', timezone: 'GST', address: '600 California St, San Francisco, CA 94108', phonelink: 'tel:+14150000000', phone: '+1 415 000 0000', emaillink: 'mailto:ae@wilmarcs.com', email: 'ae@wilmarcs.com', maplink: 'https://www.google.com/maps?q=600+California+St+San+Francisco&output=embed' },
@@ -98,7 +99,7 @@ export default function AboutUs() {
   }, []);
   return (
     <>
-      <aside className="fixed right-12 top-1/2 -translate-y-1/2">
+      <aside className="fixed right-12 top-1/2 -translate-y-1/2 z-50">
         <nav className="lg:flex hidden flex-col gap-8 text-right">
           {menuItems.map((item) => (
             <Link
@@ -459,7 +460,7 @@ export default function AboutUs() {
           <p className="mt-3 text-neutral-300">Let’s plan your film or series of assets — fast, cinematic, and on budget.</p>
           <div className="mt-6 flex items-center justify-center gap-3">
             <a href="mailto:business@wilmarcs.com" className="rounded-full bg-white text-neutral-900 font-semibold px-5 py-3 hover:opacity-90">Email us</a>
-            <a href="contact" className="rounded-full border border-neutral-700 px-5 py-3">Book a call</a>
+            <a href={`${BASE_URL}book-a-call`} className="rounded-full border border-neutral-700 px-5 py-3">Book a call</a>
           </div>
         </div>
       </section>

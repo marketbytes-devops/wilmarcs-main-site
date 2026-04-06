@@ -14,32 +14,32 @@ interface PageProps {
   }>;
 }
 export async function generateStaticParams() {
-  return ["about-us", "blog", "contact", "industries", "portfolio", "services"].map((slug) => ({ slug }));
+  return ["about-our-team", "blog", "book-a-call", "industries-we-serve", "video-production-portfolio", "video-production-services"].map((slug) => ({ slug }));
 }
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const seo = slug ? await getSeo(slug) : null;
 
   const metadataMap: Record<string, { title: string; description: string }> = {
-    "about-us": {
-      title: "About Our Global Story & Team | Wilmarcs Motion Pictures",
-      description: "From a 2016 Bangalore crew to a global studio across India, Dubai, and Australia, Wilmarcs delivers impact-driven brand, CSR, and NGO films.",
+    "about-our-team": {
+      title: "About Wilmarcs Motion Pictures | Global Corporate Film Experts",
+      description: "From Bangalore to a global studio, Wilmarcs delivers brand, CSR, and NGO films that move audiences and stakeholders. Contact us to plan your next story",
     },
-    "services": {
-      title: "Brand Films, CSR & Documentary Video Production Services | Wilmarcs",
-      description: "Explore Wilmarcs’ corporate films, animation, social content, innovation, and post‑production services, one integrated video production partner from brief to final master.",
+    "video-production-services": {
+      title: "Corporate, CSR & Brand Film Production Services in India | Wilmarcs",
+      description: "Explore Wilmarcs’ corporate films, animation, and post‑production services one partner from brief to final delivery. Enquire now to start your next project",
     },
-    "portfolio": {
-      title: "Video Production Portfolio & Case Studies | Wilmarcs Motion Pictures",
-      description: "See how Wilmarcs turns briefs into cinematic results with brand films, CSR videos, documentaries, events, and commercial spots in our curated video production portfolio.",
+    "video-production-portfolio": {
+      title: "Video Production Portfolio & Case Studies | Wilmarcs Films",
+      description: "Discover cinematic brand films, CSR videos, and commercials by Wilmarcs in our curated portfolio. View our best work and start your next project today.",
     },
-    "industries": {
-      title: "Global Corporate Video Solutions for Leading Industries | Wilmarcs",
-      description: "Wilmarcs connects storytelling with strategy, crafting industry‑specific films for travel, tech, CSR, real estate, healthcare, fintech, education, e‑commerce and more.",
+    "industries-we-serve": {
+      title: "Corporate Video Production for Industries in India | Wilmarcs",
+      description: "Wilmarcs crafts industry‑specific films for travel, tech, healthcare, fintech, education, and more blending strategy with storytelling. Connect with our team today.",
     },
-    "contact": {
-      title: "Contact Wilmarcs | Brief, Collaborate or Join Our Video Team",
-      description: "Where next stories begin on screen contact Wilmarcs to share your brief or request a call, and our producers will define clear next steps for your video project.",
+    "book-a-call": {
+      title: "Contact Wilmarcs | Start Your Corporate Video Project Today",
+      description: "Turn your story into a cinematic film with Wilmarcs. Share your brief for expert producer guidance and clear next steps. Request a call with our team today.",
     },
   };
 
@@ -63,26 +63,27 @@ export default async function Page({ params }: PageProps) {
   const { slug } = await params;
 
   switch (slug) {
-    case "about-us":
+    case "about-our-team":
       return <AboutUs />;
 
     case "blog":
       const blogs = await getBlog(0);
       return <Blog data={blogs?.data ?? []} />;
 
-    case "contact":
+    case "book-a-call":
       return <Contact />;
 
-    case "industries":
+    case "industries-we-serve":
       return <Industries />;
 
-    case "portfolio":
+    case "video-production-portfolio":
       const portfolio = await getPortfolio(0);
       return <Portfolio data={portfolio?.data ?? []} />;
 
-    case "services":
+    case "video-production-services":
       const services = await getServices(0);
       return <Services data={services?.data ?? []} />;
+
 
     default:
       return <NotFound />;

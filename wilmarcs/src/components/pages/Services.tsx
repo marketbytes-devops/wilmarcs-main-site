@@ -1,4 +1,5 @@
 'use client';
+import { useState, useEffect } from 'react';
 import { BASE_URL } from "@/lib/constants";
 type Service = {
   cname: string;
@@ -13,7 +14,27 @@ type Service = {
   }]
 };
 export default function Services({ data }: { data: Service[] }) {
-  
+  const [activeHash, setActiveHash] = useState('');
+
+  useEffect(() => {
+    setActiveHash(window.location.hash);
+    const handleHashChange = () => setActiveHash(window.location.hash);
+    window.addEventListener('hashchange', handleHashChange);
+    
+    // Initial scroll fix for Next.js hydration
+    if (window.location.hash) {
+      setTimeout(() => {
+        const id = window.location.hash.substring(1);
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 500);
+    }
+
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
   return (
     <>
       <section className="lg:mt-[76px] mt-[64px] relative overflow-hidden">
@@ -38,8 +59,21 @@ export default function Services({ data }: { data: Service[] }) {
           </div>
         </div>
       </section>
-      {Array.isArray(data) && data.map((item, i) => (
-      <section id={item.cslug} className={"md:py-16 py-10"+((i>0 && i%2!=0)?" bg-neutral-900/40 border-y border-neutral-800":"")} key={i}>
+      {Array.isArray(data) && data.map((item, i) => {
+        const isTargeted = activeHash === '#' + item.cslug || 
+                    ((item.cslug.toLowerCase().includes('animation') || item.cname.toLowerCase().includes('animation')) && activeHash === '#animation') ||
+                    ((item.cslug.toLowerCase().includes('live') || item.cname.toLowerCase().includes('live')) && activeHash === '#live') ||
+                    ((item.cslug.toLowerCase().includes('social') || item.cname.toLowerCase().includes('social')) && activeHash === '#social') ||
+                    ((item.cslug.toLowerCase().includes('innovation') || item.cname.toLowerCase().includes('innovation')) && activeHash === '#innovation') ||
+                    ((item.cslug.toLowerCase().includes('post') || item.cname.toLowerCase().includes('post')) && activeHash === '#post');
+        return (
+      <section id={item.cslug} className={`md:py-16 py-10 transition-colors duration-500 relative ${isTargeted ? 'bg-[#E50914]/10 border-y border-[#E50914]/30' : ((i > 0 && i % 2 != 0) ? 'bg-neutral-900/40 border-y border-neutral-800' : 'border-y border-transparent')}`} key={i}>
+        {/* Invisible anchor for header links if slug differs */}
+        {(item.cslug.toLowerCase().includes('animation') || item.cname.toLowerCase().includes('animation')) && <div id="animation" className="absolute -top-24"></div>}
+        {(item.cslug.toLowerCase().includes('live') || item.cname.toLowerCase().includes('live')) && <div id="live" className="absolute -top-24"></div>}
+        {(item.cslug.toLowerCase().includes('social') || item.cname.toLowerCase().includes('social')) && <div id="social" className="absolute -top-24"></div>}
+        {(item.cslug.toLowerCase().includes('innovation') || item.cname.toLowerCase().includes('innovation')) && <div id="innovation" className="absolute -top-24"></div>}
+        {(item.cslug.toLowerCase().includes('post') || item.cname.toLowerCase().includes('post')) && <div id="post" className="absolute -top-24"></div>}
         <div className="mx-auto container px-4 sm:px-6 lg:px-8">
           <div className="flex lg:flex-row flex-col items-center justify-between gap-4 mb-6 md:mb-8">
             <header>
@@ -47,8 +81,8 @@ export default function Services({ data }: { data: Service[] }) {
               <p className="mt-3 text-neutral-400 max-w-2xl">{item.cdesc}</p>
             </header>
             <div className="flex items-center justify-start sm:w-auto w-full gap-3 lg:mt-8 whitespace-nowrap">
-              <a className="bg-white text-black px-5 py-2 rounded-lg w-full text-center hover:opacity-90" href={`${BASE_URL}contact`}>Get A Quote</a>
-              <a className="border border-gray-700 px-5 py-2 rounded-lg w-full text-center" href={`${BASE_URL}portfolio`}>View Our Works</a>
+              <a className="bg-white text-black px-5 py-2 rounded-lg w-full text-center hover:opacity-90" href={`${BASE_URL}book-a-call`}>Get A Quote</a>
+              <a className="border border-gray-700 px-5 py-2 rounded-lg w-full text-center" href={`${BASE_URL}video-production-portfolio`}>View Our Works</a>
             </div>
           </div>
 
@@ -75,7 +109,9 @@ export default function Services({ data }: { data: Service[] }) {
             </details>))}
           </div>
         </div>
-      </section>))}
+      </section>
+      );
+    })}
     </>
   );
 }

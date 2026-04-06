@@ -1,5 +1,5 @@
 {
-  "travel-hospitality": {
+  "travel-hospitality-video-production": {
     "hero": {
       "tag": "Travel & Hospitality",
       "headline": "Experiences that linger long after checkout.",
@@ -14,11 +14,25 @@
           "href": "#reel"
         }
       },
-      "chips": ["Hotels", "Resorts", "Tourism Boards", "Airlines", "Cruise Lines", "Travel Apps"]
+      "chips": [
+        "Hotels",
+        "Resorts",
+        "Tourism Boards",
+        "Airlines",
+        "Cruise Lines",
+        "Travel Apps"
+      ]
     },
     "proof": {
       "title": "Trusted by global destinations & hospitality leaders",
-      "logos": ["Hotels", "Resorts", "Tourism", "Airlines", "Cruise", "Apps"]
+      "logos": [
+        "Hotels",
+        "Resorts",
+        "Tourism",
+        "Airlines",
+        "Cruise",
+        "Apps"
+      ]
     },
     "madeFor": {
       "title": "Built for your reality",
@@ -41,11 +55,26 @@
     "kpis": {
       "title": "What we optimize for",
       "metrics": [
-        { "label": "Bookings", "value": "↑ Direct bookings" },
-        { "label": "CTR", "value": "↑ Campaign CTR" },
-        { "label": "Occupancy", "value": "↑ Off-season occupancy" },
-        { "label": "Engagement", "value": "↑ Social interactions" },
-        { "label": "RevPAR", "value": "↑ Revenue per available room" }
+        {
+          "label": "Bookings",
+          "value": "↑ Direct bookings"
+        },
+        {
+          "label": "CTR",
+          "value": "↑ Campaign CTR"
+        },
+        {
+          "label": "Occupancy",
+          "value": "↑ Off-season occupancy"
+        },
+        {
+          "label": "Engagement",
+          "value": "↑ Social interactions"
+        },
+        {
+          "label": "RevPAR",
+          "value": "↑ Revenue per available room"
+        }
       ]
     },
     "services": {
@@ -116,7 +145,13 @@
     },
     "process": {
       "title": "Frictionless, end-to-end",
-      "steps": ["Discovery", "Pre-production", "Production", "Edit", "Delivery"],
+      "steps": [
+        "Discovery",
+        "Pre-production",
+        "Production",
+        "Edit",
+        "Delivery"
+      ],
       "highlights": [
         {
           "title": "Location-ready crews",
@@ -215,7 +250,7 @@
       }
     }
   },
-  "tech-saas": {
+  "tech-saas-video-production": {
     "hero": {
       "tag": "Tech / SaaS",
       "headline": "Tech stories, simplified for scale.",
@@ -230,11 +265,25 @@
           "href": "#reel"
         }
       },
-      "chips": ["AI", "SaaS", "IoT", "Cloud", "FinTech", "DevTools"]
+      "chips": [
+        "AI",
+        "SaaS",
+        "IoT",
+        "Cloud",
+        "FinTech",
+        "DevTools"
+      ]
     },
     "proof": {
       "title": "Trusted by global destinations & hospitality leaders",
-      "logos": ["AI", "SaaS", "IoT", "Cloud", "FinTech", "DevTools"]
+      "logos": [
+        "AI",
+        "SaaS",
+        "IoT",
+        "Cloud",
+        "FinTech",
+        "DevTools"
+      ]
     },
     "madeFor": {
       "title": "Built for your reality",
@@ -257,11 +306,26 @@
     "kpis": {
       "title": "What we optimize for",
       "metrics": [
-        { "label": "Demos", "value": "↑ Demo sign-ups" },
-        { "label": "Activation", "value": "↑ Product activation" },
-        { "label": "Sales cycle", "value": "↓ Time to close" },
-        { "label": "Integration", "value": "↓ Dev integration time" },
-        { "label": "CAC/Payback", "value": "↑ CAC payback speed" }
+        {
+          "label": "Demos",
+          "value": "↑ Demo sign-ups"
+        },
+        {
+          "label": "Activation",
+          "value": "↑ Product activation"
+        },
+        {
+          "label": "Sales cycle",
+          "value": "↓ Time to close"
+        },
+        {
+          "label": "Integration",
+          "value": "↓ Dev integration time"
+        },
+        {
+          "label": "CAC/Payback",
+          "value": "↑ CAC payback speed"
+        }
       ]
     },
     "services": {
@@ -352,7 +416,13 @@
     },
     "process": {
       "title": "Frictionless, end-to-end",
-      "steps": ["Discovery", "Scripting", "Production", "Edit & Grade", "Delivery"],
+      "steps": [
+        "Discovery",
+        "Scripting",
+        "Production",
+        "Edit & Grade",
+        "Delivery"
+      ],
       "highlights": [
         {
           "title": "Speed without chaos",
@@ -451,7 +521,7 @@
       }
     }
   },
-  "real-estate": {
+  "real-estate-video-production": {
     "hero": {
       "tag": "Real Estate & PropTech",
       "headline": "Bring properties to life before they're built.",
@@ -466,11 +536,23 @@
           "href": "#reel"
         }
       },
-      "chips": ["Developers", "Architects", "PropTech", "Brokerages", "Interior Brands"]
+      "chips": [
+        "Developers",
+        "Architects",
+        "PropTech",
+        "Brokerages",
+        "Interior Brands"
+      ]
     },
     "proof": {
       "title": "Trusted by developers, architects & proptech innovators",
-      "logos": ["Developers", "Architects", "PropTech", "Brokerages", "Interior Brands"]
+      "logos": [
+        "Developers",
+        "Architects",
+        "PropTech",
+        "Brokerages",
+        "Interior Brands"
+      ]
     },
     "madeFor": {
       "title": "Built for your reality",
@@ -493,11 +575,26 @@
     "kpis": {
       "title": "What we optimize for",
       "metrics": [
-        { "label": "Leads", "value": "↑ Qualified leads" },
-        { "label": "Conversions", "value": "↑ Site visit conversions" },
-        { "label": "Sales cycle", "value": "↓ Time to close" },
-        { "label": "Investor trust", "value": "↑ Investor confidence" },
-        { "label": "Engagement", "value": "↑ Brochure/video interactions" }
+        {
+          "label": "Leads",
+          "value": "↑ Qualified leads"
+        },
+        {
+          "label": "Conversions",
+          "value": "↑ Site visit conversions"
+        },
+        {
+          "label": "Sales cycle",
+          "value": "↓ Time to close"
+        },
+        {
+          "label": "Investor trust",
+          "value": "↑ Investor confidence"
+        },
+        {
+          "label": "Engagement",
+          "value": "↑ Brochure/video interactions"
+        }
       ]
     },
     "services": {
@@ -568,7 +665,13 @@
     },
     "process": {
       "title": "Frictionless, end-to-end",
-      "steps": ["Discovery", "Script & Visuals", "Production", "Edit", "Delivery"],
+      "steps": [
+        "Discovery",
+        "Script & Visuals",
+        "Production",
+        "Edit",
+        "Delivery"
+      ],
       "highlights": [
         {
           "title": "Pre-sales ready",
@@ -655,38 +758,84 @@
       }
     }
   },
-  "post-production": {
+  "post-production-broadcast": {
     "hero": {
       "tag": "Post-Production & Broadcast Partnerships",
       "headline": "Finish strong. Deliver on spec.",
       "subhead": "Editorial, color, mix, localization, and delivery—spec-checked for broadcasters, studios, and OTT.",
       "cta": {
-        "primary": { "label": "Request a post bid", "href": "#contact" },
-        "secondary": { "label": "See finishing samples", "href": "#reel" }
+        "primary": {
+          "label": "Request a post bid",
+          "href": "#contact"
+        },
+        "secondary": {
+          "label": "See finishing samples",
+          "href": "#reel"
+        }
       },
-      "chips": ["IMF", "AS-11", "HDR10", "Dolby Vision", "Stereo/5.1/7.1", "Localization", "QC", "DCP"]
+      "chips": [
+        "IMF",
+        "AS-11",
+        "HDR10",
+        "Dolby Vision",
+        "Stereo/5.1/7.1",
+        "Localization",
+        "QC",
+        "DCP"
+      ]
     },
     "proof": {
       "title": "Trusted by networks, studios, OTTs, and indies",
-      "logos": ["Broadcast", "OTT", "Studios", "Networks", "Indies", "Publishers"]
+      "logos": [
+        "Broadcast",
+        "OTT",
+        "Studios",
+        "Networks",
+        "Indies",
+        "Publishers"
+      ]
     },
     "madeFor": {
       "title": "Built for broadcasters, studios & OTT",
       "lead": "We take your offline or raw and return platform-ready masters—IMF, AS-11, ProRes, DCP—plus stems, captions, and localized versions.",
       "cards": [
-        { "title": "Spec anxiety", "description": "Different platforms, different specs—handled and templated in our pipeline." },
-        { "title": "Tight air dates", "description": "Parallel color/mix, overnight renders, and rush paths." },
-        { "title": "Global versions", "description": "VO/captions and textless/texted masters for markets." }
+        {
+          "title": "Spec anxiety",
+          "description": "Different platforms, different specs—handled and templated in our pipeline."
+        },
+        {
+          "title": "Tight air dates",
+          "description": "Parallel color/mix, overnight renders, and rush paths."
+        },
+        {
+          "title": "Global versions",
+          "description": "VO/captions and textless/texted masters for markets."
+        }
       ]
     },
     "kpis": {
       "title": "What we optimize for",
       "metrics": [
-        { "label": "QC pass rate", "value": "↑ 99% first-pass" },
-        { "label": "On-time delivery", "value": "↑ 98%+ on-time" },
-        { "label": "Rejections", "value": "↓ Delivery rejections" },
-        { "label": "Mix translation", "value": "↑ Platform loudness compliance" },
-        { "label": "Turnaround", "value": "↓ Days to master" }
+        {
+          "label": "QC pass rate",
+          "value": "↑ 99% first-pass"
+        },
+        {
+          "label": "On-time delivery",
+          "value": "↑ 98%+ on-time"
+        },
+        {
+          "label": "Rejections",
+          "value": "↓ Delivery rejections"
+        },
+        {
+          "label": "Mix translation",
+          "value": "↑ Platform loudness compliance"
+        },
+        {
+          "label": "Turnaround",
+          "value": "↓ Days to master"
+        }
       ]
     },
     "services": {
@@ -913,38 +1062,82 @@
       }
     }
   },
-  "csr-video": {
+  "csr-ngo-video-production-agency": {
     "hero": {
       "tag": "NGO / CSR & Sustainability",
       "headline": "Make impact visible.",
       "subhead": "Human stories, measurable outcomes, and donor-ready films—made with safeguarding, consent, and speed.",
       "cta": {
-        "primary": { "label": "Get an estimate", "href": "#contact" },
-        "secondary": { "label": "Watch the reel", "href": "#reel" }
+        "primary": {
+          "label": "Get an estimate",
+          "href": "#contact"
+        },
+        "secondary": {
+          "label": "Watch the reel",
+          "href": "#reel"
+        }
       },
-      "chips": ["NGOs", "Foundations", "CSR", "Impact Funds", "UN/INGOs", "Social Enterprises"]
+      "chips": [
+        "NGOs",
+        "Foundations",
+        "CSR",
+        "Impact Funds",
+        "UN/INGOs",
+        "Social Enterprises"
+      ]
     },
     "proof": {
       "title": "Trusted by NGOs, foundations, and CSR leaders",
-      "logos": ["NGOs", "CSR", "Foundations", "UN", "INGOs", "Social"]
+      "logos": [
+        "NGOs",
+        "CSR",
+        "Foundations",
+        "UN",
+        "INGOs",
+        "Social"
+      ]
     },
     "madeFor": {
       "title": "Built for your reality",
       "lead": "From field shoots to boardroom updates, we build assets that raise funds, mobilize volunteers, and meet compliance.",
       "cards": [
-        { "title": "Safeguarding & consent", "description": "Ethical storytelling with signed consent and anonymization when required." },
-        { "title": "Donor & board reporting", "description": "Outcome-aligned edits that integrate metrics and M&E visuals." },
-        { "title": "Multi-language reach", "description": "Captions/VO across Indian languages for inclusive access." }
+        {
+          "title": "Safeguarding & consent",
+          "description": "Ethical storytelling with signed consent and anonymization when required."
+        },
+        {
+          "title": "Donor & board reporting",
+          "description": "Outcome-aligned edits that integrate metrics and M&E visuals."
+        },
+        {
+          "title": "Multi-language reach",
+          "description": "Captions/VO across Indian languages for inclusive access."
+        }
       ]
     },
     "kpis": {
       "title": "What we optimize for",
       "metrics": [
-        { "label": "Funds raised", "value": "↑ Donations & grants" },
-        { "label": "Volunteer sign-ups", "value": "↑ Active volunteers" },
-        { "label": "Program adoption", "value": "↑ Beneficiaries reached" },
-        { "label": "Stakeholder trust", "value": "↑ Donor/board confidence" },
-        { "label": "Policy reach", "value": "↑ Decision-maker views" }
+        {
+          "label": "Funds raised",
+          "value": "↑ Donations & grants"
+        },
+        {
+          "label": "Volunteer sign-ups",
+          "value": "↑ Active volunteers"
+        },
+        {
+          "label": "Program adoption",
+          "value": "↑ Beneficiaries reached"
+        },
+        {
+          "label": "Stakeholder trust",
+          "value": "↑ Donor/board confidence"
+        },
+        {
+          "label": "Policy reach",
+          "value": "↑ Decision-maker views"
+        }
       ]
     },
     "services": {
@@ -1141,38 +1334,83 @@
       }
     }
   },
-  "media-entertainment": {
+  "media-entertainment-video-production": {
     "hero": {
       "tag": "Media & Entertainment",
       "headline": "Stories that move audiences.",
       "subhead": "From OTT launches to live moments—cinematic polish at platform speed, with rights handled right.",
       "cta": {
-        "primary": { "label": "Get an estimate", "href": "#contact" },
-        "secondary": { "label": "Watch the reel", "href": "#reel" }
+        "primary": {
+          "label": "Get an estimate",
+          "href": "#contact"
+        },
+        "secondary": {
+          "label": "Watch the reel",
+          "href": "#reel"
+        }
       },
-      "chips": ["OTT", "Broadcasters", "Studios", "Music", "Sports", "Brands", "Creators"]
+      "chips": [
+        "OTT",
+        "Broadcasters",
+        "Studios",
+        "Music",
+        "Sports",
+        "Brands",
+        "Creators"
+      ]
     },
     "proof": {
       "title": "Trusted by teams who set the tone",
-      "logos": ["OTT", "Broadcasters", "Studios", "Music", "Sports", "Creators"]
+      "logos": [
+        "OTT",
+        "Broadcasters",
+        "Studios",
+        "Music",
+        "Sports",
+        "Creators"
+      ]
     },
     "madeFor": {
       "title": "Built for your reality",
       "lead": "Launch-ready cuts, clean rights, and multi-format masters—without the last-minute scramble.",
       "cards": [
-        { "title": "Speed to air", "description": "Same-day or overnight edits. On-site ingest and review when needed." },
-        { "title": "Rights & clearances", "description": "Talent, music, stock, and brand safety tracked across deliverables and windows." },
-        { "title": "Multi-format delivery", "description": "9:16, 1:1, 16:9—with captions, safe zones, color & loudness QC." }
+        {
+          "title": "Speed to air",
+          "description": "Same-day or overnight edits. On-site ingest and review when needed."
+        },
+        {
+          "title": "Rights & clearances",
+          "description": "Talent, music, stock, and brand safety tracked across deliverables and windows."
+        },
+        {
+          "title": "Multi-format delivery",
+          "description": "9:16, 1:1, 16:9—with captions, safe zones, color & loudness QC."
+        }
       ]
     },
     "kpis": {
       "title": "What we optimize for",
       "metrics": [
-        { "label": "Views", "value": "↑ Trailer views" },
-        { "label": "Watch-through", "value": "↑ 50%+ VT on promos" },
-        { "label": "Engagement", "value": "↑ Social interactions" },
-        { "label": "Time-to-air", "value": "↓ Turnaround time" },
-        { "label": "QC fails", "value": "↓ Rejections on platforms" }
+        {
+          "label": "Views",
+          "value": "↑ Trailer views"
+        },
+        {
+          "label": "Watch-through",
+          "value": "↑ 50%+ VT on promos"
+        },
+        {
+          "label": "Engagement",
+          "value": "↑ Social interactions"
+        },
+        {
+          "label": "Time-to-air",
+          "value": "↓ Turnaround time"
+        },
+        {
+          "label": "QC fails",
+          "value": "↓ Rejections on platforms"
+        }
       ]
     },
     "services": {
@@ -1368,38 +1606,80 @@
       }
     }
   },
-  "manufacturing": {
+  "manufacturing-industry-video-services": {
     "hero": {
       "tag": "Manufacturing & Industry 4.0",
       "headline": "Showcase the future of making.",
       "subhead": "Factory floors, robotics, and innovation—captured with clarity and cinematic precision.",
       "cta": {
-        "primary": { "label": "Get an estimate", "href": "#contact" },
-        "secondary": { "label": "Watch the reel", "href": "#reel" }
+        "primary": {
+          "label": "Get an estimate",
+          "href": "#contact"
+        },
+        "secondary": {
+          "label": "Watch the reel",
+          "href": "#reel"
+        }
       },
-      "chips": ["Factories", "Robotics", "Automation", "Heavy Industry", "Engineering", "IoT"]
+      "chips": [
+        "Factories",
+        "Robotics",
+        "Automation",
+        "Heavy Industry",
+        "Engineering",
+        "IoT"
+      ]
     },
     "proof": {
       "title": "Trusted by manufacturers & innovators",
-      "logos": ["Factories", "Robotics", "Automation", "Engineering"]
+      "logos": [
+        "Factories",
+        "Robotics",
+        "Automation",
+        "Engineering"
+      ]
     },
     "madeFor": {
       "title": "Built for your reality",
       "lead": "From plant tours to product explainers, we create visuals that win clients and partners.",
       "cards": [
-        { "title": "Complex processes", "description": "Visuals that simplify robotics and automation." },
-        { "title": "Restricted zones", "description": "Crews trained to work safely in PPE areas." },
-        { "title": "Stakeholder trust", "description": "Professional films that impress partners and clients." }
+        {
+          "title": "Complex processes",
+          "description": "Visuals that simplify robotics and automation."
+        },
+        {
+          "title": "Restricted zones",
+          "description": "Crews trained to work safely in PPE areas."
+        },
+        {
+          "title": "Stakeholder trust",
+          "description": "Professional films that impress partners and clients."
+        }
       ]
     },
     "kpis": {
       "title": "What we optimize for",
       "metrics": [
-        { "label": "Client trust", "value": "↑ Client confidence" },
-        { "label": "Leads", "value": "↑ Partner leads" },
-        { "label": "Sales cycle", "value": "↓ Time to close deals" },
-        { "label": "Talent", "value": "↑ Employer branding" },
-        { "label": "Engagement", "value": "↑ Explainer video views" }
+        {
+          "label": "Client trust",
+          "value": "↑ Client confidence"
+        },
+        {
+          "label": "Leads",
+          "value": "↑ Partner leads"
+        },
+        {
+          "label": "Sales cycle",
+          "value": "↓ Time to close deals"
+        },
+        {
+          "label": "Talent",
+          "value": "↑ Employer branding"
+        },
+        {
+          "label": "Engagement",
+          "value": "↑ Explainer video views"
+        }
       ]
     },
     "services": {
@@ -1575,38 +1855,82 @@
       }
     }
   },
-  "healthcare": {
+  "healthcare-medtech-video-makers": {
     "hero": {
       "tag": "Healthcare & MedTech",
       "headline": "Healthcare stories with clinical accuracy.",
       "subhead": "Human-centered films for hospitals, pharma, and med-tech—made with privacy, precision, and speed.",
       "cta": {
-        "primary": { "label": "Get an estimate", "href": "#contact" },
-        "secondary": { "label": "Watch the reel", "href": "#reel" }
+        "primary": {
+          "label": "Get an estimate",
+          "href": "#contact"
+        },
+        "secondary": {
+          "label": "Watch the reel",
+          "href": "#reel"
+        }
       },
-      "chips": ["Hospitals", "Pharma", "Med-tech", "Diagnostics", "Clinics", "Education"]
+      "chips": [
+        "Hospitals",
+        "Pharma",
+        "Med-tech",
+        "Diagnostics",
+        "Clinics",
+        "Education"
+      ]
     },
     "proof": {
       "title": "Trusted by teams who care deeply",
-      "logos": ["Hospitals", "Pharma", "Med-tech", "Diagnostics", "Clinics", "Education"]
+      "logos": [
+        "Hospitals",
+        "Pharma",
+        "Med-tech",
+        "Diagnostics",
+        "Clinics",
+        "Education"
+      ]
     },
     "madeFor": {
       "title": "Built for your reality",
       "lead": "From consent to sterile protocols, our process respects your environment and your patients.",
       "cards": [
-        { "title": "Patient privacy", "description": "Consent workflows from pre-production through delivery; data masked in edit." },
-        { "title": "Clinical accuracy", "description": "Scripts and cuts reviewed with clinical advisors; no over-claiming." },
-        { "title": "Multi-team approvals", "description": "Checkpoints for medical, legal, and brand—so sign-off is smooth." }
+        {
+          "title": "Patient privacy",
+          "description": "Consent workflows from pre-production through delivery; data masked in edit."
+        },
+        {
+          "title": "Clinical accuracy",
+          "description": "Scripts and cuts reviewed with clinical advisors; no over-claiming."
+        },
+        {
+          "title": "Multi-team approvals",
+          "description": "Checkpoints for medical, legal, and brand—so sign-off is smooth."
+        }
       ]
     },
     "kpis": {
       "title": "What we optimize for",
       "metrics": [
-        { "label": "Understanding", "value": "↑ Patient comprehension" },
-        { "label": "Consent", "value": "↑ Consent rate" },
-        { "label": "Training", "value": "↑ Staff completion" },
-        { "label": "Approvals", "value": "↑ Review velocity" },
-        { "label": "Recruitment", "value": "↑ Qualified applicants" }
+        {
+          "label": "Understanding",
+          "value": "↑ Patient comprehension"
+        },
+        {
+          "label": "Consent",
+          "value": "↑ Consent rate"
+        },
+        {
+          "label": "Training",
+          "value": "↑ Staff completion"
+        },
+        {
+          "label": "Approvals",
+          "value": "↑ Review velocity"
+        },
+        {
+          "label": "Recruitment",
+          "value": "↑ Qualified applicants"
+        }
       ]
     },
     "services": {
@@ -1802,38 +2126,82 @@
       }
     }
   },
-  "fintech": {
+  "fintech-video-production-services": {
     "hero": {
       "tag": "FinTech",
       "headline": "Finance, told with trust.",
       "subhead": "From payments to wealthtech, we turn regulation and product detail into films that convert—without risking compliance.",
       "cta": {
-        "primary": { "label": "Get an estimate", "href": "#contact" },
-        "secondary": { "label": "Watch the reel", "href": "#reel" }
+        "primary": {
+          "label": "Get an estimate",
+          "href": "#contact"
+        },
+        "secondary": {
+          "label": "Watch the reel",
+          "href": "#reel"
+        }
       },
-      "chips": ["Payments", "Banking", "Lending", "InsurTech", "WealthTech", "RegTech"]
+      "chips": [
+        "Payments",
+        "Banking",
+        "Lending",
+        "InsurTech",
+        "WealthTech",
+        "RegTech"
+      ]
     },
     "proof": {
       "title": "Trusted by teams who build confidence",
-      "logos": ["Payments", "Banking", "Lending", "InsurTech", "WealthTech", "RegTech"]
+      "logos": [
+        "Payments",
+        "Banking",
+        "Lending",
+        "InsurTech",
+        "WealthTech",
+        "RegTech"
+      ]
     },
     "madeFor": {
       "title": "Built for your reality",
       "lead": "Clear storytelling. Tight approvals. Zero surprises.",
       "cards": [
-        { "title": "Compliance, not compromise", "description": "Disclaimers, risk lines, and regulator-safe claims baked in." },
-        { "title": "Trust at first sight", "description": "Premium visuals and clear demos reduce friction in KYC/onboarding." },
-        { "title": "Security expectations", "description": "PII masked, restricted links, and role-based access." }
+        {
+          "title": "Compliance, not compromise",
+          "description": "Disclaimers, risk lines, and regulator-safe claims baked in."
+        },
+        {
+          "title": "Trust at first sight",
+          "description": "Premium visuals and clear demos reduce friction in KYC/onboarding."
+        },
+        {
+          "title": "Security expectations",
+          "description": "PII masked, restricted links, and role-based access."
+        }
       ]
     },
     "kpis": {
       "title": "What we optimize for",
       "metrics": [
-        { "label": "Sign-ups", "value": "↑ Qualified sign-ups" },
-        { "label": "KYC", "value": "↑ KYC completion" },
-        { "label": "Activation", "value": "↑ First-transaction rate" },
-        { "label": "Support", "value": "↓ Onboarding calls" },
-        { "label": "Approvals", "value": "↑ Legal approval velocity" }
+        {
+          "label": "Sign-ups",
+          "value": "↑ Qualified sign-ups"
+        },
+        {
+          "label": "KYC",
+          "value": "↑ KYC completion"
+        },
+        {
+          "label": "Activation",
+          "value": "↑ First-transaction rate"
+        },
+        {
+          "label": "Support",
+          "value": "↓ Onboarding calls"
+        },
+        {
+          "label": "Approvals",
+          "value": "↑ Legal approval velocity"
+        }
       ]
     },
     "services": {
@@ -2029,38 +2397,82 @@
       }
     }
   },
-  "education": {
+  "education-edtech-video-production": {
     "hero": {
       "tag": "Education & EdTech",
       "headline": "Learning, distilled.",
       "subhead": "For schools and EdTech, we turn complex ideas into clear, bingeable lessons—aligned to outcomes.",
       "cta": {
-        "primary": { "label": "Get an estimate", "href": "#contact" },
-        "secondary": { "label": "Watch the reel", "href": "#reel" }
+        "primary": {
+          "label": "Get an estimate",
+          "href": "#contact"
+        },
+        "secondary": {
+          "label": "Watch the reel",
+          "href": "#reel"
+        }
       },
-      "chips": ["K-12", "Higher Ed", "EdTech", "Test Prep", "Skills", "Corporate L&D"]
+      "chips": [
+        "K-12",
+        "Higher Ed",
+        "EdTech",
+        "Test Prep",
+        "Skills",
+        "Corporate L&D"
+      ]
     },
     "proof": {
       "title": "Trusted by teams who teach at scale",
-      "logos": ["K-12", "Higher Ed", "EdTech", "Test Prep", "Skills", "Corporate L&D"]
+      "logos": [
+        "K-12",
+        "Higher Ed",
+        "EdTech",
+        "Test Prep",
+        "Skills",
+        "Corporate L&D"
+      ]
     },
     "madeFor": {
       "title": "Built for your reality",
       "lead": "Engaging lessons, aligned to objectives, and simple to deploy across LMS.",
       "cards": [
-        { "title": "Engagement & outcomes", "description": "Micro-lessons, tight pacing, visuals that stick—built around learning goals." },
-        { "title": "Curriculum alignment", "description": "SME-led scripting and assessment-friendly framing. No fluff." },
-        { "title": "Scale & localization", "description": "Multi-language captions/VO, accessible graphics, LMS-ready masters." }
+        {
+          "title": "Engagement & outcomes",
+          "description": "Micro-lessons, tight pacing, visuals that stick—built around learning goals."
+        },
+        {
+          "title": "Curriculum alignment",
+          "description": "SME-led scripting and assessment-friendly framing. No fluff."
+        },
+        {
+          "title": "Scale & localization",
+          "description": "Multi-language captions/VO, accessible graphics, LMS-ready masters."
+        }
       ]
     },
     "kpis": {
       "title": "What we optimize for",
       "metrics": [
-        { "label": "Watch-through", "value": "↑ 75%+ VT rates" },
-        { "label": "Completion", "value": "↑ Course completion" },
-        { "label": "Scores", "value": "↑ Assessment performance" },
-        { "label": "Support", "value": "↓ Onboarding tickets" },
-        { "label": "Time-to-launch", "value": "↓ Content production time" }
+        {
+          "label": "Watch-through",
+          "value": "↑ 75%+ VT rates"
+        },
+        {
+          "label": "Completion",
+          "value": "↑ Course completion"
+        },
+        {
+          "label": "Scores",
+          "value": "↑ Assessment performance"
+        },
+        {
+          "label": "Support",
+          "value": "↓ Onboarding tickets"
+        },
+        {
+          "label": "Time-to-launch",
+          "value": "↓ Content production time"
+        }
       ]
     },
     "services": {
@@ -2256,38 +2668,83 @@
       }
     }
   },
-  "e-commerce": {
+  "ecommerce-retail-video-production": {
     "hero": {
       "tag": "E-Commerce & Retail",
       "headline": "Make it cart-worthy.",
       "subhead": "Product films and performance cuts that raise CTR, add-to-cart, and ROAS—shot fast, spec-perfect.",
       "cta": {
-        "primary": { "label": "Get an estimate", "href": "#contact" },
-        "secondary": { "label": "Watch the reel", "href": "#reel" }
+        "primary": {
+          "label": "Get an estimate",
+          "href": "#contact"
+        },
+        "secondary": {
+          "label": "Watch the reel",
+          "href": "#reel"
+        }
       },
-      "chips": ["D2C", "Marketplace", "Fashion", "Beauty", "Electronics", "Grocery", "Home & Living"]
+      "chips": [
+        "D2C",
+        "Marketplace",
+        "Fashion",
+        "Beauty",
+        "Electronics",
+        "Grocery",
+        "Home & Living"
+      ]
     },
     "proof": {
       "title": "Trusted by teams who drop on schedule",
-      "logos": ["D2C", "Marketplace", "Fashion", "Beauty", "Electronics", "Grocery"]
+      "logos": [
+        "D2C",
+        "Marketplace",
+        "Fashion",
+        "Beauty",
+        "Electronics",
+        "Grocery"
+      ]
     },
     "madeFor": {
       "title": "Built for your reality",
       "lead": "Creative that's beautiful, testable, and built for variants—so media teams can scale what works.",
       "cards": [
-        { "title": "Scale & speed", "description": "Launch-ready assets in days. Variant-ready for A/B testing." },
-        { "title": "ROAS pressure", "description": "Hook banks, length variants, platform-specific openers to beat fatigue." },
-        { "title": "Consistency at SKU scale", "description": "Shotlists, color/perspective rules, and LUTs for repeatable quality." }
+        {
+          "title": "Scale & speed",
+          "description": "Launch-ready assets in days. Variant-ready for A/B testing."
+        },
+        {
+          "title": "ROAS pressure",
+          "description": "Hook banks, length variants, platform-specific openers to beat fatigue."
+        },
+        {
+          "title": "Consistency at SKU scale",
+          "description": "Shotlists, color/perspective rules, and LUTs for repeatable quality."
+        }
       ]
     },
     "kpis": {
       "title": "What we optimize for",
       "metrics": [
-        { "label": "CTR", "value": "↑ Click-through" },
-        { "label": "ATC", "value": "↑ Add-to-Cart" },
-        { "label": "CVR", "value": "↑ Conversion" },
-        { "label": "ROAS", "value": "↑ Return on Ad Spend" },
-        { "label": "Returns", "value": "↓ Product returns" }
+        {
+          "label": "CTR",
+          "value": "↑ Click-through"
+        },
+        {
+          "label": "ATC",
+          "value": "↑ Add-to-Cart"
+        },
+        {
+          "label": "CVR",
+          "value": "↑ Conversion"
+        },
+        {
+          "label": "ROAS",
+          "value": "↑ Return on Ad Spend"
+        },
+        {
+          "label": "Returns",
+          "value": "↓ Product returns"
+        }
       ]
     },
     "services": {
