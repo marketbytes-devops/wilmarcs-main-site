@@ -1,5 +1,7 @@
 'use client';
 import Image from "next/image";
+import { useState, useRef, useEffect } from "react";
+
 import { Pagination, Autoplay, Navigation, Scrollbar } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -30,6 +32,30 @@ type Portfolio = {
   phsubtitle: string;
 };
 export default function Home({ service_category, portfolio }: { service_category: ServiceCategory[], portfolio: Portfolio[] }) {
+  const [isBannerMuted, setIsBannerMuted] = useState(true);
+  const [isServiceMuted, setIsServiceMuted] = useState(true);
+  const [isGlobalMuted, setIsGlobalMuted] = useState(true);
+  const bannerRef = useRef<HTMLVideoElement>(null);
+  const bannerMobRef = useRef<HTMLVideoElement>(null);
+  const serviceRef = useRef<HTMLVideoElement>(null);
+  const globalRef = useRef<HTMLVideoElement>(null);
+
+  const toggleBannerMute = () => {
+    setIsBannerMuted(!isBannerMuted);
+    if (bannerRef.current) bannerRef.current.muted = !isBannerMuted;
+    if (bannerMobRef.current) bannerMobRef.current.muted = !isBannerMuted;
+  };
+
+  const toggleServiceMute = () => {
+    setIsServiceMuted(!isServiceMuted);
+    if (serviceRef.current) serviceRef.current.muted = !isServiceMuted;
+  };
+
+  const toggleGlobalMute = () => {
+    setIsGlobalMuted(!isGlobalMuted);
+    if (globalRef.current) globalRef.current.muted = !isGlobalMuted;
+  };
+
   useGSAP(() => {
     gsap.registerPlugin(SplitText, ScrollTrigger);
     const mm = gsap.matchMedia();
@@ -97,13 +123,30 @@ export default function Home({ service_category, portfolio }: { service_category
   }, []);
   return (
     <>
-      <section className="relative before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-full before:h-1/3 before:bg-gradient-to-t before:from-black before:to-transparent before:z-1">
-        <video poster={`${process.env.NEXT_PUBLIC_API_URL}assets/web/banner.jpg`} autoPlay muted loop playsInline className="sm:block hidden w-full object-cover cursor-pointer">
+      <section className="relative before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-full before:h-1/3 before:bg-gradient-to-t before:from-black before:to-transparent before:z-1 group">
+        <video ref={bannerRef} poster={`${process.env.NEXT_PUBLIC_API_URL}assets/web/banner.jpg`} autoPlay muted={isBannerMuted} loop playsInline className="sm:block hidden w-full object-cover cursor-pointer" onClick={toggleBannerMute}>
           <source src={`${process.env.NEXT_PUBLIC_API_URL}assets/web/banner.mp4`} type="video/mp4" />
         </video>
-        <video poster={`${process.env.NEXT_PUBLIC_API_URL}assets/web/banner-mob.jpg`} autoPlay muted loop playsInline className="sm:hidden block w-full object-cover cursor-pointer">
+        <video ref={bannerMobRef} poster={`${process.env.NEXT_PUBLIC_API_URL}assets/web/banner-mob.jpg`} autoPlay muted={isBannerMuted} loop playsInline className="sm:hidden block w-full object-cover cursor-pointer" onClick={toggleBannerMute}>
           <source src={`${process.env.NEXT_PUBLIC_API_URL}assets/web/banner-mob.mp4`} type="video/mp4" />
         </video>
+        <div className="absolute right-10 bottom-24 z-10 sm:block hidden">
+          <button onClick={toggleBannerMute} className="bg-black/50 hover:bg-black/80 text-white p-3 rounded-full transition-all">
+            {isBannerMuted ? (
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.393-2.06a.5.5 0 0 1 .499-.04zm7.135 1.135a.5.5 0 0 1 0 .708L12.207 7l1.645 1.646a.5.5 0 0 1-.708.708L11.5 7.707l-1.646 1.646a.5.5 0 0 1-.708-.708L10.793 7 9.148 5.354a.5.5 0 0 1 .708-.708L11.5 6.293l1.646-1.647a.5.5 0 0 1 .707 0z"/>
+              </svg>
+            ) : (
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+                <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+                <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182l-.707.707A3.489 3.489 0 0 1 9.025 8a3.489 3.489 0 0 1-1.025 2.475l.707.707z"/>
+                <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.393-2.06a.5.5 0 0 1 .499-.04z"/>
+              </svg>
+            )}
+          </button>
+        </div>
+
         <div className="absolute left-1/2 lg:bottom-20 sm:bottom-10 bottom-0 -translate-x-1/2 z-2 text-center grid items-center justify-center">
           <a href={`${BASE_URL}book-a-call`} className="md:px-8 px-6 py-2 lg:text-xl md:text-lg text-base lg:mb-9 sm:mb-6 mb-4 ease-linear duration-200 hover:bg-white hover:text-black inline-flex items-center gap-2 sm:border-2 border border-white md:rounded-2xl rounded-xl">Enquiry</a>
           <a href="#about-us" className="grid -space-y-4 text-white text-center justify-center items-center">
@@ -139,7 +182,7 @@ export default function Home({ service_category, portfolio }: { service_category
             initialSlide={2} 
             autoplay={{ delay: 6000, disableOnInteraction: false, pauseOnMouseEnter: false, }}>
             {portfolio.map((item, i) => (<SwiperSlide className="max-w-6xl" key={i}>
-              <LightGallery plugins={[lgVideo]} download={false}>
+              <LightGallery plugins={[lgVideo]} download={false} youTubePlayerParams={{ modestbranding: 1, showinfo: 0, rel: 0, mute: 0, autoplay: 1 }}>
                 <a href={item.plink} className="relative rounded-2xl overflow-hidden block">
                   <Image src={process.env.NEXT_PUBLIC_ASSET_URL + item.pimg} alt={item.ptitle} className="block w-full" width={1152} height={760} priority />
                   <h3 className="2xl:text-7xl xl:text-5xl lg:text-4xl md:text-3xl sm::text-2xl text-xl absolute left-0 w-full top-1/2 -translate-y-1/2 text-center uppercase grid items-center justify-center font-trakya leading-snug">
@@ -155,9 +198,28 @@ export default function Home({ service_category, portfolio }: { service_category
       <section className="2xl:pb-40 xl:pb-32 lg:pb-28 md:pb-24 pb-20 bg-black" id="services">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="2xl:text-5xl xl:text-4xl md:text-3xl text-2xl font-bold text-white text-center">Services</h2>
-          <video poster={`${process.env.NEXT_PUBLIC_API_URL}assets/web/services.jpg`} autoPlay muted loop playsInline className="block w-full object-cover">
-            <source src={`${process.env.NEXT_PUBLIC_API_URL}assets/web/services-banner.mp4`} type="video/mp4" />
-          </video>
+          <div className="relative group">
+            <video ref={serviceRef} poster={`${process.env.NEXT_PUBLIC_API_URL}assets/web/services.jpg`} autoPlay muted={isServiceMuted} loop playsInline className="block w-full object-cover cursor-pointer" onClick={toggleServiceMute}>
+              <source src={`${process.env.NEXT_PUBLIC_API_URL}assets/web/services-banner.mp4`} type="video/mp4" />
+            </video>
+            <div className="absolute right-4 bottom-4 z-10">
+              <button onClick={toggleServiceMute} className="bg-black/50 hover:bg-black/80 text-white p-2 rounded-full transition-all opacity-0 group-hover:opacity-100">
+                {isServiceMuted ? (
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.393-2.06a.5.5 0 0 1 .499-.04zm7.135 1.135a.5.5 0 0 1 0 .708L12.207 7l1.645 1.646a.5.5 0 0 1-.708.708L11.5 7.707l-1.646 1.646a.5.5 0 0 1-.708-.708L10.793 7 9.148 5.354a.5.5 0 0 1 .708-.708L11.5 6.293l1.646-1.647a.5.5 0 0 1 .707 0z"/>
+                  </svg>
+                ) : (
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+                    <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+                    <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182l-.707.707A3.489 3.489 0 0 1 9.025 8a3.489 3.489 0 0 1-1.025 2.475l.707.707z"/>
+                    <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.393-2.06a.5.5 0 0 1 .499-.04z"/>
+                  </svg>
+                )}
+              </button>
+            </div>
+          </div>
+
           <div className="2xl:pb-52 xl:pb-48 lg:pb-40 md:pb-32 sm:pb-24 pb-12 max-w-3xl mx-auto text-center service-wrapper">
             <p className="lg:text-[#b5b5b5] text-white md:text-xl sm:text-lg text-base leading-relaxed">
               From timeless stories to modern brand narratives, Wilmarcs transforms ideas into cinematic experiences built to connect and endure. As one of India’s most trusted production companies, we deliver corporate films, commercials, and brand stories that blend strategy with storytelling to elevate brands and shape culture.
@@ -368,11 +430,28 @@ export default function Home({ service_category, portfolio }: { service_category
               <p className="text-[#b5b5b5] lg:text-xl md:text-lg sm:text-base text-sm leading-relaxed md:mb-16 sm:mb-12 mb-8">Wilmarcs Motion Pictures operates across <strong className="text-white">India, Australia, and Dubai</strong>, bringing world-class video production and storytelling to brands worldwide. With a strong foothold in these key regions, we collaborate with businesses across diverse industries, delivering high-quality content that resonates with global audiences.</p>
               <a href={`${BASE_URL}book-a-call`} className="sm:px-4 px-3 py-2 lg:text-xl md:text-lg text-base ease-linear duration-200 hover:bg-white hover:text-black inline-flex items-center sm:gap-4 gap-2 sm:border-2 border border-white md:rounded-2xl rounded-xl">Request a quote <svg xmlns="http://www.w3.org/2000/svg" className="w-6" fill="currentColor" viewBox="0 0 16 16"><path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/></svg></a>
             </div>
-            <div className="pb-12">
-              <video poster={`${process.env.NEXT_PUBLIC_API_URL}assets/web/globe.jpg`} autoPlay muted loop playsInline className="block lg:w-3/4 w-full object-cover mx-auto">
+            <div className="pb-12 relative group">
+              <video ref={globalRef} poster={`${process.env.NEXT_PUBLIC_API_URL}assets/web/globe.jpg`} autoPlay muted={isGlobalMuted} loop playsInline className="block lg:w-3/4 w-full object-cover mx-auto cursor-pointer" onClick={toggleGlobalMute}>
                 <source src={`${process.env.NEXT_PUBLIC_API_URL}assets/web/earth.mp4`} type="video/mp4" />
               </video>
+              <div className="absolute right-[15%] bottom-16 z-10">
+                <button onClick={toggleGlobalMute} className="bg-black/50 hover:bg-black/80 text-white p-2 rounded-full transition-all opacity-0 group-hover:opacity-100">
+                  {isGlobalMuted ? (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.393-2.06a.5.5 0 0 1 .499-.04zm7.135 1.135a.5.5 0 0 1 0 .708L12.207 7l1.645 1.646a.5.5 0 0 1-.708.708L11.5 7.707l-1.646 1.646a.5.5 0 0 1-.708-.708L10.793 7 9.148 5.354a.5.5 0 0 1 .708-.708L11.5 6.293l1.646-1.647a.5.5 0 0 1 .707 0z"/>
+                    </svg>
+                  ) : (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+                      <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+                      <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182l-.707.707A3.489 3.489 0 0 1 9.025 8a3.489 3.489 0 0 1-1.025 2.475l.707.707z"/>
+                      <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.393-2.06a.5.5 0 0 1 .499-.04z"/>
+                    </svg>
+                  )}
+                </button>
+              </div>
             </div>
+
           </div>
         </div>
       </section>
