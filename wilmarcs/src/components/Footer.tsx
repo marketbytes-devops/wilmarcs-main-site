@@ -36,15 +36,14 @@ export default function Footer({ data }: { data: ServiceCategory[] }) {
                 <li><a href={`${BASE_URL}about-our-team`}>About us</a></li>
                 <li><a href={`${BASE_URL}video-production-services`}>Services</a></li>
                 <li><a href={`${BASE_URL}video-production-portfolio`}>Portfolio</a></li>
-                <li><a href={`${BASE_URL}industries-we-serve`}>Industries</a></li>
-                {/* <li><a href={`${BASE_URL}blogs`}>Blogs</a></li> */}
+                <li><a href={`${BASE_URL}blog`}>Blog</a></li>
                 <li><a href={`${BASE_URL}book-a-call`}>Contact</a></li>
               </ul>
             </div>
             <div>
               <h5 className="lg:text-xl text-base font-bold md:mb-8 mb-6">Services</h5>
               <ul className="grid gap-4 footul text-sm">
-                {Array.isArray(data) && data.map((item, i) => (<li key={i}><a href={`${BASE_URL}video-production-services#${item.cslug}`}>{item.cname}</a></li>))}
+                {Array.isArray(data) && data.map((item, i) => (<li key={i}><a href={`${BASE_URL}services/${item.cslug}`}>{item.cname}</a></li>))}
               </ul>
             </div>
             <div>

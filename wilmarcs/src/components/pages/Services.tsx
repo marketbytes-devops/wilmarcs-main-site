@@ -80,9 +80,10 @@ export default function Services({ data }: { data: Service[] }) {
               <h2 className="2xl:text-4xl xl:text-3xl md:text-2xl text-xl font-bold tracking-tight">{item.cname}</h2>
               <p className="mt-3 text-neutral-400 max-w-2xl">{item.cdesc}</p>
             </header>
-            <div className="flex items-center justify-start sm:w-auto w-full gap-3 lg:mt-8 whitespace-nowrap">
+            <div className="flex items-center justify-start sm:w-auto w-full gap-3 lg:mt-8 whitespace-nowrap overflow-x-auto pb-4">
               <a className="bg-white text-black px-5 py-2 rounded-lg w-full text-center hover:opacity-90" href={`${BASE_URL}book-a-call`}>Get A Quote</a>
-              <a className="border border-gray-700 px-5 py-2 rounded-lg w-full text-center" href={`${BASE_URL}video-production-portfolio`}>View Our Works</a>
+              <a className="border border-neutral-700 text-white px-5 py-2 rounded-lg w-full text-center hover:bg-neutral-800 transition-colors" href={`${BASE_URL}services/${item.cslug}`}>View Details</a>
+              <a className="border border-neutral-700 text-neutral-400 px-5 py-2 rounded-lg w-full text-center hover:text-white transition-colors" href={`${BASE_URL}video-production-portfolio`}>Portfolio</a>
             </div>
           </div>
 

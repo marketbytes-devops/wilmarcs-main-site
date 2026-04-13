@@ -66,10 +66,6 @@ export default async function Page({ params }: PageProps) {
     case "about-our-team":
       return <AboutUs />;
 
-    case "blog":
-      const blogs = await getBlog(0);
-      return <Blog data={blogs?.data ?? []} />;
-
     case "book-a-call":
       return <Contact />;
 

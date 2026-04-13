@@ -238,7 +238,7 @@ export default function Home({ service_category, portfolio }: { service_category
           }}
           autoplay={{ delay: 3000, disableOnInteraction: false, pauseOnMouseEnter: false, }}>
           {service_category.map((item, i) => (<SwiperSlide key={i} className="p-5">
-            <a href={`${BASE_URL}video-production-services#${item.cslug}`} className="bg-[#111113] border border-gray-800 hover:border-gray-500 rounded-xl p-5 block hover:scale-105 transition-all duration-300 ease-in-out text-left">
+            <a href={`${BASE_URL}services/${item.cslug}`} className="bg-[#111113] border border-gray-800 hover:border-gray-500 rounded-xl p-5 block hover:scale-105 transition-all duration-300 ease-in-out text-left">
               <Image src={process.env.NEXT_PUBLIC_ASSET_URL + item.cimg} alt={item.cslug} className="block w-full rounded-xl overflow-hidden object-cover h-[350px]" width={380} height={450} priority />
               <h3 className="md:text-lg text-base font-semibold mt-5 mb-2">{item.cname}</h3>
               <p className="text-gray-400 text-sm min-h-16">{item.cdesc}</p>
