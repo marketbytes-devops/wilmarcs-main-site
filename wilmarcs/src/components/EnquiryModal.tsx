@@ -31,7 +31,7 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
       tl.to(overlayRef.current, {
         opacity: 1,
         duration: 0.3,
-        display: 'block',
+        display: 'flex',
       })
       .fromTo(contentRef.current, 
         { scale: 0.8, opacity: 0, y: 20 },
@@ -100,13 +100,13 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
   return (
     <div
       ref={overlayRef}
-      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm w-full h-full overflow-y-auto"
       style={{ opacity: 0, display: isOpen ? 'flex' : 'none' }}
       onClick={(e) => e.target === overlayRef.current && handleClose()}
     >
       <div
         ref={contentRef}
-        className="relative w-full max-w-lg bg-zinc-900/90 border border-white/10 rounded-3xl overflow-hidden shadow-2xl grain scanline"
+        className="relative w-full max-w-lg mx-auto my-auto bg-zinc-900/90 border border-white/10 rounded-3xl overflow-hidden shadow-2xl grain scanline"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Background Decorative Element */}

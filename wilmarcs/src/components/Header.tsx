@@ -52,15 +52,15 @@ export default function Header() {
                         <div className={`transition-all ease-in-out duration-500 ${showServicesMenu ? 'top-0 opacity-100' : 'opacity-0 relative top-16'}`}>
                           <h4 className="text-[#A6A6A7] text-xl mb-8 font-normal">Our Services</h4>
                           <ul className="grid gap-5 text-white font-medium text-2xl footul">
-                            <li><a href={`${BASE_URL}services/live-action-production`}>Live‑Action Production</a></li>
-                            <li><a href={`${BASE_URL}services/animation-motion`}>Animation & Motion</a></li>
-                            <li><a href={`${BASE_URL}services/social-performance`}>Social & Performance</a></li>
+                            <li><a href={`${BASE_URL}video-production-services#live-action-production`}>Live‑Action Production</a></li>
+                            <li><a href={`${BASE_URL}video-production-services#animation-motion`}>Animation & Motion</a></li>
+                            <li><a href={`${BASE_URL}video-production-services#social-performance`}>Social & Performance</a></li>
                           </ul>
                         </div>
                         <div className={`transition-all ease-in-out duration-500 ${showServicesMenu ? 'top-0 opacity-100' : 'opacity-0 relative top-16'}`}>
                           <ul className="grid pt-14 gap-5 text-white font-medium text-2xl footul">
-                            <li><a href={`${BASE_URL}services/innovation`}>Innovation</a></li>
-                            <li><a href={`${BASE_URL}services/post-production-studio`}>Post‑Production Studio</a></li>
+                            <li><a href={`${BASE_URL}video-production-services#innovation`}>Innovation</a></li>
+                            <li><a href={`${BASE_URL}video-production-services#post-production-studio`}>Post‑Production Studio</a></li>
                           </ul>
                         </div>
                       </div>
