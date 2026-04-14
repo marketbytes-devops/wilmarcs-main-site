@@ -1,6 +1,6 @@
 'use client';
 import Image from "next/image";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import EnquiryModal from "@/components/EnquiryModal";
 
 import { Pagination, Autoplay, Navigation, Scrollbar } from 'swiper/modules';

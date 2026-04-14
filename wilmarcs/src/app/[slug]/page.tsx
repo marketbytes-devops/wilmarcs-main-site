@@ -1,12 +1,11 @@
 import AboutUs from "@/components/pages/AboutUs";
-import Blog from "@/components/pages/Blog";
 import Contact from "@/components/pages/Contact";
 import Industries from "@/components/pages/Industries";
 import Portfolio from "@/components/pages/Portfolio";
 import Services from "@/components/pages/Services";
 import type { Metadata } from "next";
 import { getSeo } from "@/lib/seo";
-import { getBlog, getPortfolio, getServices } from "@/lib/data";
+import { getPortfolio, getServices } from "@/lib/data";
 import NotFound from "@/components/pages/NotFound";
 interface PageProps {
   params: Promise<{

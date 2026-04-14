@@ -2,8 +2,23 @@ import { getServices } from "@/lib/data";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { BASE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
+
+interface Service {
+  stitle: string;
+  sdesc: string;
+  deliverables?: string;
+  moreinfo?: string;
+  addons?: string;
+}
+
+interface Category {
+  cslug: string;
+  cname: string;
+  cdesc: string;
+  cimg?: string;
+  services: Service[];
+}
 
 interface PageProps {
   params: Promise<{
@@ -14,9 +29,9 @@ interface PageProps {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const servicesData = await getServices(0);
-  const categories = servicesData?.data ?? [];
+  const categories: Category[] = servicesData?.data ?? [];
   
-  const category = categories.find((c: any) => c.cslug === slug);
+  const category = categories.find((c) => c.cslug === slug);
   
   if (!category) {
     return { title: "Service | Wilmarcs" };
@@ -31,9 +46,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function ServiceCategoryPage({ params }: PageProps) {
   const { slug } = await params;
   const servicesData = await getServices(0);
-  const categories = servicesData?.data ?? [];
+  const categories: Category[] = servicesData?.data ?? [];
   
-  const category = categories.find((c: any) => c.cslug === slug);
+  const category = categories.find((c) => c.cslug === slug);
 
   if (!category) {
     return notFound();
@@ -62,7 +77,7 @@ export default async function ServiceCategoryPage({ params }: PageProps) {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {category.services.map((service: any, idx: number) => (
+            {category.services.map((service: Service, idx: number) => (
               <div key={idx} className="group p-8 rounded-3xl bg-neutral-900/50 border border-neutral-800 hover:border-red-600/50 transition-all duration-500">
                 <div className="flex justify-between items-start mb-6">
                   <h3 className="text-2xl font-bold group-hover:text-red-500 transition-colors">{service.stitle}</h3>
