@@ -21,7 +21,7 @@ export default function Industries() {
           </div>
         </div>
       </section>
-      <section className="md:pb-20 pb-16">
+      <section className="md:pb-20 pb-16 pt-16 md:pt-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-6">
             {industriesObj.map((item, i) => (

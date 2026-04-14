@@ -1,6 +1,7 @@
 'use client';
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
+import EnquiryModal from "@/components/EnquiryModal";
 
 import { Pagination, Autoplay, Navigation, Scrollbar } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -32,6 +33,7 @@ type Portfolio = {
   phsubtitle: string;
 };
 export default function Home({ service_category, portfolio }: { service_category: ServiceCategory[], portfolio: Portfolio[] }) {
+  const [isEnquiryOpen, setIsEnquiryOpen] = useState(false);
   const [isBannerMuted, setIsBannerMuted] = useState(true);
   const [isServiceMuted, setIsServiceMuted] = useState(true);
   const [isGlobalMuted, setIsGlobalMuted] = useState(true);
@@ -148,7 +150,7 @@ export default function Home({ service_category, portfolio }: { service_category
         </div>
 
         <div className="absolute left-1/2 lg:bottom-20 sm:bottom-10 bottom-0 -translate-x-1/2 z-2 text-center grid items-center justify-center">
-          <a href={`${BASE_URL}book-a-call`} className="md:px-8 px-6 py-2 lg:text-xl md:text-lg text-base lg:mb-9 sm:mb-6 mb-4 ease-linear duration-200 hover:bg-white hover:text-black inline-flex items-center gap-2 sm:border-2 border border-white md:rounded-2xl rounded-xl">Enquiry</a>
+          <button onClick={() => setIsEnquiryOpen(true)} className="cursor-pointer md:px-8 px-6 py-2 lg:text-xl md:text-lg text-base lg:mb-9 sm:mb-6 mb-4 ease-linear duration-200 hover:bg-white hover:text-black inline-flex items-center gap-2 sm:border-2 border border-white md:rounded-2xl rounded-xl">Enquiry</button>
           <a href="#about-us" className="grid -space-y-4 text-white text-center justify-center items-center">
             <svg xmlns="http://www.w3.org/2000/svg" className="w-8 opacity-50" fill="currentColor" viewBox="0 0 16 16"> <path fillRule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/> </svg>
             <svg xmlns="http://www.w3.org/2000/svg" className="w-8 opacity-75" fill="currentColor" viewBox="0 0 16 16"> <path fillRule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/> </svg>
@@ -428,7 +430,7 @@ export default function Home({ service_category, portfolio }: { service_category
             <div className="lg:pb-12">
               <h2 className="2xl:text-5xl xl:text-4xl md:text-3xl sm:text-2xl text-xl font-bold text-white md:mb-12 sm:mb-8 mb-4">Our Global Presence</h2>
               <p className="text-[#b5b5b5] lg:text-xl md:text-lg sm:text-base text-sm leading-relaxed md:mb-16 sm:mb-12 mb-8">Wilmarcs Motion Pictures operates across <strong className="text-white">India, Australia, and Dubai</strong>, bringing world-class video production and storytelling to brands worldwide. With a strong foothold in these key regions, we collaborate with businesses across diverse industries, delivering high-quality content that resonates with global audiences.</p>
-              <a href={`${BASE_URL}book-a-call`} className="sm:px-4 px-3 py-2 lg:text-xl md:text-lg text-base ease-linear duration-200 hover:bg-white hover:text-black inline-flex items-center sm:gap-4 gap-2 sm:border-2 border border-white md:rounded-2xl rounded-xl">Request a quote <svg xmlns="http://www.w3.org/2000/svg" className="w-6" fill="currentColor" viewBox="0 0 16 16"><path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/></svg></a>
+              <button onClick={() => setIsEnquiryOpen(true)} className="cursor-pointer sm:px-4 px-3 py-2 lg:text-xl md:text-lg text-base ease-linear duration-200 hover:bg-white hover:text-black inline-flex items-center sm:gap-4 gap-2 sm:border-2 border border-white md:rounded-2xl rounded-xl">Request a quote <svg xmlns="http://www.w3.org/2000/svg" className="w-6" fill="currentColor" viewBox="0 0 16 16"><path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/></svg></button>
             </div>
             <div className="pb-12 relative group">
               <video ref={globalRef} poster={`${process.env.NEXT_PUBLIC_API_URL}assets/web/globe.jpg`} autoPlay muted={isGlobalMuted} loop playsInline className="block lg:w-3/4 w-full object-cover mx-auto cursor-pointer" onClick={toggleGlobalMute}>
@@ -455,6 +457,7 @@ export default function Home({ service_category, portfolio }: { service_category
           </div>
         </div>
       </section>
+      <EnquiryModal isOpen={isEnquiryOpen} onClose={() => setIsEnquiryOpen(false)} />
     </>
   );
 }

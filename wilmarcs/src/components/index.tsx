@@ -2,3 +2,4 @@ export { default as Header } from './Header';
 export { default as Footer } from './Footer';
 export { default as CountrySelect } from './CountrySelect';
 export { default as WhatsAppButton } from './WhatsAppButton';
+export { default as EnquiryModal } from './EnquiryModal';

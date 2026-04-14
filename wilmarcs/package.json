@@ -11,6 +11,7 @@
     "export": "next build"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@gsap/react": "^2.1.2",
     "bootstrap-icons": "^1.13.1",
     "flag-icons": "^7.5.0",
