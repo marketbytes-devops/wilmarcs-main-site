@@ -52,15 +52,15 @@ export default function Header() {
                         <div className={`transition-all ease-in-out duration-500 ${showServicesMenu ? 'top-0 opacity-100' : 'opacity-0 relative top-16'}`}>
                           <h4 className="text-[#A6A6A7] text-xl mb-8 font-normal">Our Services</h4>
                           <ul className="grid gap-5 text-white font-medium text-2xl footul">
-                            <li><a href={`${BASE_URL}video-production-services#live`}>Live‑Action Production</a></li>
-                            <li><a href={`${BASE_URL}video-production-services#animation`}>Animation & Motion</a></li>
-                            <li><a href={`${BASE_URL}video-production-services#social`}>Social & Performance</a></li>
+                            <li><a href={`${BASE_URL}services/live-action-production`}>Live‑Action Production</a></li>
+                            <li><a href={`${BASE_URL}services/animation-motion`}>Animation & Motion</a></li>
+                            <li><a href={`${BASE_URL}services/social-performance`}>Social & Performance</a></li>
                           </ul>
                         </div>
                         <div className={`transition-all ease-in-out duration-500 ${showServicesMenu ? 'top-0 opacity-100' : 'opacity-0 relative top-16'}`}>
                           <ul className="grid pt-14 gap-5 text-white font-medium text-2xl footul">
-                            <li><a href={`${BASE_URL}video-production-services#innovation`}>Innovation</a></li>
-                            <li><a href={`${BASE_URL}video-production-services#post`}>Post‑Production Studio</a></li>
+                            <li><a href={`${BASE_URL}services/innovation`}>Innovation</a></li>
+                            <li><a href={`${BASE_URL}services/post-production-studio`}>Post‑Production Studio</a></li>
                           </ul>
                         </div>
                       </div>
@@ -69,6 +69,7 @@ export default function Header() {
                 </li>
                 <li className={`header-link ${pathname.startsWith('/portfolio') ? 'font-bold' : ''} all-ease lg:py-6 py-2.5`}><a href={`${BASE_URL}video-production-portfolio`}>Portfolio</a></li>
                 <li className={`header-link ${pathname.startsWith('/industries') ? 'font-bold' : ''} all-ease lg:py-6 py-2.5`}><a href={`${BASE_URL}industries-we-serve`}>Industries</a></li>
+                <li className={`header-link ${pathname.startsWith('/blog') ? 'font-bold' : ''} all-ease lg:py-6 py-2.5`}><a href={`${BASE_URL}blog`}>Blog</a></li>
                 <li className={`header-link ${pathname.startsWith('/contact') ? 'font-bold' : ''} all-ease lg:py-6 py-2.5`}><a href={`${BASE_URL}book-a-call`}>Contact</a></li>
               </ul>
               <ul className="flex items-center md:gap-12 sm:gap-8 gap-6 relative z-[11]">
