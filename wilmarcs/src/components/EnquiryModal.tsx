@@ -1,32 +1,128 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import { useForm, Controller } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import { gsap } from 'gsap';
+import { motion, AnimatePresence } from 'framer-motion';
+
+interface DropdownProps {
+  options: { value: string; label: string }[];
+  placeholder: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  control: any; 
+  name: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  rules?: any;
+}
 
 interface EnquiryModalProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
+const Dropdown = ({ options, placeholder, control, name, rules }: DropdownProps) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClick = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, []);
+
+  return (
+    <Controller
+      control={control}
+      name={name}
+      rules={rules}
+      render={({ field: { onChange, value }, fieldState: { error } }) => {
+        const selected = options.find((opt: { value: string; label: string }) => opt.value === value);
+
+        return (
+          <div ref={ref} className="relative">
+            <button
+              type="button"
+              onClick={() => setIsOpen((prev) => !prev)}
+              className={`
+                w-full bg-zinc-800/50 border rounded-xl px-4 py-3 text-left flex items-center justify-between appearance-none transition-all
+                ${error ? 'border-red-500' : 'border-white/10 focus:border-white/30'}
+                ${selected ? 'text-white' : 'text-zinc-600'}
+              `}
+            >
+              <span>{selected?.label || placeholder}</span>
+              <motion.svg
+                width="12"
+                height="8"
+                viewBox="0 0 12 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                animate={{ rotate: isOpen ? 180 : 0 }}
+                transition={{ duration: 0.2 }}
+              >
+                <path
+                  d="M1 1L6 6L11 1"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </motion.svg>
+            </button>
+            {error && <p className="text-red-500 text-xs mt-1 ml-1">{error.message}</p>}
+            <AnimatePresence>
+              {isOpen && (
+                <motion.ul
+                  initial={{ opacity: 0, y: -8, scale: 0.95 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: -8, scale: 0.95 }}
+                  transition={{ duration: 0.15, ease: 'easeOut' }}
+                  className="absolute z-50 mt-2 w-full bg-zinc-900 border border-white/10 rounded-xl shadow-2xl overflow-hidden"
+                >
+                  {options.map((opt: { value: string; label: string }) => (
+                    <li
+                      key={opt.value}
+                      onClick={() => {
+                        onChange(opt.value);
+                        setIsOpen(false);
+                      }}
+                      className="px-4 py-3 cursor-pointer text-zinc-400 hover:bg-zinc-800 hover:text-white transition-colors"
+                    >
+                      {opt.label}
+                    </li>
+                  ))}
+                </motion.ul>
+              )}
+            </AnimatePresence>
+          </div>
+        );
+      }}
+    />
+  );
+};
+
 export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-  });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-  
+
+  const {
+    register,
+    handleSubmit,
+    control,
+    formState: { errors },
+    reset,
+  } = useForm({ mode: 'onChange' });
+
   const overlayRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
-      
-      // GSAP Animation
       const tl = gsap.timeline();
       tl.to(overlayRef.current, {
         opacity: 1,
@@ -62,58 +158,73 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const onSubmit = async (data: Record<string, string>) => {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
     try {
+      const templateParams = {
+        fullName: data.fullName,
+        workEmail: data.workEmail,
+        phone: data.phone,
+        company: data.company,
+        budgetRange: data.budgetRange,
+        timeline: data.timeline,
+        projectBrief: data.projectBrief,
+        referenceLinks: data.referenceLinks || '—',
+      };
+
       const result = await emailjs.send(
-        'service_slv9xzo',
-        'template_jxufppl',
-        {
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          message: formData.message,
-        },
-        'amNar9juPV7yiIQL8'
+        'service_s8ubnxc',
+        'template_4l40s3a',
+        templateParams,
+        '2YEPEtf8IXRpv5o5b'
       );
 
       if (result.status === 200) {
         setSubmitStatus('success');
-        setFormData({ name: '', email: '', phone: '', message: '' });
-        setTimeout(() => handleClose(), 2000);
+        reset();
+        setTimeout(() => {
+          window.location.href = "https://wilmarcs.com/thank-you";
+        }, 1500);
       } else {
         setSubmitStatus('error');
       }
     } catch (error) {
-      console.error('EmailJS Error:', error);
+      console.error('Email error:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
     }
   };
 
+  const budgetOptions = [
+    { value: "₹5–10L", label: "₹5–10L" },
+    { value: "₹10–20L", label: "₹10–20L" },
+    { value: "₹20L+", label: "₹20L+" },
+  ];
+
+  const timelineOptions = [
+    { value: "Urgent", label: "Urgent" },
+    { value: "Standard", label: "Standard" },
+    { value: "Flexible", label: "Flexible" },
+  ];
+
   if (!isOpen && submitStatus === 'idle') return null;
 
   return (
     <div
       ref={overlayRef}
-      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm w-full h-full overflow-y-auto"
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-md w-full h-full overflow-y-auto pt-4 pb-4"
       style={{ opacity: 0, display: isOpen ? 'flex' : 'none' }}
       onClick={(e) => e.target === overlayRef.current && handleClose()}
     >
       <div
         ref={contentRef}
-        className="relative w-full max-w-lg mx-auto my-auto bg-zinc-900/90 border border-white/10 rounded-3xl overflow-hidden shadow-2xl grain scanline"
+        className="relative w-full max-w-md mx-auto my-auto bg-[#121212] border border-white/10 rounded-2xl overflow-hidden shadow-2xl grain"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Background Decorative Element */}
-        <div className="absolute -top-24 -right-24 w-48 h-48 bg-white/5 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-24 -left-24 w-48 h-48 bg-white/5 rounded-full blur-3xl pointer-events-none" />
-
-        <div className="p-8 sm:p-10">
+        <div className="p-6 sm:p-8">
           <button
             onClick={handleClose}
             className="absolute top-6 right-6 text-zinc-400 hover:text-white transition-colors"
@@ -123,9 +234,9 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
             </svg>
           </button>
 
-          <div className="mb-8">
-            <h2 className="text-3xl font-bold text-white mb-2">Enquiry</h2>
-            <p className="text-zinc-400">Tell us about your project and we'll get back to you.</p>
+          <div className="mb-4">
+            <h2 className="text-2xl font-bold text-white mb-1 text-center">Get a Quote</h2>
+            <p className="text-zinc-500 text-sm text-center">Let's discuss your production vision.</p>
           </div>
 
           {submitStatus === 'success' ? (
@@ -136,82 +247,100 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-white">Message Sent!</h3>
-              <p className="text-zinc-400 mt-2">We appreciate your enquiry. We'll be in touch soon.</p>
+              <p className="text-zinc-400 mt-2">Redirecting you shortly...</p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <input
+                    {...register("fullName", { required: "Full name is required" })}
+                    placeholder="Full Name"
+                    className={`w-full bg-zinc-800/50 border rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none transition-all ${errors.fullName ? 'border-red-500' : 'border-white/10 focus:border-white/30'}`}
+                  />
+                  {errors.fullName && <p className="text-red-500 text-xs mt-1 ml-1">{errors.fullName.message as string}</p>}
+                </div>
+                <div>
+                  <input
+                    {...register("phone", { 
+                      required: "Phone number is required",
+                      pattern: { value: /^\+?[\d\s-]{10,}$/, message: "Invalid phone number" }
+                    })}
+                    placeholder="Phone Number"
+                    className={`w-full bg-zinc-800/50 border rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none transition-all ${errors.phone ? 'border-red-500' : 'border-white/10 focus:border-white/30'}`}
+                  />
+                  {errors.phone && <p className="text-red-500 text-xs mt-1 ml-1">{errors.phone.message as string}</p>}
+                </div>
+              </div>
+
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-zinc-400 mb-1.5 ml-1">Name</label>
                 <input
-                  type="text"
-                  id="name"
-                  required
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  placeholder="John Doe"
-                  className="w-full bg-zinc-800/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-white/30 transition-all"
+                  {...register("workEmail", { 
+                    required: "Work email is required",
+                    pattern: { value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/, message: "Invalid email" }
+                  })}
+                  placeholder="Work Email"
+                  className={`w-full bg-zinc-800/50 border rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none transition-all ${errors.workEmail ? 'border-red-500' : 'border-white/10 focus:border-white/30'}`}
                 />
+                {errors.workEmail && <p className="text-red-500 text-xs mt-1 ml-1">{errors.workEmail.message as string}</p>}
+              </div>
+
+              <div>
+                <input
+                  {...register("company", { required: "Company name is required" })}
+                  placeholder="Company"
+                  className={`w-full bg-zinc-800/50 border rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none transition-all ${errors.company ? 'border-red-500' : 'border-white/10 focus:border-white/30'}`}
+                />
+                {errors.company && <p className="text-red-500 text-xs mt-1 ml-1">{errors.company.message as string}</p>}
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-zinc-400 mb-1.5 ml-1">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    required
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    placeholder="john@example.com"
-                    className="w-full bg-zinc-800/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-white/30 transition-all"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-zinc-400 mb-1.5 ml-1">Phone</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    required
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder="+91 00000 00000"
-                    className="w-full bg-zinc-800/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-white/30 transition-all"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-zinc-400 mb-1.5 ml-1">Message</label>
-                <textarea
-                  id="message"
-                  required
-                  rows={4}
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  placeholder="Tell us about your project..."
-                  className="w-full bg-zinc-800/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-white/30 transition-all resize-none"
+                <Dropdown
+                  options={budgetOptions}
+                  placeholder="Budget Range"
+                  control={control}
+                  name="budgetRange"
+                  rules={{ required: "Required" }}
+                />
+                <Dropdown
+                  options={timelineOptions}
+                  placeholder="Timeline"
+                  control={control}
+                  name="timeline"
+                  rules={{ required: "Required" }}
                 />
               </div>
 
+              <div>
+                <textarea
+                  {...register("referenceLinks")}
+                  placeholder="Reference Links (optional - one per line)"
+                  className="w-full bg-zinc-800/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none focus:border-white/30 transition-all h-20 resize-none scrollbar-hide"
+                />
+              </div>
+
+              <div>
+                <textarea
+                  {...register("projectBrief", { required: "Project brief is required" })}
+                  placeholder="Project Brief"
+                  className={`w-full bg-zinc-800/50 border rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none transition-all h-28 resize-none ${errors.projectBrief ? 'border-red-500' : 'border-white/10 focus:border-white/30'}`}
+                />
+                {errors.projectBrief && <p className="text-red-500 text-xs mt-1 ml-1">{errors.projectBrief.message as string}</p>}
+              </div>
+
               {submitStatus === 'error' && (
-                <p className="text-red-500 text-sm mt-2">Failed to send message. Please try again or contact us directly.</p>
+                <p className="text-red-500 text-sm mt-2 text-center">Failed to send enquiry. Please try again.</p>
               )}
 
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-white text-black font-bold py-4 rounded-xl hover:bg-zinc-200 transition-all disabled:opacity-50 disabled:cursor-not-allowed mt-4 flex items-center justify-center gap-2"
-              >
-                {isSubmitting ? (
-                  <>
-                    <svg className="animate-spin h-5 w-5 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                    </svg>
-                    Sending...
-                  </>
-                ) : 'Send Message'}
-              </button>
+              <div className="flex justify-center pt-1">
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full py-4 bg-white text-black font-bold rounded-xl hover:bg-zinc-200 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                >
+                  {isSubmitting ? 'Sending...' : 'Send Enquiry'}
+                </button>
+              </div>
             </form>
           )}
         </div>

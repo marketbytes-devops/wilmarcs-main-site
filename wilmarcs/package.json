@@ -15,11 +15,13 @@
     "@gsap/react": "^2.1.2",
     "bootstrap-icons": "^1.13.1",
     "flag-icons": "^7.5.0",
+    "framer-motion": "^12.38.0",
     "gsap": "^3.13.0",
     "gsap-trial": "^3.12.7",
     "lightgallery": "^2.9.0",
     "next": "^15.5.9",
     "nodemailer": "^7.0.10",
+    "react-hook-form": "^7.72.1",
     "react-select": "^5.10.2",
     "swiper": "^11.2.10"
   },

@@ -1,4 +1,4 @@
-import { getBlog } from "@/lib/data";
+import { blogData } from "@/data/blogData";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -6,14 +6,19 @@ import type { Metadata } from "next";
 
 interface PageProps {
   params: Promise<{
-    id: string;
+    slug: string;
   }>;
 }
 
+export async function generateStaticParams() {
+  return blogData.map((blog) => ({
+    slug: blog.blslug,
+  }));
+}
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { id } = await params;
-  const blog = await getBlog(Number(id));
-  const data = blog?.data;
+  const { slug } = await params;
+  const data = blogData.find((b) => b.blslug === slug);
 
   return {
     title: data?.seotitle ?? data?.bltitle ?? "Blog Post | Wilmarcs",
@@ -23,14 +28,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function BlogPostPage({ params }: PageProps) {
-  const { id } = await params;
-  const blog = await getBlog(Number(id));
+  const { slug } = await params;
+  const data = blogData.find((b) => b.blslug === slug);
   
-  if (!blog || !blog.status || !blog.data) {
+  if (!data) {
     return notFound();
   }
-
-  const data = blog.data;
 
   return (
     <article className="min-h-screen bg-[#0a0a0b] text-white">
@@ -38,7 +41,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       <section className="relative w-full h-[60vh] md:h-[70vh] flex items-end">
         <div className="absolute inset-0 z-0">
           <Image
-            src={process.env.NEXT_PUBLIC_ASSET_URL + data.blimg}
+            src={data.blimg}
             alt={data.bltitle}
             fill
             className="object-cover opacity-60"
@@ -88,7 +91,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               dangerouslySetInnerHTML={{ __html: data.bldesc }}
             />
 
-            {/* Tags area if any */}
+            {/* Tags area */}
             {data.btags && (
               <div className="mt-16 pt-8 border-t border-white/10">
                 <div className="flex flex-wrap gap-2">

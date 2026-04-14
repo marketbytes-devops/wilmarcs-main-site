@@ -13,7 +13,7 @@ interface PageProps {
   }>;
 }
 export async function generateStaticParams() {
-  return ["about-our-team", "blog", "book-a-call", "industries-we-serve", "video-production-portfolio", "video-production-services"].map((slug) => ({ slug }));
+  return ["about-our-team", "book-a-call", "industries-we-serve", "video-production-portfolio", "video-production-services"].map((slug) => ({ slug }));
 }
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
