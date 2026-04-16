@@ -49,7 +49,7 @@ const Dropdown = ({ options, placeholder, control, name, rules }: DropdownProps)
               type="button"
               onClick={() => setIsOpen((prev) => !prev)}
               className={`
-                w-full bg-zinc-800/50 border rounded-xl px-4 py-3 text-left flex items-center justify-between appearance-none transition-all
+                w-full bg-zinc-800/50 border rounded-xl px-3 py-2.5 text-left flex items-center justify-between appearance-none transition-all
                 ${error ? 'border-red-500' : 'border-white/10 focus:border-white/30'}
                 ${selected ? 'text-white' : 'text-zinc-600'}
               `}
@@ -90,7 +90,7 @@ const Dropdown = ({ options, placeholder, control, name, rules }: DropdownProps)
                         onChange(opt.value);
                         setIsOpen(false);
                       }}
-                      className="px-4 py-3 cursor-pointer text-zinc-400 hover:bg-zinc-800 hover:text-white transition-colors"
+                      className="px-3 py-2 cursor-pointer text-zinc-400 hover:bg-zinc-800 hover:text-white transition-colors"
                     >
                       {opt.label}
                     </li>
@@ -221,10 +221,10 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
     >
       <div
         ref={contentRef}
-        className="relative w-full max-w-md mx-auto my-auto bg-[#121212] border border-white/10 rounded-2xl overflow-hidden shadow-2xl grain"
+        className="relative w-[95%] max-w-[420px] mx-auto my-auto bg-[#121212] border border-white/10 rounded-2xl overflow-hidden shadow-2xl grain"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="p-6 sm:p-8">
+        <div className="p-5 sm:p-7">
           <button
             onClick={handleClose}
             className="absolute top-6 right-6 text-zinc-400 hover:text-white transition-colors"
@@ -235,7 +235,7 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
           </button>
 
           <div className="mb-4">
-            <h2 className="text-2xl font-bold text-white mb-1 text-center">Get a Quote</h2>
+            <h2 className="text-xl sm:text-2xl font-bold text-white mb-1 text-center">Get a Quote</h2>
             <p className="text-zinc-500 text-sm text-center">Let's discuss your production vision.</p>
           </div>
 
@@ -250,13 +250,13 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
               <p className="text-zinc-400 mt-2">Redirecting you shortly...</p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
                   <input
                     {...register("fullName", { required: "Full name is required" })}
                     placeholder="Full Name"
-                    className={`w-full bg-zinc-800/50 border rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none transition-all ${errors.fullName ? 'border-red-500' : 'border-white/10 focus:border-white/30'}`}
+                    className={`w-full bg-zinc-800/50 border rounded-xl px-3 py-2.5 text-white placeholder:text-zinc-600 focus:outline-none transition-all ${errors.fullName ? 'border-red-500' : 'border-white/10 focus:border-white/30'}`}
                   />
                   {errors.fullName && <p className="text-red-500 text-xs mt-1 ml-1">{errors.fullName.message as string}</p>}
                 </div>
@@ -267,7 +267,7 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
                       pattern: { value: /^\+?[\d\s-]{10,}$/, message: "Invalid phone number" }
                     })}
                     placeholder="Phone Number"
-                    className={`w-full bg-zinc-800/50 border rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none transition-all ${errors.phone ? 'border-red-500' : 'border-white/10 focus:border-white/30'}`}
+                    className={`w-full bg-zinc-800/50 border rounded-xl px-3 py-2.5 text-white placeholder:text-zinc-600 focus:outline-none transition-all ${errors.phone ? 'border-red-500' : 'border-white/10 focus:border-white/30'}`}
                   />
                   {errors.phone && <p className="text-red-500 text-xs mt-1 ml-1">{errors.phone.message as string}</p>}
                 </div>
@@ -280,7 +280,7 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
                     pattern: { value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/, message: "Invalid email" }
                   })}
                   placeholder="Work Email"
-                  className={`w-full bg-zinc-800/50 border rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none transition-all ${errors.workEmail ? 'border-red-500' : 'border-white/10 focus:border-white/30'}`}
+                  className={`w-full bg-zinc-800/50 border rounded-xl px-3 py-2.5 text-white placeholder:text-zinc-600 focus:outline-none transition-all ${errors.workEmail ? 'border-red-500' : 'border-white/10 focus:border-white/30'}`}
                 />
                 {errors.workEmail && <p className="text-red-500 text-xs mt-1 ml-1">{errors.workEmail.message as string}</p>}
               </div>
@@ -289,12 +289,12 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
                 <input
                   {...register("company", { required: "Company name is required" })}
                   placeholder="Company"
-                  className={`w-full bg-zinc-800/50 border rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none transition-all ${errors.company ? 'border-red-500' : 'border-white/10 focus:border-white/30'}`}
+                  className={`w-full bg-zinc-800/50 border rounded-xl px-3 py-2.5 text-white placeholder:text-zinc-600 focus:outline-none transition-all ${errors.company ? 'border-red-500' : 'border-white/10 focus:border-white/30'}`}
                 />
                 {errors.company && <p className="text-red-500 text-xs mt-1 ml-1">{errors.company.message as string}</p>}
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <Dropdown
                   options={budgetOptions}
                   placeholder="Budget Range"
@@ -315,7 +315,7 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
                 <textarea
                   {...register("referenceLinks")}
                   placeholder="Reference Links (optional - one per line)"
-                  className="w-full bg-zinc-800/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none focus:border-white/30 transition-all h-20 resize-none scrollbar-hide"
+                  className="w-full bg-zinc-800/50 border border-white/10 rounded-xl px-3 py-2.5 text-white placeholder:text-zinc-600 focus:outline-none focus:border-white/30 transition-all h-16 resize-none scrollbar-hide"
                 />
               </div>
 
@@ -323,7 +323,7 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
                 <textarea
                   {...register("projectBrief", { required: "Project brief is required" })}
                   placeholder="Project Brief"
-                  className={`w-full bg-zinc-800/50 border rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none transition-all h-28 resize-none ${errors.projectBrief ? 'border-red-500' : 'border-white/10 focus:border-white/30'}`}
+                  className={`w-full bg-zinc-800/50 border rounded-xl px-3 py-2.5 text-white placeholder:text-zinc-600 focus:outline-none transition-all h-24 resize-none ${errors.projectBrief ? 'border-red-500' : 'border-white/10 focus:border-white/30'}`}
                 />
                 {errors.projectBrief && <p className="text-red-500 text-xs mt-1 ml-1">{errors.projectBrief.message as string}</p>}
               </div>
@@ -336,7 +336,7 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-4 bg-white text-black font-bold rounded-xl hover:bg-zinc-200 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                  className="w-full py-3 bg-white text-black font-bold rounded-xl hover:bg-zinc-200 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                 >
                   {isSubmitting ? 'Sending...' : 'Send Enquiry'}
                 </button>
