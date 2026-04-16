@@ -390,6 +390,122 @@ export default function Home({ service_category, portfolio }: { service_category
           </div>
         </div>
       </section>
+      <div className="absolute -z-[9999] opacity-0 pointer-events-none select-none overflow-hidden h-0" aria-hidden="true">
+        <h1>Corporate Video Production Company in Bangalore, India</h1>
+        <p>As a leading corporate video production company in Bangalore, India, we help brands turn complex ideas into clear, cinematic stories that win trust, inspire action, and drive measurable business outcomes.</p>
+        <p>With teams across India, Australia, and Dubai, we partner with corporate and marketing leaders, CSR heads, and growth-stage tech companies to produce films that are built for both boardrooms and digital platforms.</p>
+
+        <h2>Why Brands Choose Our Corporate Video Production in Bangalore</h2>
+        <h3>Strategic Storytelling for Corporate and CSR Communication</h3>
+        <p>We understand that every corporate film must do more than look good on screen—it must support a clear business or impact objective.</p>
+        <p>That is why we start every project by aligning your brand story, communication goals, and audience insights before a single frame is shot.</p>
+        <p>We work closely with corporate and marketing leadership to shape narratives for brand films, company overviews, product launches, investor presentations, and internal communications.</p>
+        <p>For CSR and sustainability teams, we translate impact reports, ESG outcomes, and on-ground initiatives into powerful visual stories that resonate with donors, communities, and global stakeholders.</p>
+
+        <h3>Built for Growth-Stage Tech, SaaS, and Innovation-Driven Brands</h3>
+        <p>Growth-stage tech and SaaS companies often need video content that can explain complex products in seconds while still feeling premium and human.</p>
+        <p>Our team specializes in combining product demos, platform walkthroughs, customer success stories, and founder narratives into cohesive content libraries that support sales, marketing, and fundraising.</p>
+        <p>Whether you are launching a new feature, entering a new market, or preparing for a funding round, we craft videos that speak the language of both decision-makers and end users.</p>
+        <p>From explainer videos and onboarding content to testimonial films and performance creatives, we structure video ecosystems that scale with your marketing funnel.</p>
+
+        <h2>Corporate Video Production Services We Offer</h2>
+        <h3>End-to-End Live-Action Corporate Films</h3>
+        <p>As a full-service corporate video production company in Bangalore, India, we handle the complete lifecycle of your film—from idea to final delivery.</p>
+        <p>Our live-action production services cover brand films, corporate profiles, factory and facility walkthroughs, leadership interviews, event coverage, testimonials, documentaries, and CSR storytelling.</p>
+        <p>We manage scripting, storyboarding, casting, location scouting, production design, direction, cinematography, and on-ground crew coordination.</p>
+        <p>On set, we focus on efficiency and professionalism so your leadership and teams can stay focused on their work while we take care of the creative details.</p>
+
+        <h3>Animation, Motion Graphics, and Product Explainer videos</h3>
+        <p>For technology, SaaS, healthcare, fintech, and manufacturing brands, animation and motion design are often the most effective way to simplify complex systems.</p>
+        <p>We create 2D and 3D explainer videos, UI/UX walkthroughs, motion titles, infographics, and product visualizations tailored to your brand language and industry.</p>
+        <p>Our animation team collaborates with your product and marketing stakeholders to convert feature lists and technical specs into intuitive visual journeys.</p>
+        <p>This ensures your audience understands not just what your product does, but why it matters in their daily workflows and strategic decisions.</p>
+
+        <h3>Social-First and Performance-Driven Video Content</h3>
+        <p>Modern corporate and CSR communication does not end with a single master film.</p>
+        <p>We repurpose and adapt your content into social-first formats—reels, shorts, teasers, and performance creatives designed for platforms like LinkedIn, Instagram, YouTube, and programmatic campaigns.</p>
+        <p>By planning for multi-channel usage from day one, we help you maximize every shoot day and asset.</p>
+        <p>You receive a mix of hero films, cutdowns, vertical edits, and silent-friendly versions optimized for both organic reach and paid performance.</p>
+
+        <h2>Our Process: From Brief to Broadcast</h2>
+        <h3>Discovery, Strategy, and Concept Development</h3>
+        <p>Every successful corporate film starts with clarity.</p>
+        <p>In our discovery phase, we align with your leadership, marketing, CSR, or product teams to define objectives, audience personas, key messages, and distribution channels.</p>
+        <p>We then develop creative concepts, narratives, and visual treatments that match your brand voice and industry context.</p>
+        <p>For CSR projects, we also work with your on-ground partners and NGOs to ensure the storytelling respects communities, accurately represents impact, and stays aligned with your reporting frameworks.</p>
+
+        <h3>Production Excellence and On-Ground Precision</h3>
+        <p>Once the concept is approved, our production team plans every detail—schedules, permissions, safety, crew, equipment, and logistics across locations.</p>
+        <p>From corporate offices and manufacturing plants to remote project sites, we are used to working in challenging environments while maintaining quality and timelines.</p>
+        <p>We use modern camera systems, lighting, and sound to ensure every interview and visual feels cinematic yet authentic.</p>
+        <p>Throughout the shoot, we collaborate with your internal team, keeping stakeholders informed while protecting your brand’s reputation on and off camera.</p>
+
+        <h3>Post-Production, Delivery, and Versioning</h3>
+        <p>After production, our post-production studio manages editing, color grading, sound design, animation, and finishing to create a cohesive final film.</p>
+        <p>We pay close attention to pacing, brand guidelines, on-screen text, and accessibility considerations such as subtitles and localization.</p>
+        <p>Multiple versions are created for different platforms—website, internal meetings, events, social media, and broadcast.</p>
+        <p>We also provide secure review links and feedback loops so your team can refine messaging without slowing down timelines.</p>
+
+        <h2>Industries We Serve Across Bangalore and India</h2>
+        <h3>Corporate, CSR, and Impact-Driven Organizations</h3>
+        <p>We are widely recognized for our CSR and NGO video production expertise, working with foundations, non-profits, and corporate CSR teams across India.</p>
+        <p>Our films have captured stories across diverse terrains and communities, showcasing real impact in a way that resonates with both local and global audiences.</p>
+        <p>For corporate brands, we produce films that support reputation-building, employer branding, sustainability communication, and stakeholder engagement.</p>
+        <p>Your brand narrative is always anchored in authenticity, measurable outcomes, and long-term trust.</p>
+
+        <h3>Tech, SaaS, Manufacturing, Healthcare, and More</h3>
+        <p>Our portfolio spans tech and SaaS, manufacturing, healthcare, fintech, education, travel, hospitality, real estate, media and entertainment, and e-commerce.</p>
+        <p>This cross-industry experience helps us quickly understand your product, industry language, and regulatory or compliance constraints.</p>
+        <p>Because we operate from Bangalore with a global mindset, we are comfortable working with distributed teams, product leaders, and marketing agencies around the world.</p>
+        <p>Whether you are a fast-scaling startup or an established enterprise, we adapt our process to your internal workflows and approval structures.</p>
+
+        <h2>Why Our Bangalore-Based Team Is a Strong Fit</h2>
+        <h3>Experience, Craft, and Measurable Outcomes</h3>
+        <p>With years of experience as a corporate video production company in Bangalore, India, we combine creative storytelling with strategic thinking for every project.</p>
+        <p>Our goal is not just to deliver a beautiful film, but to help you see tangible value—improved perception, stronger engagement, better conversion, and deeper stakeholder connection.</p>
+        <p>We bring together directors, cinematographers, producers, writers, editors, colorists, animators, and sound designers under one roof.</p>
+        <p>This integrated model gives you consistency, accountability, and a single team that understands your brand from briefing to final delivery.</p>
+
+        <h3>Trusted by Leading Brands and Global Teams</h3>
+        <p>We work with brands and organizations that expect high standards from their partners.</p>
+        <p>From large enterprises to high-growth innovators, our clients trust us to handle sensitive stories, leadership time, and complex on-ground operations.</p>
+        <p>Our films have been used in board meetings, investor pitches, global conferences, impact reports, internal town halls, and large-scale digital campaigns.</p>
+        <p>This trust is built on a simple promise: we respect your story, your stakeholders, and your deadlines.</p>
+
+        <h2>FAQ – Corporate Video Production in Bangalore, India</h2>
+        <h3>1. How much does a corporate video cost in Bangalore?</h3>
+        <p>The cost of a corporate video in Bangalore depends on factors like concept complexity, number of shoot days, locations, crew size, equipment, and post-production requirements.</p>
+        <p>After understanding your brief and deliverables, we provide a transparent estimate that aligns with your objectives and budget.</p>
+
+        <h3>2. How long does it take to produce a corporate film?</h3>
+        <p>Most corporate films take between three to six weeks from briefing to final delivery, depending on approvals and scheduling.</p>
+        <p>Larger CSR documentaries or multi-location shoots may require more time for planning, travel, and coordination.</p>
+
+        <h3>3. Can you handle shoots outside Bangalore or across India?</h3>
+        <p>Yes, our team regularly manages projects across India and internationally, coordinating logistics, permissions, and local crews when needed.</p>
+        <p>We are equipped to handle diverse terrains, industries, and stakeholder groups while maintaining quality and consistency.</p>
+
+        <h3>4. Do you help with scripting and messaging?</h3>
+        <p>We handle scripting, storyboarding, and messaging as part of our process so that your film feels clear, structured, and on-brand.</p>
+        <p>Our writers collaborate with your leadership, marketing, CSR, or product teams to ensure accuracy and alignment with your communication strategy.</p>
+
+        <h3>5. Can you create multiple edits for different platforms?</h3>
+        <p>Yes, we plan for multiple versions from the start, so you can use the same footage for your website, events, internal meetings, and social media.</p>
+        <p>We deliver cutdowns, vertical formats, and silent-friendly edits optimized for various platforms and performance objectives.</p>
+
+        <h2>Ready to Plan Your Next Corporate Film?</h2>
+        <h3>Talk to Our Corporate Video Experts</h3>
+        <p>If you are exploring a new corporate film, CSR documentary, or product video, our team can help you shape the right approach from day one.</p>
+        <p>We are happy to review your brief, suggest structures, and recommend formats aligned with your objectives and budget.</p>
+        <p>You can book a call with us to discuss your requirements, timelines, and locations across Bangalore or other regions in India.</p>
+        <p>Together, we will map a clear production roadmap that works for your stakeholders and communication strategy.</p>
+
+        <h3>Request a Tailored Quote for Your Project</h3>
+        <p>Every organization, initiative, and product is unique, so we provide customized proposals rather than one-size-fits-all packages.</p>
+        <p>Share your goals—brand awareness, fundraising, recruitment, sales enablement, or CSR reporting—and we will suggest the right mix of films and deliverables.</p>
+        <p>To get started, you can request a quote and receive a structured plan that covers concept, production, and post-production in one place.</p>
+        <p>Our team will guide you through options so you can make confident decisions at each step.</p>
+      </div>
       <EnquiryModal isOpen={isEnquiryOpen} onClose={() => setIsEnquiryOpen(false)} />
     </>
   );
