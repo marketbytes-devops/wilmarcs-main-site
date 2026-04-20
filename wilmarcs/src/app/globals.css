@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 @font-face {
   font-family: 'trakya';

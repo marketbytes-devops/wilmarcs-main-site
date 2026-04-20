@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { BASE_URL } from '@/lib/constants';
 import industries from '@/data/industries.json';
+import { blogData } from '@/data/blogData';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const topLevelRoutes = [
@@ -14,8 +15,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const industryRoutes = Object.keys(industries).map((slug) => `industries/${slug}`);
+  const blogRoutes = blogData.map((blog) => `blog/${blog.blslug}`);
 
-  const allRoutes = [...topLevelRoutes, ...industryRoutes];
+  const allRoutes = [...topLevelRoutes, ...industryRoutes, ...blogRoutes];
 
   const currentDate = new Date();
 
