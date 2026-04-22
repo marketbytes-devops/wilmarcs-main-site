@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Corporate Video Production Agency in Bengaluru — Wilmarcs Motion Pictures",
     description: "Cinematic storytellers for brands, tech enterprises, and NGOs in Bengaluru. High-quality production with fast turnaround. Contact us for your next project.",
     type: "website",
-    url: "https://wilmarcs.com/corporate-video-production-agency-bengaluru",
+    url: "https://wilmarcs.com/corporate-video-production-agency-in-bengaluru",
   },
 };
 

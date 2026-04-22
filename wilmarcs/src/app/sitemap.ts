@@ -12,6 +12,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'industries-we-serve',
     'video-production-portfolio',
     'video-production-services',
+    'corporate-video-production-agency-in-bengaluru',
+    'corporate-film-production-company-bengaluru',
   ];
 
   const industryRoutes = Object.keys(industries).map((slug) => `industries/${slug}`);

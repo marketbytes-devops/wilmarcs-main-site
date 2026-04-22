@@ -33,6 +33,8 @@ We provide specialized solutions for various industries including:
 
 ### Dynamic Routes
 - `/industries/[slug]` - Individual industry pages
+- `/corporate-video-production-agency-in-bengaluru` - Bangalore Agency Page
+- `/corporate-film-production-company-bengaluru` - Bangalore Film Company Page
 - `/[slug]` - Dynamic content pages
 
 ## Technical Information
