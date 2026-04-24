@@ -127,7 +127,7 @@ details[open] .arrow::before{content: "\F229";}
 .layeredblock img{@apply relative z-1}
 .slist ul, .slist ol{@apply mt-2 space-y-1 list-disc list-inside}
 @media(max-width:1024.98px) {
-  .mainmenu{@apply fixed flex-col top-0 right-0 items-start gap-4 px-8 pt-24 pb-8 min-w-2xs bg-black !h-full z-10 min-h-screen overflow-y-auto transition-all duration-300 ease-in-out}
+  .mainmenu{@apply fixed flex-col top-0 right-0 items-start gap-4 px-8 pt-24 pb-8 min-w-2xs bg-black !h-full z-50 min-h-screen overflow-y-auto transition-all duration-300 ease-in-out}
   .menuopen .mainmenu{@apply translate-x-full}
   body{font-size: 15px;}
   .filmslider .swiper-pagination.swiper-pagination-horizontal {margin-top: 40px;padding: 5px 15px 7px;}
